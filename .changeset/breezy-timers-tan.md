@@ -1,6 +1,6 @@
 ---
-"docs": major
-"@sb/ui": major
+"docs": patch
+"@sb/ui": patch
 ---
 
 Sample
