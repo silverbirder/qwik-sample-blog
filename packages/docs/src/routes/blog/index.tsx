@@ -14,7 +14,7 @@ export const getPosts = async (): Promise<PostSummary[]> => {
       title: data.head.title || "",
       description:
         data.head.meta.find((m) => m.name === "description")?.content || "",
-      permalink: data.head.frontmatter.permalink,
+      permalink: `/blog/contents${data.head.frontmatter.permalink}`,
       date: data.head.frontmatter.date,
       tags: data.head.frontmatter.tags,
       published: data.head.frontmatter.published,
