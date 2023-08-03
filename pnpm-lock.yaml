@@ -21,6 +21,9 @@ importers:
         specifier: workspace:^
         version: link:../ui
     devDependencies:
+      '@builder.io/partytown':
+        specifier: ^0.8.0
+        version: 0.8.0
       '@builder.io/qwik':
         specifier: ^1.2.6
         version: 1.2.6(undici@5.22.1)
@@ -2436,6 +2439,11 @@ packages:
       '@babel/helper-string-parser': 7.22.5
       '@babel/helper-validator-identifier': 7.22.5
       to-fast-properties: 2.0.0
+    dev: true
+
+  /@builder.io/partytown@0.8.0:
+    resolution: {integrity: sha512-M6H7nSMwW2dHd1/MQ+9J1Jqdw22uhl1nKv90kIiL9G7gjFVqqouQp4qSS1oZclmtW1XjAa4Q5UnbHB4iytmxZA==}
+    hasBin: true
     dev: true
 
   /@builder.io/qwik-city@1.2.6:
