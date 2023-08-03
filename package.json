@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "changeset": "changeset",
     "lint": "turbo lint",
     "build": "turbo build",
     "test": "turbo test"
