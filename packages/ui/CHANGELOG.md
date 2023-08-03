@@ -1,5 +1,11 @@
 # @sb/ui
 
+## 0.0.3
+
+### Patch Changes
+
+- Integration etc
+
 ## 0.0.2
 
 ### Patch Changes
