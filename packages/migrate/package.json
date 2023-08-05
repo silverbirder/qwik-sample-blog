@@ -1,0 +1,17 @@
+{
+  "name": "migrate",
+  "version": "0.0.1",
+  "description": "migration script for doc",
+  "scripts": {
+    "start": "pnpm relocate && pnpm removeComments",
+    "relocate": "node relocateBlogPosts.js",
+    "removeComments": "node removeCommentsFromMdx.js"
+  },
+  "packageManager": "pnpm@8.6.2",
+  "engines": {
+    "npm": "use pnpm please!",
+    "yarn": "use pnpm please!",
+    "pnpm": ">=8.6.2"
+  },
+  "private": false
+}
