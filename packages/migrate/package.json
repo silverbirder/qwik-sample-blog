@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "description": "migration script for doc",
   "scripts": {
-    "start": "pnpm relocate && pnpm removeComments",
+    "start": "pnpm relocate && pnpm removeComments && pnpm fixLocalReferences && pnpm fixUnclosedTags && pnpm replaceWebComponents && pnpm replaceStringsInMdx",
     "relocate": "node relocateBlogPosts.js",
-    "removeComments": "node removeCommentsFromMdx.js"
+    "removeComments": "node removeCommentsFromMdx.js",
+    "fixLocalReferences": "node fixLocalReferences.js",
+    "fixUnclosedTags": "node fixUnclosedTags.js",
+    "replaceWebComponents": "node replaceWebComponents.js",
+    "replaceStringsInMdx": "node replaceStringsInMdx.js"
   },
   "packageManager": "pnpm@8.6.2",
   "engines": {
