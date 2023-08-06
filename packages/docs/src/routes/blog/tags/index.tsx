@@ -1,6 +1,5 @@
 import { component$, Resource, useResource$ } from "@builder.io/qwik";
 import type { DocumentHeadProps } from "@builder.io/qwik-city";
-import { PostSummaryList } from "@sb/ui";
 import { PostSummary } from "@sb/ui/lib-types/models";
 import { asyncMap } from "~/util";
 
@@ -34,7 +33,32 @@ export default component$(() => {
       <main class="main">
         <Resource
           value={postsResource}
-          onResolved={(posts) => <PostSummaryList data={posts} />}
+          onResolved={(posts) => {
+            const tags = posts.map(({ tags }) => tags).flat();
+            const tagCount = tags.reduce((acc, cur) => {
+              acc[cur] = (acc[cur] || 0) + 1;
+              return acc;
+            }, {} as { [key: string]: number });
+            return (
+              <ul class="post-summary-list">
+                {Object.entries(tagCount)
+                  .sort((a, b) => b[1] - a[1])
+                  .map(([tag, count]) => {
+                    return (
+                      <li>
+                        <a
+                          key={tag}
+                          href={`/blog/tags/${tag}`}
+                          class="post-summary-list__tag"
+                        >
+                          {tag} ({count})
+                        </a>
+                      </li>
+                    );
+                  })}
+              </ul>
+            );
+          }}
         />
       </main>
     </>
