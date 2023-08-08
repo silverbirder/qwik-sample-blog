@@ -67,6 +67,8 @@ importers:
         specifier: 4.2.0
         version: 4.2.0(typescript@5.1.6)(vite@4.4.0)
 
+  packages/migrate: {}
+
   packages/ui:
     devDependencies:
       '@builder.io/qwik':
