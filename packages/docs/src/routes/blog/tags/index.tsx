@@ -1,5 +1,6 @@
 import { component$, useContext } from "@builder.io/qwik";
 import { BlogContentsContext } from "../layout";
+import { Link } from "@builder.io/qwik-city";
 
 export default component$(() => {
   const { posts } = useContext(BlogContentsContext);
@@ -15,9 +16,9 @@ export default component$(() => {
         .map(([tag, count]) => {
           return (
             <li>
-              <a key={tag} href={`/blog/tags/${tag}`}>
+              <Link key={tag} href={`/blog/tags/${tag}`}>
                 {tag} ({count})
-              </a>
+              </Link>
             </li>
           );
         })}

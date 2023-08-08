@@ -8,7 +8,7 @@ import { DocumentHeadProps, routeLoader$ } from "@builder.io/qwik-city";
 import { PostSummary } from "@sb/ui/lib-types/models";
 import { asyncMap } from "~/util";
 
-const useBlogContents = routeLoader$(async (): Promise<PostSummary[]> => {
+export const getBlogContents = async (): Promise<PostSummary[]> => {
   const modules = await import.meta.glob(
     "/src/routes/blog/contents/**/**/index.mdx"
   );
@@ -31,7 +31,8 @@ const useBlogContents = routeLoader$(async (): Promise<PostSummary[]> => {
     const dateB = new Date(b.date).getTime();
     return dateB - dateA;
   });
-});
+};
+export const useBlogContents = routeLoader$(getBlogContents);
 
 interface BlogContents {
   posts: PostSummary[];

@@ -12,7 +12,7 @@ export default component$(() => {
       <>
         <h2>Tags</h2>
         {tags.map((tag) => (
-          <section>
+          <section key={tag}>
             <h3>{tag}</h3>
             {posts
               .filter(
@@ -20,7 +20,7 @@ export default component$(() => {
                   post.tags.indexOf(tag) !== -1 && head.title !== post.title
               )
               .map((post) => (
-                <div>
+                <div key={post.title}>
                   <a href={post.permalink}>{post.title}</a>
                 </div>
               ))}
