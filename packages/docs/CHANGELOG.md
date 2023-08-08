@@ -1,5 +1,13 @@
 # docs
 
+## 0.0.4
+
+### Patch Changes
+
+- 4bd9dd2: Add SSG
+- Updated dependencies [4bd9dd2]
+  - @sb/ui@0.0.4
+
 ## 0.0.3
 
 ### Patch Changes

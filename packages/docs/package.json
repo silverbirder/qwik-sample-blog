@@ -1,6 +1,6 @@
 {
   "name": "docs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "App with Routing built-in ready to create your app",
   "packageManager": "pnpm@8.6.2",
   "engines": {
