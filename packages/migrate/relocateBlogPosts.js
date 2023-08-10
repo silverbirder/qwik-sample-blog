@@ -18,7 +18,7 @@ fs.readdir(sourceDir, (err, files) => {
     const fileNameWithoutExt = path.basename(file, ".md");
     const sourceFilePath = path.join(sourceDir, file);
     const targetDirPath = path.join(targetDir, fileNameWithoutExt);
-    const targetFilePath = path.join(targetDirPath, "index.mdx");
+    const targetFilePath = path.join(targetDirPath, "index.md");
 
     // Create target directory if not exists
     fs.mkdir(targetDirPath, { recursive: true }, (err) => {

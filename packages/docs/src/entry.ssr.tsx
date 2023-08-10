@@ -35,7 +35,7 @@ export default async function (opts: RenderToStreamOptions) {
 
 const generateBlogFrontMatter = async () => {
   const modules = await import.meta.glob(
-    "/src/routes/blog/contents/**/**/index.mdx"
+    "/src/routes/blog/contents/**/**/index.md"
   );
   const posts = (
     await asyncMap(Object.keys(modules), async (path) => {
@@ -46,7 +46,7 @@ const generateBlogFrontMatter = async () => {
           data.head.meta.find((m) => m.name === "description")?.content || "",
         permalink: path
           .replace(/^\/src\/routes/, "")
-          .replace(/\/index.mdx$/, "/"),
+          .replace(/\/index.md$/, "/"),
         date: data.head.frontmatter.date,
         tags: data.head.frontmatter.tags,
         published: data.head.frontmatter.published,

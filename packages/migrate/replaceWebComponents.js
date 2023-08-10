@@ -46,7 +46,7 @@ function processDirectory(directoryPath) {
       const fullPath = path.join(directoryPath, dirent.name);
       if (dirent.isDirectory()) {
         processDirectory(fullPath);
-      } else if (dirent.isFile() && path.extname(dirent.name) === ".mdx") {
+      } else if (dirent.isFile() && path.extname(dirent.name) === ".md") {
         processFile(fullPath);
       }
     });

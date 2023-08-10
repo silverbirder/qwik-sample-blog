@@ -4,7 +4,7 @@ const path = require("path");
 const directoryPath = "../docs/src/routes/blog/contents"; // Updated path
 
 function fixLocalFileReferences(str) {
-  return str.replace(/\.\/([a-zA-Z0-9_-]+)\.md/g, "../$1/index.mdx"); // Updated to .mdx
+  return str.replace(/\.\/([a-zA-Z0-9_-]+)\.md/g, "../$1/index.md"); // Updated to .mdx
 }
 
 function processFile(filePath) {
@@ -38,7 +38,7 @@ function processDirectory(directoryPath) {
       const fullPath = path.join(directoryPath, dirent.name);
       if (dirent.isDirectory()) {
         processDirectory(fullPath);
-      } else if (dirent.isFile() && path.extname(dirent.name) === ".mdx") {
+      } else if (dirent.isFile() && path.extname(dirent.name) === ".md") {
         processFile(fullPath);
       }
     });
