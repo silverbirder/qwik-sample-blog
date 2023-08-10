@@ -1,19 +1,14 @@
 {
-  "name": "docs",
-  "version": "0.0.4",
-  "description": "App with Routing built-in ready to create your app",
-  "packageManager": "pnpm@8.6.2",
+  "name": "my-qwik-site-with-visual-cms",
+  "description": "Site integrated with Builder.io for visual editing",
   "engines": {
-    "npm": "use pnpm please!",
-    "yarn": "use pnpm please!",
-    "pnpm": ">=8.6.2"
+    "node": ">=15.0.0"
   },
   "private": true,
   "scripts": {
     "build": "qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
-    "build.server": "vite build -c adapters/static/vite.config.ts",
     "build.types": "tsc --incremental --noEmit",
     "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
     "dev": "vite --mode ssr",
@@ -23,14 +18,13 @@
     "lint": "eslint \"src/**/*.ts*\"",
     "preview": "qwik build preview && vite preview --open",
     "start": "vite --open --mode ssr",
-    "test": "playwright test",
     "qwik": "qwik"
   },
   "devDependencies": {
-    "@builder.io/partytown": "^0.8.0",
+    "@builder.io/dev-tools": "^0.0.7",
     "@builder.io/qwik": "^1.2.6",
     "@builder.io/qwik-city": "^1.2.6",
-    "@playwright/test": "^1.35.1",
+    "@builder.io/sdk-qwik": "^0.4.1",
     "@types/eslint": "8.40.2",
     "@types/node": "^20.4.0",
     "@typescript-eslint/eslint-plugin": "5.61.0",
@@ -42,9 +36,5 @@
     "undici": "5.22.1",
     "vite": "4.4.0",
     "vite-tsconfig-paths": "4.2.0"
-  },
-  "dependencies": {
-    "@sb/content": "workspace:^",
-    "@sb/ui": "workspace:^"
   }
 }
