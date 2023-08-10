@@ -1,4 +1,3 @@
-import "../src/global.css";
 import { Parameters } from "storybook-framework-qwik";
 
 export const parameters: Parameters = {

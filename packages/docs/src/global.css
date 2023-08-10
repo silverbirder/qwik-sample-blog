@@ -5,8 +5,6 @@
  * the styles in here will be applied to the Document, without any sort of CSS scoping.
  *
  */
-@import url("@sb/ui/styled-system");
-
 html {
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;

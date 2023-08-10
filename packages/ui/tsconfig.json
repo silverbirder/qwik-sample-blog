@@ -17,5 +17,5 @@
     "isolatedModules": true,
     "types": ["vite/client"]
   },
-  "include": ["src", "styled-system"]
+  "include": ["src"]
 }

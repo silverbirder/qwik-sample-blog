@@ -29,6 +29,3 @@ build
 dist
 tsconfig.tsbuildinfo
 vite.config.ts
-
-# Panda CSS
-src/styled-system

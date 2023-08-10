@@ -4,15 +4,12 @@
   "description": "Create a reusable Qwik component library",
   "main": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
-  "types": "./lib-types/src/index.d.ts",
+  "types": "./lib-types/index.d.ts",
   "exports": {
     ".": {
       "import": "./lib/index.qwik.mjs",
       "require": "./lib/index.qwik.cjs",
-      "types": "./lib-types/src/index.d.ts"
-    },
-    "./styled-system": {
-      "import": "./styled-system/styles.css"
+      "types": "./lib-types/index.d.ts"
     }
   },
   "files": [
@@ -37,8 +34,6 @@
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
-    "prebuild.pandacss.codegen": "panda codegen --silent",
-    "prebuild.pandacss.cssgen": "panda cssgen --silent",
     "release": "np",
     "start": "vite --open --mode ssr",
     "storybook": "storybook dev -p 6006",
@@ -49,8 +44,6 @@
   },
   "devDependencies": {
     "@builder.io/qwik": "1.2.6",
-    "@builder.io/vite-plugin-macro": "~0.0.7",
-    "@pandacss/dev": "^0.4.0",
     "@storybook/addon-essentials": "7.0.23",
     "@storybook/addon-links": "7.0.23",
     "@storybook/blocks": "7.0.23",
