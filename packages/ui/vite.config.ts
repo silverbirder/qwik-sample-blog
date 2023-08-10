@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import { qwikVite } from "@builder.io/qwik/optimizer";
 import tsconfigPaths from "vite-tsconfig-paths";
+import { macroPlugin } from "@builder.io/vite-plugin-macro";
 
 export default defineConfig(() => {
   return {
@@ -12,6 +13,10 @@ export default defineConfig(() => {
         fileName: (format) => `index.qwik.${format === "es" ? "mjs" : "cjs"}`,
       },
     },
-    plugins: [qwikVite(), tsconfigPaths()],
+    plugins: [
+      macroPlugin({ preset: "pandacss", rootDir: "styled-system" }),
+      qwikVite(),
+      tsconfigPaths(),
+    ],
   };
 });
