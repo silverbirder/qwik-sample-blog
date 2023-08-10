@@ -44,3 +44,9 @@ aをloadしたとき、URLは以下。
 ```
 
 まあ、まずは完成を目指して、後で content に切り出そうかな。
+
+## pandaCSS
+
+pandaCSSを入れようとしたけど、うまくいかなかった。
+
+git commit dd26d72095a4 がrevert commit.
