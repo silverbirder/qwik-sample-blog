@@ -1,7 +1,8 @@
 import { component$, useContext } from "@builder.io/qwik";
 import { StaticGenerateHandler, useLocation } from "@builder.io/qwik-city";
-import { BlogContentsContext, getBlogContents } from "../../layout";
+import { BlogContentsContext } from "../../layout";
 import { PostSummaryList } from "@sb/ui";
+import data from "../../posts.json";
 
 export default component$(() => {
   const loc = useLocation();
@@ -13,8 +14,7 @@ export default component$(() => {
 });
 
 export const onStaticGenerate: StaticGenerateHandler = async () => {
-  const posts = await getBlogContents();
-  const tags = Array.from(new Set(posts.map(({ tags }) => tags).flat()));
+  const tags = Array.from(new Set(data.map(({ tags }) => tags).flat()));
   return {
     params: tags.map((tag) => {
       return { tag };
