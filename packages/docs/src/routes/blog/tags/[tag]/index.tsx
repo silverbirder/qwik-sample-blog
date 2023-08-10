@@ -1,14 +1,12 @@
-import { component$, useContext } from "@builder.io/qwik";
-import { StaticGenerateHandler, useLocation } from "@builder.io/qwik-city";
-import { BlogContentsContext } from "../../layout";
+import { component$ } from "@builder.io/qwik";
+import { type StaticGenerateHandler, useLocation } from "@builder.io/qwik-city";
 import { PostSummaryList } from "@sb/ui";
-import data from "../../posts.json";
+import data from "../../index.json";
 
 export default component$(() => {
   const loc = useLocation();
-  const { posts } = useContext(BlogContentsContext);
-  const tagPosts = posts.filter(
-    (post) => post.tags.indexOf(loc.params.tag) !== -1
+  const tagPosts = data.filter(
+    ({ tags }) => tags.indexOf(loc.params.tag) !== -1
   );
   return <PostSummaryList data={tagPosts}></PostSummaryList>;
 });

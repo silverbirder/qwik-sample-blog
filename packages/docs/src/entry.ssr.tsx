@@ -16,11 +16,24 @@ import {
 } from "@builder.io/qwik/server";
 import { manifest } from "@qwik-client-manifest";
 import Root from "./root";
-import { DocumentHeadProps } from "@builder.io/qwik-city";
+import { type DocumentHeadProps } from "@builder.io/qwik-city";
 import { asyncMap } from "./util";
 import fs from "fs";
 
 export default async function (opts: RenderToStreamOptions) {
+  await generateBlogFrontMatter();
+  return renderToStream(<Root />, {
+    manifest,
+    ...opts,
+    // Use container attributes to set attributes on the html tag.
+    containerAttributes: {
+      lang: "en-us",
+      ...opts.containerAttributes,
+    },
+  });
+}
+
+const generateBlogFrontMatter = async () => {
   const modules = await import.meta.glob(
     "/src/routes/blog/contents/**/**/index.mdx"
   );
@@ -44,14 +57,5 @@ export default async function (opts: RenderToStreamOptions) {
     const dateB = new Date(b.date).getTime();
     return dateB - dateA;
   });
-  fs.writeFileSync("./src/routes/blog/posts.json", JSON.stringify(posts));
-  return renderToStream(<Root />, {
-    manifest,
-    ...opts,
-    // Use container attributes to set attributes on the html tag.
-    containerAttributes: {
-      lang: "en-us",
-      ...opts.containerAttributes,
-    },
-  });
-}
+  fs.writeFileSync("./src/routes/blog/index.json", JSON.stringify(posts));
+};

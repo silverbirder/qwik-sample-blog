@@ -1,11 +1,10 @@
-import { component$, Slot, useContext } from "@builder.io/qwik";
+import { component$, Slot } from "@builder.io/qwik";
 import { useDocumentHead } from "@builder.io/qwik-city";
-import { BlogContentsContext } from "../layout";
+import data from "../index.json";
 
 export default component$(() => {
   const head = useDocumentHead();
   const tags: string[] = head.frontmatter.tags || [];
-  const { posts } = useContext(BlogContentsContext);
   return (
     <>
       <Slot />
@@ -14,7 +13,7 @@ export default component$(() => {
         {tags.map((tag) => (
           <section key={tag}>
             <h3>{tag}</h3>
-            {posts
+            {data
               .filter(
                 (post) =>
                   post.tags.indexOf(tag) !== -1 && head.title !== post.title
