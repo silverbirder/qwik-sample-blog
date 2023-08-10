@@ -10,8 +10,7 @@
   },
   "private": true,
   "scripts": {
-    "prebuild": "pnpm build.server",
-    "build": "pnpm prebuild && qwik build",
+    "build": "qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
     "build.server": "vite build -c adapters/static/vite.config.ts",

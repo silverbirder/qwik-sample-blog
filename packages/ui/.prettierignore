@@ -4,3 +4,6 @@
 *.
 dist
 node_modules
+
+# Panda CSS
+src/styled-system

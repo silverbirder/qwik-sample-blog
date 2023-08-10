@@ -1,8 +1,7 @@
-import { component$, useContext } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import { PostSummaryList } from "@sb/ui";
-import { BlogContentsContext } from "./layout";
+import data from "./index.json";
 
 export default component$(() => {
-  const { posts } = useContext(BlogContentsContext);
-  return <PostSummaryList data={posts}></PostSummaryList>;
+  return <PostSummaryList data={data}></PostSummaryList>;
 });

@@ -1,10 +1,8 @@
-import { component$, useContext } from "@builder.io/qwik";
-import { BlogContentsContext } from "../layout";
-import { Link } from "@builder.io/qwik-city";
+import { component$ } from "@builder.io/qwik";
+import data from "../index.json";
 
 export default component$(() => {
-  const { posts } = useContext(BlogContentsContext);
-  const tags = posts.map(({ tags }) => tags).flat();
+  const tags = data.map(({ tags }) => tags).flat();
   const tagCount = tags.reduce((acc, cur) => {
     acc[cur] = (acc[cur] || 0) + 1;
     return acc;
@@ -15,10 +13,10 @@ export default component$(() => {
         .sort((a, b) => b[1] - a[1])
         .map(([tag, count]) => {
           return (
-            <li>
-              <Link key={tag} href={`/blog/tags/${tag}`}>
+            <li key={tag}>
+              <a href={`/blog/tags/${tag}`}>
                 {tag} ({count})
-              </Link>
+              </a>
             </li>
           );
         })}

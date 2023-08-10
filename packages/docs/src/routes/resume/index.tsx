@@ -5,7 +5,7 @@ export default component$(() => {
   return (
     <ul>
       {Index.items.map((item) => {
-        return <li>{item.name}</li>;
+        return <li key={item.name}>{item.name}</li>;
       })}
     </ul>
   );

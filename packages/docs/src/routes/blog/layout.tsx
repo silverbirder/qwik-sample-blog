@@ -1,20 +1,5 @@
-import {
-  component$,
-  createContextId,
-  Slot,
-  useContextProvider,
-} from "@builder.io/qwik";
-import { PostSummary } from "@sb/ui/lib-types/models";
-import data from "./posts.json";
-
-interface BlogContents {
-  posts: PostSummary[];
-}
-
-export const BlogContentsContext =
-  createContextId<BlogContents>("blogContents");
+import { component$, Slot } from "@builder.io/qwik";
 
 export default component$(() => {
-  useContextProvider(BlogContentsContext, { posts: data });
   return <Slot />;
 });
