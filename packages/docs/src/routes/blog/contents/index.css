@@ -1,0 +1,88 @@
+.post {
+  margin-top: 60px;
+  font-family: var(--font-family);
+  line-height: 1.4;
+}
+.post h1 {
+  color: var(--title-color);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-light);
+}
+.post h1 + p {
+  margin-top: 10px;
+  font-size: var(--font-size-sm);
+  color: var(--misc-color);
+}
+.post h2 {
+  margin-top: 40px;
+  color: var(--title-color);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-light);
+}
+.post p {
+  margin-top: 20px;
+}
+.post hr + p {
+  margin-top: 40px;
+}
+.post a {
+  color: var(--misc-color);
+}
+.post ul,
+.post ol {
+  margin-top: 20px;
+  padding-left: 20px;
+  list-style: disc;
+}
+.post li {
+  margin-top: 10px;
+}
+.post li pre {
+  margin-left: -30px;
+}
+.post pre {
+  margin: 20px -10px 0 -10px;
+}
+.post pre code {
+  font-family: var(--font-family-code);
+  font-size: var(--font-size-code);
+}
+.post p code {
+  padding: 0 4px;
+  font-family: var(--font-family-code);
+  font-size: var(--font-size-code);
+  color: var(--block-text);
+  background-color: var(--block-bg);
+  border-radius: 4px;
+}
+.post blockquote {
+  margin-top: 20px;
+  padding-left: 30px;
+  font-style: italic;
+}
+.post hr {
+  margin-top: 40px;
+  height: 2px;
+  background-color: var(--text-color);
+}
+.post p em {
+  font-style: italic;
+}
+.post img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.post strong {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .post pre {
+    margin: 20px 0 0 0;
+    border-radius: 4px;
+  }
+  .post li pre {
+    margin-left: -20px;
+  }
+}
