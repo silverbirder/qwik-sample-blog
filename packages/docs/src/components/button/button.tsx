@@ -4,7 +4,7 @@ import { css } from "~/styled-system/css";
 export interface ButtonProps {
   size?: "small" | "medium" | "large";
 }
-export const Button = component$<ButtonProps>(({ size = "medium" }) => {
+export const Button = component$<ButtonProps>(() => {
   useStylesScoped$(`
     .size-small {
       font-size: 10px;
@@ -20,7 +20,7 @@ export const Button = component$<ButtonProps>(({ size = "medium" }) => {
     <button
       class={css({
         padding: 10,
-        bg: "red.400",
+        bg: "primary",
         height: "dvh",
         margin: 100,
         fontSize: 30,
