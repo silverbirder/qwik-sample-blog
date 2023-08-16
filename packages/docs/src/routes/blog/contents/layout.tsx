@@ -16,6 +16,22 @@ export default component$(() => {
       <article class="post">
         <Slot />
       </article>
+      <script
+        src="https://giscus.app/client.js"
+        data-repo="silverbirder/qwik-sample-blog"
+        data-repo-id="R_kgDOKCARrA"
+        data-category="General"
+        data-category-id="DIC_kwDOKCARrM4CYpI-"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-loading="lazy"
+        crossOrigin="anonymous"
+        async
+      ></script>
       <h2>Tags</h2>
       {tags.map((tag) => (
         <section key={tag}>
