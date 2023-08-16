@@ -4,10 +4,12 @@ import { qwikCity } from "@builder.io/qwik-city/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { partytownVite } from "@builder.io/partytown/utils";
 import { join } from "path";
+import { macroPlugin } from "@builder.io/vite-plugin-macro";
 
 export default defineConfig(() => {
   return {
     plugins: [
+      macroPlugin({ preset: "pandacss" }),
       qwikCity(),
       qwikVite(),
       tsconfigPaths(),
