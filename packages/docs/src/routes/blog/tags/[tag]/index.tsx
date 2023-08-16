@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { type StaticGenerateHandler, useLocation } from "@builder.io/qwik-city";
-import { PostSummaryList } from "@sb/ui";
 import data from "../../index.json";
+import { PostSummaryList } from "~/components/post-summary-list/post-summary-list";
 
 export default component$(() => {
   const loc = useLocation();

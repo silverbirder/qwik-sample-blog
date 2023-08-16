@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { PostSummaryListItem } from "./post-summary-list-item/post-summary-list-item";
-import { PostSummary } from "../../models";
+import { PostSummary } from "~/models";
 
 export interface PostSummaryListProps {
   data: PostSummary[];

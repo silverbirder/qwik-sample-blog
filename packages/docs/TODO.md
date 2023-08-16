@@ -47,6 +47,6 @@ aをloadしたとき、URLは以下。
 
 ## pandaCSS
 
-pandaCSSを入れようとしたけど、うまくいかなかった。
+pandaCSS を入れようとしたけど、うまくいかなかった。
 
-git commit dd26d72095a4 がrevert commit.
+git commit dd26d72095a4 が revert commit.
