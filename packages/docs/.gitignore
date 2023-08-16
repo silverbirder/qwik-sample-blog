@@ -43,3 +43,6 @@ lerna-debug.log*
 # Tests
 test-results
 playwright-report
+
+# Panda CSS
+src/styled-system

@@ -1,7 +1,11 @@
 import { component$ } from "@builder.io/qwik";
-import { PostSummaryList } from "@sb/ui";
 import data from "./index.json";
+import { PostSummaryList } from "~/components/post-summary-list/post-summary-list";
 
 export default component$(() => {
-  return <PostSummaryList data={data}></PostSummaryList>;
+  return (
+    <main class="main">
+      <PostSummaryList data={data}></PostSummaryList>
+    </main>
+  );
 });
