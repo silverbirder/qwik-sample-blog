@@ -14,37 +14,32 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 
 export default component$(() => {
   return (
-    <div class="theme-container">
-      <div class="container">
-        <header>
-          <h1>silverbirder's portfolio</h1>
-          <nav>
-            <ul>
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              {/* <li>
-                <Link href="/">About</Link>
-              </li> */}
-              <li>
-                <Link href="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link href="/resume">Resume・Skill</Link>
-              </li>
-              <li>
-                <a href="/misc">Misc</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <main>
-          <Slot />
-        </main>
-        <footer>
-          <p>&copy; 2023 silverbirder's portfolio. All rights reserved.</p>
-        </footer>
-      </div>
+    <div>
+      <header>
+        <h1>silverbirder's portfolio</h1>
+        <nav>
+          <ul>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link href="/resume">Resume・Skill</Link>
+            </li>
+            <li>
+              <a href="/misc">Misc</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <Slot />
+      </main>
+      <footer>
+        <p>&copy; 2023 silverbirder's portfolio. All rights reserved.</p>
+      </footer>
     </div>
   );
 });

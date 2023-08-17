@@ -1,6 +1,6 @@
 # Misc
 
-- [artifact](./artifact/index.md)
-- [book](./book/index.md)
-- [goods](./goods/index.md)
-- [watch](./watch/index.md)
+- [artifact](./artifact)
+- [book](./book)
+- [goods](./goods)
+- [watch](./watch)

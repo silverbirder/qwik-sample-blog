@@ -1,14 +1,8 @@
-import { component$, Slot, useStyles$ } from "@builder.io/qwik";
+import { component$, Slot } from "@builder.io/qwik";
 import { DocumentHead, useDocumentHead } from "@builder.io/qwik-city";
 import data from "../index.json";
 
-import prismStyles from "~/styles/prism/prism-vsc-dark-plus.css?inline";
-import styles from "./index.css?inline";
-
 export default component$(() => {
-  useStyles$(prismStyles);
-  useStyles$(styles);
-
   const head = useDocumentHead();
   const tags: string[] = head.frontmatter.tags || [];
   return (

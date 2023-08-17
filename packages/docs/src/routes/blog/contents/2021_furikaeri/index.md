@@ -18,7 +18,7 @@ socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v16402369
 昨年までは、Web アプリケーションの開発が多かったのですが、今年はクラウドインフラやデータ構築の業務が多かったです。
 また、ゼロベースで構築したプロダクトの運用も経験したことで、去年に比べて幅広いエンジニアリング力を身につけられたなと思いました。
 
-具体的に経験したソフトウェアは、[Resume##Career](../../resume/index.md)に書いていますので、ご参照ください。ざっくり言うと、クラウドインフラは GCP/Terraform, データ構築は BigQuery と Digdag です。
+具体的に経験したソフトウェアは、[Resume##Career](../../../resume/index.md)に書いていますので、ご参照ください。ざっくり言うと、クラウドインフラは GCP/Terraform, データ構築は BigQuery と Digdag です。
 
 ### 転職
 
