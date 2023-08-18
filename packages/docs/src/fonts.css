@@ -1,0 +1,5 @@
+@import "@fontsource-variable/noto-sans-jp";
+
+:root {
+  --font-noto-sans: "Noto Sans JP Variable", sans-serif;
+}

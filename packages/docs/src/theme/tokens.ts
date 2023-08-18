@@ -14,10 +14,23 @@ export const tokens = defineTokens({
     "5xl": { value: "3rem" },
     "6xl": { value: "4rem" },
   },
+  fontWeights: {
+    thin: { value: 100 },
+    extralight: { value: 200 },
+    light: { value: 300 },
+    normal: { value: 400 },
+    medium: { value: 500 },
+    semibold: { value: 600 },
+    bold: { value: 700 },
+    extrabold: { value: 800 },
+    black: { value: 900 },
+  },
+  fontStyles: {
+    normal: { value: "normal" },
+    italic: { value: "italic" },
+  },
   fonts: {
-    mono: { value: "var(--font-fira-code), Menlo, monospace" },
-    body: { value: "var(--font-mona-sans), sans-serif" },
-    heading: { value: "var(--font-mona-sans), sans-serif" },
+    noto: { value: "var(--font-noto-sans), sans-serif" },
   },
   colors,
 });

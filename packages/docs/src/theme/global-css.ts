@@ -1,209 +1,112 @@
 import { defineGlobalStyles } from "@pandacss/dev";
 
 export const globalCss = defineGlobalStyles({
-  // nextra specific styles
-  "*, *::before, *::after": {
-    borderColor: { base: "neutral.200", _dark: "neutral.800" },
+  "*": {
+    boxSizing: "border-box",
   },
-  html: {
-    fontFamily: "sans",
+  "html, body": {
+    margin: 0,
+    padding: 0,
+    fontFamily: "noto",
+    fontSize: "base",
+    lineHeight: 1.5,
+    color: "text.main",
+    backgroundColor: "bg.main",
+    height: "100%",
   },
-  body: {
-    bg: "white",
-    _dark: { bg: "dark", color: "gray.100" },
+  "h1, h2, h3, h4, h5, h6": {
+    margin: 0,
+    fontWeight: "normal",
   },
-  "a, summary, button, input, [tabindex]:not([tabindex='-1'])": {
-    outline: "none",
-    _focusVisible: {
-      outline: "2px",
-      outlineColor: "primary.200",
-      outlineOffset: "1px",
-      outlineStyle: "solid",
-      _dark: {
-        outlineColor: "primary.800",
-      },
+  "h1, h2, h3": {
+    fontSize: "4xl",
+  },
+  "h4, h5, h6": {
+    fontSize: "2xl",
+  },
+  "h1, h2, h3, h4, h5, h6, p, ul, ol, dl, table, blockquote, pre, form, fieldset, iframe, hr":
+    {
+      margin: "1rem 0",
     },
+  "ul, ol, dl": {
+    listStyle: "inside",
+    paddingLeft: "1.5rem",
   },
-  "a, summary": {
-    rounded: "md",
+  "ol ol, ul ol": {
+    listStyle: "lower-latin",
   },
-  "article:before": {
-    _motionReduce: {
-      mdDown: {
-        transition: "none",
-      },
+  "ul ul, ul ol, ol ul, ol ol": {
+    margin: 0,
+  },
+  blockquote: {
+    margin: "1rem 0",
+    padding: "0 1rem",
+    borderLeft: "4px solid",
+    backgroundColor: "bg.quote",
+  },
+  "blockquote:before, blockquote:after, q:before, q:after": {
+    content: "none",
+  },
+  a: {
+    color: "text.link",
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "underline",
     },
-  },
-  /* Content Typography */
-  "article details > summary": {
-    "&::-webkit-details-marker": {
-      display: "none",
+    "&:active": {
+      color: "text.linkActive",
     },
-    _before: {
-      backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd' /%3E%3C/svg%3E")`,
-      height: "1.2em",
-      width: "1.2em",
-      verticalAlign: "-4px",
-    },
-  },
-
-  ".nextra-search ul": {
-    _supportsBackdrop: {
-      backdropFilter: "blur(12px)",
-      backgroundColor: "rgba(255, 255, 255, 0.7)",
-      _dark: {
-        backgroundColor: "rgba(0, 0, 0, 0.7)",
-      },
-    },
-  },
-  ".nextra-button": {
-    _supportsBackdrop: {
-      backdropFilter: "blur(8px)",
-      backgroundColor: "rgba(255, 255, 255, 0.85)",
-      _dark: {
-        backgroundColor: "rgba(0, 0, 0, 0.85)",
-      },
+    "&:focus": {
+      outline: "none",
     },
   },
-  "input[type='search']": {
-    "&::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, &::-webkit-search-results-decoration":
-      {
-        WebkitAppearance: "none",
-      },
+  img: {
+    width: "100%",
+    maxHeight: "512px",
+    objectFit: "contain",
   },
-  ".contains-task-list": {
-    ml: 0,
-    listStyle: "none",
-    "& input[type='checkbox']": {
-      mr: 1,
+  table: {
+    borderCollapse: "collapse",
+    borderSpacing: 0,
+    border: "1px solid",
+    "& thead": {
+      verticalAlign: "bottom",
+      borderBottom: "2px solid",
     },
-  },
-  ".nextra-scrollbar": {
-    scrollbarWidth: "thin",
-    scrollbarColor: "oklch(55.55% 0 0 / 40%) transparent",
-    scrollbarGutter: "stable",
-    "&::-webkit-scrollbar": {
-      w: "3",
-      h: "3",
+    "& tbody": {
+      verticalAlign: "top",
     },
-    "&::-webkit-scrollbar-track": {
-      bg: "transparent",
+    "& tr": {
+      verticalAlign: "top",
+      borderBottom: "1px solid",
     },
-    "&::-webkit-scrollbar-thumb": {
-      rounded: "10px",
+    "& th": {
+      fontWeight: "bold",
     },
-    "&:hover::-webkit-scrollbar-thumb": {
-      border: "3px solid transparent",
-      backgroundColor: "neutral.500",
-      backgroundClip: "content-box",
-      mdDown: {
-        ".nextra-container &": {
-          scrollbarGutter: "auto",
-        },
-      },
+    "& td": {
+      fontWeight: "normal",
+    },
+    "& caption": {
+      textAlign: "left",
+      fontWeight: "bold",
     },
   },
-  ".no-scrollbar": {
-    scrollbarWidth: "none",
-    msOverflowStyle: "none",
-    "&::-webkit-scrollbar": {
-      display: "none",
-    },
+  "address, caption, cite, code, dfn, em, strong, var": {
+    fontStyle: "normal",
+    fontWeight: "normal",
   },
-  code: {
-    boxDecorationBreak: "clone",
-    fontFeatureSettings: "'rlig' 1, 'calt' 1, 'ss01' 1",
-    "&[data-line-numbers] > .line": {
-      display: "inline-flex",
-      pl: 2,
-      "&::before": {
-        counterIncrement: "line",
-        content: "counter(line)",
-        h: "full",
-        float: "left",
-        pr: 4,
-        textAlign: "right",
-        minW: "2.6rem",
-        color: "gray.500",
-      },
+  "input, textarea, select, button": {
+    margin: 0,
+    padding: 0,
+    fontFamily: "inherit",
+    fontSize: "inherit",
+    lineHeight: "inherit",
+    color: "inherit",
+    "&:not(button)": {
+      verticalAlign: "middle",
     },
-    "& .line": {
-      "&.highlighted": {
-        bg: "hsl(var(--nextra-primary-hue), 100%, 45%, 0.1)",
-        color: "hsl(var(--nextra-primary-hue), 100%, 45%, 0.5)",
-        shadow: "2px 0 currentColor inset",
-      },
-      "& .highlighted": {
-        rounded: "md",
-        bg: "hsl(var(--nextra-primary-hue), 100%, 32%, 0.1)",
-        shadow: "0 0 0 2px rgba(0,0,0,.3)",
-        shadowColor: "hsl(var(--nextra-primary-hue), 100%, 32%, 0.1)",
-        _dark: {
-          bg: "hsl(var(--nextra-primary-hue), 100%, 77%, 0.1)",
-          shadowColor: "hsl(var(--nextra-primary-hue), 100%, 77%, 0.1)",
-        },
-      },
-    },
-  },
-  pre: {
-    contain: "paint",
-    "& code": {
-      display: "grid",
-      minW: "full",
-      rounded: "none",
-      border: "none",
-      bg: "transparent!",
-      p: 0,
-      textStyle: "sm",
-      lineHeight: "1.25rem",
-      color: "currentcolor",
-      _dark: {
-        bg: "transparent!",
-      },
-      "& .line": {
-        px: 4,
-      },
-    },
-    "&:not([data-theme])": {
-      px: 4,
-    },
-    "html[data-nextra-word-wrap] &": {
-      wordBreak: "break-word",
-      whiteSpace: "pre-wrap",
-      md: {
-        whiteSpace: "pre",
-      },
-      "& .line": {
-        display: "inline-block",
-      },
-    },
-    "& .nextra-copy-icon": {
-      animation: "fadein 0.3s ease forwards",
-    },
-  },
-  ".subheading-anchor": {
-    opacity: 0,
-    transition: "opacity",
-    ms: "1",
-    "span:target + &, :hover > &, &:focus": {
-      opacity: 1,
-    },
-    "span + &,&:hover > &": {
-      textDecoration: "none",
-    },
-    "&:after": {
-      content: "'#'",
-      px: 1,
-      color: "gray.300",
-      _dark: {
-        color: "neutral.700",
-      },
-      "span:target + &": {
-        color: "gray.400",
-        _dark: {
-          color: "neutral.500",
-        },
-      },
+    "&:is(button)": {
+      cursor: "pointer",
     },
   },
 });

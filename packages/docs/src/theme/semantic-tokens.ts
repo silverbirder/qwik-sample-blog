@@ -15,6 +15,12 @@ export const semanticTokens = defineSemanticTokens({
           _dark: "{colors.gray.400}",
         },
       },
+      quote: {
+        value: {
+          base: "{colors.gray.100}",
+          _dark: "{colors.gray.800}",
+        },
+      },
       dark: {
         value: {
           base: "{colors.black}",
@@ -46,6 +52,12 @@ export const semanticTokens = defineSemanticTokens({
           base: "{colors.gray.800}",
           _dark: "{colors.gray.50}",
         },
+      },
+      link: {
+        value: { base: "{colors.blue.500}", _dark: "{colors.blue.300}" },
+      },
+      linkActive: {
+        value: { base: "{colors.blue.700}", _dark: "{colors.blue.200}" },
       },
     },
   },
