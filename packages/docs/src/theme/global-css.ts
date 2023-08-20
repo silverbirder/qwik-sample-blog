@@ -41,7 +41,8 @@ export const globalCss = defineGlobalStyles({
   blockquote: {
     margin: "1rem 0",
     padding: "0 1rem",
-    borderLeft: "4px solid",
+    borderLeftColor: "bg.quote",
+    borderLeftWidth: "thin",
     backgroundColor: "bg.quote",
   },
   "blockquote:before, blockquote:after, q:before, q:after": {

@@ -1,5 +1,7 @@
 import { component$, Slot } from "@builder.io/qwik";
 import { Link, type RequestHandler } from "@builder.io/qwik-city";
+import { css } from "~/styled-system/css";
+import { Container } from "~/styled-system/jsx";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
@@ -14,32 +16,51 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 
 export default component$(() => {
   return (
-    <div>
-      <header>
+    <Container
+      class={css({
+        display: "grid",
+        gridTemplateAreas: {
+          base: `
+          "header header"
+          "nav content"
+          "footer footer"`,
+          mdDown: `
+              "header"
+              "content"
+              "footer"`,
+        },
+        gridTemplateRows: {
+          base: "auto 1fr",
+          mdDown: "auto",
+        },
+        gridTemplateColumns: "auto 1fr auto",
+      })}
+    >
+      <header class={css({ gridArea: "header" })}>
         <h1>silverbirder's portfolio</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link href="/resume">Resume・Skill</Link>
-            </li>
-            <li>
-              <a href="/misc">Misc</a>
-            </li>
-          </ul>
-        </nav>
       </header>
-      <main>
+      <nav class={css({ gridArea: "nav", hideBelow: "md" })}>
+        <ul>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link href="/resume">Resume・Skill</Link>
+          </li>
+          <li>
+            <a href="/misc">Misc</a>
+          </li>
+        </ul>
+      </nav>
+      <main class={css({ gridArea: "content" })}>
         <Slot />
       </main>
-      <footer>
+      <footer class={css({ gridArea: "footer" })}>
         <p>&copy; 2023 silverbirder's portfolio. All rights reserved.</p>
       </footer>
-    </div>
+    </Container>
   );
 });

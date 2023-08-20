@@ -2,7 +2,7 @@ import { defineTokens } from "@pandacss/dev";
 
 const makePrimaryColor = (l: number) => {
   return {
-    value: `hsl(var(--nextra-primary-hue) 100% ${l}%)`,
+    value: `hsl(120deg 100% ${l}%)`,
   };
 };
 
