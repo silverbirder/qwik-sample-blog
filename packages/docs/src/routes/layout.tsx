@@ -1,5 +1,6 @@
 import { component$, Slot } from "@builder.io/qwik";
 import { type RequestHandler } from "@builder.io/qwik-city";
+import { Search } from "~/components/search/search";
 import { css } from "~/styled-system/css";
 import { Container } from "~/styled-system/jsx";
 
@@ -39,6 +40,7 @@ export default component$(() => {
         <h1>silverbirder's portfolio</h1>
       </header>
       <Container class={css({ gridArea: "content" })}>
+        <Search />
         <Slot />
       </Container>
       <footer class={css({ gridArea: "footer", backgroundColor: "bg.quote" })}>
