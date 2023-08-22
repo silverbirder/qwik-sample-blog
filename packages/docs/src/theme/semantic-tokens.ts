@@ -54,10 +54,30 @@ export const semanticTokens = defineSemanticTokens({
         },
       },
       link: {
-        value: { base: "{colors.blue.500}", _dark: "{colors.blue.300}" },
+        value: { base: "{colors.black}", _dark: "{colors.white}" },
       },
       linkActive: {
-        value: { base: "{colors.blue.700}", _dark: "{colors.blue.200}" },
+        value: { base: "{colors.black}", _dark: "{colors.white}" },
+      },
+    },
+  },
+  sizes: {
+    icon: {
+      main: {
+        value: {
+          base: "{sizes.4xl}",
+          _dark: "{sizes.4xl}",
+        },
+      },
+    },
+  },
+  radii: {
+    tag: {
+      main: {
+        value: {
+          base: "{radii.xl}",
+          _dark: "{radii.xl}",
+        },
       },
     },
   },

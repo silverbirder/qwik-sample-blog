@@ -28,7 +28,7 @@ export default component$(() => {
             <Link href="/blog">Blog</Link>
           </li>
           <li>
-            <Link href="/resume">Resume・Skill</Link>
+            <Link href="/resume">Resume</Link>
           </li>
           <li>
             <a href="/misc">Misc</a>
