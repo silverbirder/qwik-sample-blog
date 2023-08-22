@@ -52,7 +52,7 @@ export const globalCss = defineGlobalStyles({
     color: "text.link",
     textDecoration: "none",
     "&:hover": {
-      textDecoration: "underline",
+      color: "text.linkActive",
     },
     "&:active": {
       color: "text.linkActive",
@@ -62,9 +62,7 @@ export const globalCss = defineGlobalStyles({
     },
   },
   img: {
-    width: "100%",
-    maxHeight: "512px",
-    objectFit: "contain",
+    margin: "auto",
   },
   table: {
     borderCollapse: "collapse",

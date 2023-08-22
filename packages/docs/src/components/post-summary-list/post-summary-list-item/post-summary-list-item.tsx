@@ -1,21 +1,47 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import { LuRocket } from "@qwikest/icons/lucide";
-import { PostSummary } from "../../../models";
-
-import styles from "./post-summary-list-item.css?inline";
+import { component$ } from "@builder.io/qwik";
+import { PostSummary } from "~/models";
+import { BsTag } from "@qwikest/icons/bootstrap";
+import { HStack } from "~/styled-system/jsx";
+import { css } from "~/styled-system/css";
 
 export const PostSummaryListItem = component$(
   ({ title, description, permalink, tags, date, published }: PostSummary) => {
-    useStylesScoped$(styles);
     if (!published) return <></>;
     return (
-      <a href={permalink} class="post-summary-list-item">
-        <LuRocket />
-        <h2 class="title">{title}</h2>
-        <p class="date">{date}</p>
-        <p class="tags">{tags.join(",")}</p>
-        <p class="summary">{description}</p>
-      </a>
+      <>
+        <a href={permalink}>
+          <h2>{title}</h2>
+        </a>
+        <p>{date}</p>
+        <HStack>
+          {tags.map((tag) => {
+            return (
+              <a href={`/blog/tags/${tag}`}>
+                <HStack
+                  key={tag}
+                  gap="1"
+                  class={css({
+                    backgroundColor: "bg.quote",
+                    borderRadius: "tag.main",
+                    padding: "2",
+                  })}
+                >
+                  <BsTag class="icon" />
+                  <span
+                    class={css({
+                      fontWeight: "light",
+                      fontSize: "sm",
+                    })}
+                  >
+                    {tag}
+                  </span>
+                </HStack>
+              </a>
+            );
+          })}
+        </HStack>
+        <p>{description}</p>
+      </>
     );
   }
 );

@@ -9,6 +9,10 @@ callToActionItems:
     href: /resume/
 ---
 
+- [Blog](/blog)
+- [Resume](/resume)
+- [Misc](/misc)
+
 ## 自己紹介
 
 <img src="https://google-account-photo.vercel.app/api/?account_id=101722346324226588907" style="width: 100px"/>

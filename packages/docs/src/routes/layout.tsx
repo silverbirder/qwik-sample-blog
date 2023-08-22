@@ -1,7 +1,9 @@
 import { component$, Slot } from "@builder.io/qwik";
 import { Link, type RequestHandler } from "@builder.io/qwik-city";
 import { css } from "~/styled-system/css";
-import { Container } from "~/styled-system/jsx";
+import { Container, HStack } from "~/styled-system/jsx";
+import { BsGithub, BsTwitter } from "@qwikest/icons/bootstrap";
+import { hstack } from "~/styled-system/patterns";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
@@ -16,51 +18,59 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 
 export default component$(() => {
   return (
-    <Container
+    <div
       class={css({
         display: "grid",
-        gridTemplateAreas: {
-          base: `
-          "header header"
-          "nav content"
-          "footer footer"`,
-          mdDown: `
-              "header"
-              "content"
-              "footer"`,
-        },
-        gridTemplateRows: {
-          base: "auto 1fr",
-          mdDown: "auto",
-        },
-        gridTemplateColumns: "auto 1fr auto",
+        gridTemplateAreas: `
+        "header"
+        "content"
+        "footer"`,
+        gridTemplateRows: "auto 1fr auto",
+        gridTemplateColumns: "1fr",
       })}
     >
-      <header class={css({ gridArea: "header" })}>
+      <header
+        class={[
+          css({
+            gridArea: "header",
+            position: "sticky",
+            backgroundColor: "bg.quote",
+            top: 0,
+            zIndex: 1,
+            backdropFilter: "blur(23px) saturate(4.5)",
+          }),
+          hstack({
+            justifyContent: "space-between",
+          }),
+        ]}
+      >
         <h1>silverbirder's portfolio</h1>
+        <HStack>
+          <a href="https://github.com/silverbirder" target="_brank">
+            <BsGithub
+              class={css({ width: "icon.main", height: "icon.main" })}
+            />
+          </a>
+          <a href="https://x.com/silverbirder" target="_brank">
+            <BsTwitter
+              class={css({ width: "icon.main", height: "icon.main" })}
+            />
+          </a>
+        </HStack>
       </header>
-      <nav class={css({ gridArea: "nav", hideBelow: "md" })}>
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link href="/resume">Resume・Skill</Link>
-          </li>
-          <li>
-            <a href="/misc">Misc</a>
-          </li>
-        </ul>
-      </nav>
-      <main class={css({ gridArea: "content" })}>
+      <Container class={css({ gridArea: "content" })}>
         <Slot />
-      </main>
-      <footer class={css({ gridArea: "footer" })}>
+      </Container>
+      <footer
+        class={css({
+          gridArea: "footer",
+          backgroundColor: "bg.quote",
+          display: "flex",
+          placeContent: "center",
+        })}
+      >
         <p>&copy; 2023 silverbirder's portfolio. All rights reserved.</p>
       </footer>
-    </Container>
+    </div>
   );
 });

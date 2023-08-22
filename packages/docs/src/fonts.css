@@ -1,5 +1,5 @@
-@import "@fontsource-variable/noto-sans-jp";
+@import "@fontsource/noto-sans-jp/japanese-400.css";
 
 :root {
-  --font-noto-sans: "Noto Sans JP Variable", sans-serif;
+  --font-noto-sans: "Noto Sans JP";
 }
