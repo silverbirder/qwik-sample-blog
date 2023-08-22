@@ -4,8 +4,8 @@ import { PostSummaryList } from "~/components/post-summary-list/post-summary-lis
 
 export default component$(() => {
   return (
-    <main class="main">
+    <>
       <PostSummaryList data={data}></PostSummaryList>
-    </main>
+    </>
   );
 });

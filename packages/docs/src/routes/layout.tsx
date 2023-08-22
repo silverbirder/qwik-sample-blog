@@ -1,9 +1,10 @@
 import { component$, Slot } from "@builder.io/qwik";
-import { type RequestHandler } from "@builder.io/qwik-city";
+import { Link, type RequestHandler } from "@builder.io/qwik-city";
 import { css } from "~/styled-system/css";
 import { Container, HStack } from "~/styled-system/jsx";
 import { BsGithub, BsTwitter } from "@qwikest/icons/bootstrap";
 import { hstack } from "~/styled-system/patterns";
+import ImgFavicon from "~/media/favicon.svg?jsx";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
@@ -35,6 +36,7 @@ export default component$(() => {
             gridArea: "header",
             position: "sticky",
             backgroundColor: "bg.quote",
+            height: "header.main",
             top: 0,
             zIndex: 1,
             backdropFilter: "blur(23px) saturate(4.5)",
@@ -44,7 +46,13 @@ export default component$(() => {
           }),
         ]}
       >
-        <h1>silverbirder's portfolio</h1>
+        <h1>
+          <Link href="/">
+            <ImgFavicon
+              class={css({ width: "icon.main", height: "icon.main" })}
+            />
+          </Link>
+        </h1>
         <HStack>
           <a href="https://github.com/silverbirder" target="_brank">
             <BsGithub

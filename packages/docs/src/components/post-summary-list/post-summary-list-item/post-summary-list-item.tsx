@@ -5,15 +5,19 @@ import { HStack } from "~/styled-system/jsx";
 import { css } from "~/styled-system/css";
 
 export const PostSummaryListItem = component$(
-  ({ title, description, permalink, tags, date, published }: PostSummary) => {
+  ({ title, permalink, tags, date, published }: PostSummary) => {
     if (!published) return <></>;
     return (
       <>
         <a href={permalink}>
-          <h2>{title}</h2>
+          <h3>{title}</h3>
         </a>
         <p>{date}</p>
-        <HStack>
+        <HStack
+          class={css({
+            flexWrap: "wrap",
+          })}
+        >
           {tags.map((tag) => {
             return (
               <a href={`/blog/tags/${tag}`} key={tag}>
@@ -39,7 +43,15 @@ export const PostSummaryListItem = component$(
             );
           })}
         </HStack>
-        <p>{description}</p>
+        {/* <p
+          class={css({
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          })}
+        >
+          {description}
+        </p> */}
       </>
     );
   }

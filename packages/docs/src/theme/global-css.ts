@@ -18,11 +18,23 @@ export const globalCss = defineGlobalStyles({
     margin: 0,
     fontWeight: "normal",
   },
-  "h1, h2, h3": {
+  h1: {
+    fontSize: "5xl",
+  },
+  h2: {
     fontSize: "4xl",
   },
-  "h4, h5, h6": {
+  h3: {
+    fontSize: "3xl",
+  },
+  h4: {
     fontSize: "2xl",
+  },
+  h5: {
+    fontSize: "xl",
+  },
+  h6: {
+    fontSize: "lg",
   },
   "h1, h2, h3, h4, h5, h6, p, ul, ol, dl, table, blockquote, pre, form, fieldset, iframe, hr":
     {

@@ -1,11 +1,10 @@
 import { component$, Slot } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { css } from "~/styled-system/css";
-import { Container } from "~/styled-system/jsx";
 
 export default component$(() => {
   return (
-    <Container
+    <div
       class={css({
         display: "grid",
         gridTemplateAreas: {
@@ -35,9 +34,9 @@ export default component$(() => {
           </li>
         </ul>
       </nav>
-      <main class={css({ gridArea: "content" })}>
+      <div class={css({ gridArea: "content" })}>
         <Slot />
-      </main>
-    </Container>
+      </div>
+    </div>
   );
 });

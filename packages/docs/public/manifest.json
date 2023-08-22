@@ -1,9 +1,30 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "qwik-project-name",
-  "short_name": "Welcome to Qwik",
-  "start_url": ".",
+  "name": "silverbirder",
+  "short_name": "silverbirder",
+  "theme_color": "#e63946",
+  "background_color": "#1d3557",
   "display": "standalone",
-  "background_color": "#fff",
-  "description": "A Qwik project app."
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/maskable-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "splash_pages": null
 }
