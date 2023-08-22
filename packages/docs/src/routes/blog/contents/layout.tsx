@@ -1,6 +1,6 @@
 import { component$, Slot } from "@builder.io/qwik";
 import {
-  DocumentHead,
+  type DocumentHead,
   useContent,
   useDocumentHead,
 } from "@builder.io/qwik-city";

@@ -37,6 +37,7 @@ package-lock.json
 yarn.lock
 server
 index.json
+search.json
 
 # Panda CSS
 src/styled-system

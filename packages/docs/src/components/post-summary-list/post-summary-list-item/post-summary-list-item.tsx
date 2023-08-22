@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import { PostSummary } from "~/models";
+import { type PostSummary } from "~/models";
 import { BsTag } from "@qwikest/icons/bootstrap";
 import { HStack } from "~/styled-system/jsx";
 import { css } from "~/styled-system/css";
@@ -16,9 +16,8 @@ export const PostSummaryListItem = component$(
         <HStack>
           {tags.map((tag) => {
             return (
-              <a href={`/blog/tags/${tag}`}>
+              <a href={`/blog/tags/${tag}`} key={tag}>
                 <HStack
-                  key={tag}
                   gap="1"
                   class={css({
                     backgroundColor: "bg.quote",

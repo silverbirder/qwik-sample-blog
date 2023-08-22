@@ -1,5 +1,8 @@
 import type { Meta, StoryObj } from "storybook-framework-qwik";
-import { PostSummaryList, PostSummaryListProps } from "./post-summary-list";
+import {
+  PostSummaryList,
+  type PostSummaryListProps,
+} from "./post-summary-list";
 
 const meta: Meta<PostSummaryListProps> = {
   component: PostSummaryList,
