@@ -53,18 +53,25 @@ export default component$(() => {
             />
           </Link>
         </h1>
-        <HStack>
-          <a href="https://github.com/silverbirder" target="_brank">
-            <BsGithub
-              class={css({ width: "icon.main", height: "icon.main" })}
-            />
-          </a>
-          <a href="https://x.com/silverbirder" target="_brank">
-            <BsTwitter
-              class={css({ width: "icon.main", height: "icon.main" })}
-            />
-          </a>
-        </HStack>
+        <div class={hstack({ gap: 10 })}>
+          <nav class={hstack({ gap: 1 })}>
+            <Link href="/blog">Blog</Link>
+            <Link href="/resume">Resume</Link>
+            <Link href="/misc">Misc</Link>
+          </nav>
+          <nav class={hstack({ gap: 1 })}>
+            <a href="https://github.com/silverbirder" target="_brank">
+              <BsGithub
+                class={css({ width: "icon.main", height: "icon.main" })}
+              />
+            </a>
+            <a href="https://x.com/silverbirder" target="_brank">
+              <BsTwitter
+                class={css({ width: "icon.main", height: "icon.main" })}
+              />
+            </a>
+          </nav>
+        </div>
       </header>
       <Container class={css({ gridArea: "content" })}>
         <Slot />

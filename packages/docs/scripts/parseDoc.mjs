@@ -3,7 +3,7 @@ import { globby } from "globby";
 import { readFileSync, writeFileSync } from "fs";
 
 async function parseDoc() {
-  const files = await globby("src/**/*.md");
+  const files = await globby("src/routes/blog/contents/**/*.md");
   const textForSearch = await Promise.all(
     files.map(async (file) => {
       const readFileData = readFileSync(file, "utf8");
@@ -20,9 +20,20 @@ async function parseDoc() {
             return item.content;
           }
         });
+      const titles = parsedData
+        .filter((item) => {
+          return (
+            item.path === "root[1].html[1].body[1]" &&
+            item.content.startsWith("title:")
+          );
+        })
+        .map((item) => {
+          return item.content.split("title:")[1].split("published")[0].trim();
+        });
       return {
         f: file,
         c: Array.from(new Set(contents)),
+        t: titles.length ? titles[0] : "",
       };
     })
   );

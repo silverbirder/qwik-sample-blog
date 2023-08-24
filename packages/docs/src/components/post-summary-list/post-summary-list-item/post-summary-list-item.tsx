@@ -5,12 +5,16 @@ import { HStack } from "~/styled-system/jsx";
 import { css } from "~/styled-system/css";
 
 export const PostSummaryListItem = component$(
-  ({ title, permalink, tags, date, published }: PostSummary) => {
+  ({ title, permalink, description, tags, date, published }: PostSummary) => {
     if (!published) return <></>;
     return (
-      <>
+      <div
+        class={css({
+          width: "70vw",
+        })}
+      >
         <a href={permalink}>
-          <h3>{title}</h3>
+          <div class={css({ textStyle: "h4" })}>{title}</div>
         </a>
         <p>{date}</p>
         <HStack
@@ -43,16 +47,17 @@ export const PostSummaryListItem = component$(
             );
           })}
         </HStack>
-        {/* <p
+
+        <p
           class={css({
-            whiteSpace: "nowrap",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
+            borderColor: "bg.quote",
+            borderWidth: "medium",
+            borderRadius: "base",
           })}
         >
-          {description}
-        </p> */}
-      </>
+          {description}...
+        </p>
+      </div>
     );
   }
 );

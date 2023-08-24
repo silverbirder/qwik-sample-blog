@@ -38,6 +38,7 @@ export default component$(() => {
             gridArea: "content",
           })}
         >
+          <h1>{head.title}</h1>
           <Slot />
         </div>
         <aside
