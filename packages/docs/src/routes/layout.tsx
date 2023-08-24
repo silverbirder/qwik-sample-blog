@@ -1,7 +1,7 @@
 import { component$, Slot } from "@builder.io/qwik";
 import { Link, type RequestHandler } from "@builder.io/qwik-city";
 import { css } from "~/styled-system/css";
-import { Container, HStack } from "~/styled-system/jsx";
+import { Container } from "~/styled-system/jsx";
 import { BsGithub, BsTwitter } from "@qwikest/icons/bootstrap";
 import { hstack } from "~/styled-system/patterns";
 import ImgFavicon from "~/media/favicon.svg?jsx";

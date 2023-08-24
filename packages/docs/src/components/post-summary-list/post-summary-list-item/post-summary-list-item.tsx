@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import { type PostSummary } from "~/models";
-import { BsTag } from "@qwikest/icons/bootstrap";
 import { HStack } from "~/styled-system/jsx";
 import { css } from "~/styled-system/css";
+import { Tag } from "~/components/tag/tag";
 
 export const PostSummaryListItem = component$(
   ({ title, permalink, description, tags, date, published }: PostSummary) => {
@@ -22,30 +22,9 @@ export const PostSummaryListItem = component$(
             flexWrap: "wrap",
           })}
         >
-          {tags.map((tag) => {
-            return (
-              <a href={`/blog/tags/${tag}`} key={tag}>
-                <HStack
-                  gap="1"
-                  class={css({
-                    backgroundColor: "bg.quote",
-                    borderRadius: "tag.main",
-                    padding: "2",
-                  })}
-                >
-                  <BsTag class="icon" />
-                  <span
-                    class={css({
-                      fontWeight: "light",
-                      fontSize: "sm",
-                    })}
-                  >
-                    {tag}
-                  </span>
-                </HStack>
-              </a>
-            );
-          })}
+          {tags.map((tag) => (
+            <Tag url={`/blog/tags/${tag}`} name={tag} key={tag} />
+          ))}
         </HStack>
 
         <p

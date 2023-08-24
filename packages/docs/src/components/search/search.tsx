@@ -98,6 +98,3 @@ export const Search = component$<SearchProps>(() => {
     </div>
   );
 });
-function useRef(arg0: null) {
-  throw new Error("Function not implemented.");
-}

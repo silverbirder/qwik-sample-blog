@@ -4,8 +4,11 @@ import {
   useContent,
   useDocumentHead,
 } from "@builder.io/qwik-city";
+import { PostSummaryList } from "~/components/post-summary-list/post-summary-list";
+import { Tag } from "~/components/tag/tag";
 import data from "~/routes/blog/index.json";
 import { css } from "~/styled-system/css";
+import { HStack } from "~/styled-system/jsx";
 
 export default component$(() => {
   const head = useDocumentHead();
@@ -39,6 +42,11 @@ export default component$(() => {
           })}
         >
           <h1>{head.title}</h1>
+          <HStack gap={1}>
+            {tags.map((tag) => (
+              <Tag url={`/blog/tags/${tag}`} name={tag} key={tag} />
+            ))}
+          </HStack>
           <Slot />
         </div>
         <aside
@@ -61,21 +69,7 @@ export default component$(() => {
           })}
         >
           <h2>Tags</h2>
-          {tags.map((tag) => (
-            <section key={tag}>
-              <h3>{tag}</h3>
-              {data
-                .filter(
-                  (post) =>
-                    post.tags.indexOf(tag) !== -1 && head.title !== post.title
-                )
-                .map((post) => (
-                  <div key={post.title}>
-                    <a href={post.permalink}>{post.title}</a>
-                  </div>
-                ))}
-            </section>
-          ))}
+          <RelatedTags currentTags={tags} currentTitle={head.title} />
         </div>
         <div
           class={css({
@@ -103,6 +97,35 @@ export default component$(() => {
     </>
   );
 });
+
+interface RelatedTagsProps {
+  currentTags: string[];
+  currentTitle: string;
+}
+
+const RelatedTags = component$(
+  ({ currentTags, currentTitle }: RelatedTagsProps) => {
+    return (
+      <>
+        {currentTags.map((tag) => {
+          const relatedTagPosts = data.filter(
+            (post) =>
+              post.tags.indexOf(tag) !== -1 && currentTitle !== post.title
+          );
+          if (relatedTagPosts.length === 0) return <></>;
+          return (
+            <section key={tag}>
+              <h3>
+                <Tag url={`/blog/tags/${tag}`} name={tag} />
+              </h3>
+              <PostSummaryList data={relatedTagPosts} />
+            </section>
+          );
+        })}
+      </>
+    );
+  }
+);
 
 export const head: DocumentHead = ({ head }) => {
   return {
