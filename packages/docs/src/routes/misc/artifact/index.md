@@ -1,4 +1,8 @@
-# Misc >> Artifact
+---
+title: Artifact
+---
+
+# Artifact
 
 ## Web Site / App
 

@@ -1,12 +1,5 @@
 ---
 title: silverbirder
-layout: layout-home
-slogan: Welcome to silverbirder's page!
-callToActionItems:
-  - text: Browse Blog
-    href: /blog/
-  - text: Know Resume
-    href: /resume/
 ---
 
 ## 自己紹介

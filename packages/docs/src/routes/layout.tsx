@@ -1,8 +1,8 @@
 import { component$, Slot } from "@builder.io/qwik";
 import { Link, type RequestHandler } from "@builder.io/qwik-city";
 import { css } from "~/styled-system/css";
-import { Container } from "~/styled-system/jsx";
 import { BsGithub, BsTwitter } from "@qwikest/icons/bootstrap";
+import { SiAmazon } from "@qwikest/icons/simpleicons";
 import { hstack } from "~/styled-system/patterns";
 import ImgFavicon from "~/media/favicon.svg?jsx";
 
@@ -70,12 +70,20 @@ export default component$(() => {
                 class={css({ width: "icon.main", height: "icon.main" })}
               />
             </a>
+            <a
+              href="https://www.amazon.co.jp/gp/product/B08CY2QCFV/"
+              target="_brank"
+            >
+              <SiAmazon
+                class={css({ width: "icon.main", height: "icon.main" })}
+              ></SiAmazon>
+            </a>
           </nav>
         </div>
       </header>
-      <Container class={css({ gridArea: "content" })}>
+      <main class={css({ gridArea: "content", margin: "0 20%" })}>
         <Slot />
-      </Container>
+      </main>
       <footer
         class={css({
           gridArea: "footer",
