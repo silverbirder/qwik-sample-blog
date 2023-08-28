@@ -71,6 +71,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: 5.61.0
         version: 5.61.0(eslint@8.44.0)(typescript@5.1.6)
+      '@unpic/qwik':
+        specifier: ^0.0.25
+        version: 0.0.25(@builder.io/qwik@1.2.7)
       '@vitest/ui':
         specifier: ^0.33.0
         version: 0.33.0(vitest@0.33.0)
@@ -5073,6 +5076,15 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.61.0
       eslint-visitor-keys: 3.4.2
+    dev: true
+
+  /@unpic/qwik@0.0.25(@builder.io/qwik@1.2.7):
+    resolution: {integrity: sha512-8YvmmOwk7dWdtAlZFiNM+z7SWHJ/M6uoleVr8y82eeu2yxPvr5n8kUgG1MdXX+re0RBtumF1vfEe4GP2UJoFMg==}
+    engines: {node: '>=15.0.0'}
+    peerDependencies:
+      '@builder.io/qwik': '*'
+    dependencies:
+      '@builder.io/qwik': 1.2.7(undici@5.22.1)
     dev: true
 
   /@vitest/expect@0.33.0:
