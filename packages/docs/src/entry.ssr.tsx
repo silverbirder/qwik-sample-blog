@@ -35,7 +35,7 @@ export default async function (opts: RenderToStreamOptions) {
 
 const generateBlogFrontMatter = async () => {
   const modules = await import.meta.glob(
-    "/src/routes/blog/contents/**/**/index.md"
+    "/src/routes/blog/contents/**/**/index.mdx"
   );
   const posts = (
     await asyncMap(Object.keys(modules), async (path) => {

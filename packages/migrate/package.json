@@ -17,5 +17,8 @@
     "yarn": "use pnpm please!",
     "pnpm": ">=8.6.2"
   },
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "cloudinary": "^1.40.0"
+  }
 }
