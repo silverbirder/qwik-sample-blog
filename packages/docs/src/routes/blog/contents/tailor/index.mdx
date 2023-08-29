@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614429982/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614429982/silver-birder.github.io/blog/Photo_by_Kenny_Luo_on_Unsplash.jpg
 ---
 
+import { Image } from "@unpic/qwik";
+
 Zalando 社が開発した Tailor を使って、サンプル Web アプリを Micro Frontends で構築してみました。Tailor はサーバーサイドで統合するアーキテクチャです。クライアントサイドは、Web Components で作られている Lit Element を使って統合しました。どういった内容か、ここに投稿しようと思います。
 
 作ったリポジトリは、下記に残しています。
@@ -16,15 +18,24 @@ https://github.com/silverbirder/micro-frontends-sample-code-4
 # 全体構成
 
 <figure title="アプリケーション構成">
-<img alt="アプリケーション構成" src="https://res.cloudinary.com/silverbirder/image/upload/v1614430036/silver-birder.github.io/blog/tailor_and_application_configuration.png" />
-<figcaption>アプリケーション構成</figcaption>
+  <img
+    alt="アプリケーション構成"
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1614430036/silver-birder.github.io/blog/tailor_and_application_configuration.png"
+  />
+  <figcaption>アプリケーション構成</figcaption>
 </figure>
 
 ざっくり説明すると、HTML から Tailor に対してフラグメント(コンポーネント)を取得・返却するようにします。各フラグメントは、LitElement で WebComponents を定義させた Javascript を指します。フラグメントを読み込むだけで、カスタムエレメントを使えるようになります。
 
 # Tailor
 
-![image](https://camo.githubusercontent.com/3018354754cc0c9f1f6b27ac68bd8060a11db5a7/68747470733a2f2f7261776769746875622e636f6d2f7a616c616e646f2f7461696c6f722f6d61737465722f6c6f676f2f7461696c6f722d6c6f676f2e737667)
+<Image
+  src="https://camo.githubusercontent.com/3018354754cc0c9f1f6b27ac68bd8060a11db5a7/68747470733a2f2f7261776769746875622e636f6d2f7a616c616e646f2f7461696c6f722f6d61737465722f6c6f676f2f7461696c6f722d6c6f676f2e737667"
+  width={500}
+  height={200}
+  layout="constrained"
+  alt="image"
+/>
 
 https://github.com/zalando/tailor
 
@@ -99,7 +110,13 @@ fragments.js は、Response Header に Link ヘッダを追加するようにし
 
 # Lerna
 
-![lerna](https://res.cloudinary.com/silverbirder/image/upload/v1614430061/silver-birder.github.io/blog/Lerna.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614430061/silver-birder.github.io/blog/Lerna.png"
+  width={425}
+  height={384}
+  layout="constrained"
+  alt="lerna"
+/>
 
 それぞれのフラグメントを Lerna で管理するようにします。
 私は、下記のような packages 分けをしました。
@@ -144,7 +161,13 @@ package.json
 
 # LitElement
 
-![LitElement](https://res.cloudinary.com/silverbirder/image/upload/v1614430086/silver-birder.github.io/blog/LitElement.jpg)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614430086/silver-birder.github.io/blog/LitElement.jpg"
+  width={567}
+  height={196}
+  layout="constrained"
+  alt="LitElement"
+/>
 
 https://lit-element.polymer-project.org/
 
@@ -197,7 +220,13 @@ https://www.ninkovic.dev/blog/2020/testing-web-components-with-jest-and-lit-elem
 
 # DynamicRendering
 
-![rendertron](https://res.cloudinary.com/silverbirder/image/upload/v1614430107/silver-birder.github.io/blog/rendertron.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614430107/silver-birder.github.io/blog/rendertron.png"
+  width={425}
+  height={93}
+  layout="constrained"
+  alt="rendertron"
+/>
 
 このサンプルでは、カスタムエレメントを使って、ブラウザ側でレンダリングする 所謂 SPA の動きで構築しています。
 『SEO ガー！』と SSR しなきゃと思う訳ですが、正直 SSR を考えたくないです。(ハイドレーションなんて無駄なロードをブラウザにさせたくない）

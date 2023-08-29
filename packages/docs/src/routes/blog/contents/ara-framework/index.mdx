@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614430802/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614430802/silver-birder.github.io/blog/Photo_by_Artem_Sapegin_on_Unsplash.jpg
 ---
 
+import { Image } from "@unpic/qwik";
+
 みなさん、こんにちは。silverbirder です。
 私の最近の興味として、Micro Frontends があります。
 
@@ -36,7 +38,13 @@ Ara-Framework は、Airbnb が開発した Hypernova というフレームワー
 
 Ara-Framework のアーキテクチャ図は、次のようなものです。
 
-![ara framework overview](https://cdn-images-1.medium.com/max/2400/1*43CBDwIZ8P2q_ZfGg_ktUQ.png)
+<Image
+  src="https://cdn-images-1.medium.com/max/2400/1*43CBDwIZ8P2q_ZfGg_ktUQ.png"
+  width={1181}
+  height={835}
+  layout="constrained"
+  alt="ara framework overview"
+/>
 
 ※ [https://ara-framework.github.io/website/docs/nova-architecture](https://ara-framework.github.io/website/docs/nova-architecture)
 
@@ -258,7 +266,13 @@ $ concurrently -n cluster,layout,proxy,search,product "npm run cluster" "npm run
 
 動作として、次のような画像になります。
 
-![nova results](https://res.cloudinary.com/silverbirder/image/upload/v1614430832/silver-birder.github.io/blog/nova_results.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614430832/silver-birder.github.io/blog/nova_results.png"
+  width={970}
+  height={850}
+  layout="constrained"
+  alt="nova results"
+/>
 
 # 最後に
 

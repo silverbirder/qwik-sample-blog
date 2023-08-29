@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1639816691/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1639816691/silver-birder.github.io/blog/kubernetes_raspberrypi.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 # ストーリー
 
 1. [一足遅れて Kubernetes を学び始める - 01. 環境選択編 -](../start_the_learning_kubernetes_01/index.mdx)
@@ -65,7 +67,14 @@ iMac (21.5-inch, 2017)
 
 [Raspberry Pi でおうち Kubernetes 構築【物理編】](https://qiita.com/go_vargo/items/d1271ab60f2bba375dcc)で十分な情報があります。こちらを参考にして組み立てします。
 できたものがこちらです。
-![kubernetes_raspberrypi.png](https://res.cloudinary.com/silverbirder/image/upload/v1639816691/silver-birder.github.io/blog/kubernetes_raspberrypi.png)
+
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1639816691/silver-birder.github.io/blog/kubernetes_raspberrypi.png"
+  width={500}
+  height={514}
+  layout="constrained"
+  alt="kubernetes_raspberrypi.png"
+/>
 
 WiFi を使うために、LAN ケーブルや WiFi 親機などがなくなり、スッキリしました。
 電源を確保できるところであれば、家の中なら、どこでも持ち運びできます。 ✨
@@ -256,7 +265,13 @@ wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 `http://192.168.3.32:30783`にアクセス
 
-![nginx](https://res.cloudinary.com/silverbirder/image/upload/v1639816718/silver-birder.github.io/blog/kubernetes_nginx.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1639816718/silver-birder.github.io/blog/kubernetes_nginx.png"
+  width={554}
+  height={210}
+  layout="constrained"
+  alt="nginx"
+/>
 
 OK!
 

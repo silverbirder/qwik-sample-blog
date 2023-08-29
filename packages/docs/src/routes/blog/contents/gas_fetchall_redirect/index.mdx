@@ -29,8 +29,11 @@ https://developers.google.com/apps-script/reference/url-fetch/url-fetch-app#adva
 要するに次のようなコードで解決しようと考えていました。
 
 <figure title="FetchAllとRedirectURL">
-<img alt="FetchAllとRedirectURL" src="https://res.cloudinary.com/silverbirder/image/upload/v1614429255/silver-birder.github.io/blog/FetchAll_and_RedirectURL.png" />
-<figcaption>FetchAllとRedirectURL</figcaption>
+  <img
+    alt="FetchAllとRedirectURL"
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1614429255/silver-birder.github.io/blog/FetchAll_and_RedirectURL.png"
+  />
+  <figcaption>FetchAllとRedirectURL</figcaption>
 </figure>
 
 ```typescript
@@ -95,8 +98,11 @@ fetch や fetchAll は、`muteHttpExceptions: true` としたとしても、Exce
 そうすると、例えば 1000 件の URL を fetchAll した場合、<b>どれが成功で、どれが失敗で、どれが未実施か</b> がわからないというところです。
 
 <figure title="FetchAllとRedirectURL (Error)">
-<img alt="FetchAllとRedirectURL (Error)" src="https://res.cloudinary.com/silverbirder/image/upload/v1614429297/silver-birder.github.io/blog/FetchAll_and_RedirectURL_error.png" />
-<figcaption>FetchAllとRedirectURL (Error)</figcaption>
+  <img
+    alt="FetchAllとRedirectURL (Error)"
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1614429297/silver-birder.github.io/blog/FetchAll_and_RedirectURL_error.png"
+  />
+  <figcaption>FetchAllとRedirectURL (Error)</figcaption>
 </figure>
 
 Promise.allSettled が使えれば、解決できるのかなと思いますが、現状 Promise は使えません。

@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1639816747/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1639816747/silver-birder.github.io/blog/Kubernetes_learning.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 # ストーリー
 
 1. [一足遅れて Kubernetes を学び始める - 01. 環境選択編 -](../start_the_learning_kubernetes_01/index.mdx)
@@ -75,7 +77,13 @@ Kubernetes では、MasterNode と WorkerNode の 2 種類の Node が存在し�
 私なりの理解をアウトプットしたものが下記になります。
 (ほとんど真似した感じです。しかし、アウトプットするだけで理解が深まるため実施。 **アウトプット大事！** )
 
-![Kubernetes_learning.png](https://res.cloudinary.com/silverbirder/image/upload/v1639816747/silver-birder.github.io/blog/Kubernetes_learning.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1639816747/silver-birder.github.io/blog/Kubernetes_learning.png"
+  width={615}
+  height={760}
+  layout="constrained"
+  alt="Kubernetes_learning.png"
+/>
 
 ```shell
 ~ $ kubectl get nodes

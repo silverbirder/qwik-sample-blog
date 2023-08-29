@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1639816788/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1639816788/silver-birder.github.io/blog/pod_ip_adress_kubernetes.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 # ストーリー
 
 1. [一足遅れて Kubernetes を学び始める - 01. 環境選択編 -](../start_the_learning_kubernetes_01/index.mdx)
@@ -101,7 +103,13 @@ sample-deployment-9dc487867-n8x5w   10.244.2.66   raspi003
 sample-deployment-9dc487867-nxbxc   10.244.2.67   raspi003
 ```
 
-![pod ip adress](https://res.cloudinary.com/silverbirder/image/upload/v1639816788/silver-birder.github.io/blog/pod_ip_adress_kubernetes.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1639816788/silver-birder.github.io/blog/pod_ip_adress_kubernetes.png"
+  width={790}
+  height={311}
+  layout="constrained"
+  alt="pod ip adress"
+/>
 
 このような状況下で、`sample-deployment-9dc487867-n8x5w:redis`を中心に見ていきます。
 

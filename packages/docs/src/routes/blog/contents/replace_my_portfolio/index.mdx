@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1640068525/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1640068525/silver-birder.github.io/blog/silverbirder_portfolio_amp_overview.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 この度、私のポートフォリオページを刷新致しました。本記事では、
 刷新することになった動機から、刷新内容、今後について紹介したいと思います。
 
@@ -43,7 +45,13 @@ Hugo で記事を管理する対象は、Markdown であるため、エンジニ
 
 AMP を存分に使ったポートフォリオサイトを作成しました。全体像は、下記のとおりです。
 
-![overview](https://res.cloudinary.com/silverbirder/image/upload/v1640068525/silver-birder.github.io/blog/silverbirder_portfolio_amp_overview.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1640068525/silver-birder.github.io/blog/silverbirder_portfolio_amp_overview.png"
+  width={532}
+  height={361}
+  layout="constrained"
+  alt="overview"
+/>
 
 [AMP Optimizer](https://www.npmjs.com/package/@ampproject/toolbox-optimizer)を中心とした構成です。
 ソースコードは、下記のリポジトリにあります。

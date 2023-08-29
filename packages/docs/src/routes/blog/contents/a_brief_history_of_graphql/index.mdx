@@ -7,6 +7,8 @@ tags: ["GraphQL"]
 cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1659191668/silver-birder.github.io/blog/graphql_logo.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 GraphQL を業務で使い始めました。
 いつものように、GraphQL の歴史が気になったので、調べてみました。
 
@@ -55,11 +57,23 @@ REST API で開発を進めていくと、次の 3 つの課題を抱えてし�
 
 REST API の場合は、次の画像のように 3 往復することになります。
 
-![REST_API](https://res.cloudinary.com/silverbirder/image/upload/v1659191676/silver-birder.github.io/blog/rest_api_flow.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1659191676/silver-birder.github.io/blog/rest_api_flow.png"
+  width={2078}
+  height={1700}
+  layout="constrained"
+  alt="REST_API"
+/>
 
 GraphQL の場合は、1 回の往復だけでデータが取得できます。
 
-![GraphQL](https://res.cloudinary.com/silverbirder/image/upload/v1659191675/silver-birder.github.io/blog/graphql_flow.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1659191675/silver-birder.github.io/blog/graphql_flow.png"
+  width={1566}
+  height={946}
+  layout="constrained"
+  alt="GraphQL"
+/>
 
 ## REST API から GraphQL へ
 

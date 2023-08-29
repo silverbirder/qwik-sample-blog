@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1639816612/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1639816612/silver-birder.github.io/blog/sample_deployment_1.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 # ストーリー
 
 1. [一足遅れて Kubernetes を学び始める - 01. 環境選択編 -](../start_the_learning_kubernetes_01/index.mdx)
@@ -124,8 +126,20 @@ pi@raspi001:~/tmp $ for PODNAME in `k get pods -l app=sample-app -o jsonpath='{.
 どこの pod かどうかわかりやすいくするため、index.html を書き換えます。
 では、ブラウザからアクセスしてみます。
 
-![sample_deployment_1](https://res.cloudinary.com/silverbirder/image/upload/v1639816612/silver-birder.github.io/blog/sample_deployment_1.png)
-![sample_deployment_2](https://res.cloudinary.com/silverbirder/image/upload/v1639816612/silver-birder.github.io/blog/sample_deployment_2.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1639816612/silver-birder.github.io/blog/sample_deployment_1.png"
+  width={593}
+  height={441}
+  layout="constrained"
+  alt="sample_deployment_1"
+/>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1639816612/silver-birder.github.io/blog/sample_deployment_2.png"
+  width={594}
+  height={442}
+  layout="constrained"
+  alt="sample_deployment_2"
+/>
 
 raspi002 を公開したので、その Node に存在する Pod がランダムに出力されている、つまりロードバランサが動作していることがわかります。
 

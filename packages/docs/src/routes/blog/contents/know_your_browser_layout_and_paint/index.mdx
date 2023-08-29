@@ -7,6 +7,8 @@ tags: ["Browser", "Layout", "Paint"]
 cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1656938619/silver-birder.github.io/blog/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg
 ---
 
+import { Image } from "@unpic/qwik";
+
 ブラウザのレンダリングエンジンにおけるレイアウトやペイントについて気になったので、調べました。
 その内容をまとめます。レンダリングエンジンは、Chrome の Blink を題材とします。
 
@@ -19,7 +21,13 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1656938619/si
 - https://silver-birder.github.io/blog/contents/learning_browser_engine/
 - https://developer.chrome.com/blog/inside-browser-part3/
 
-![レンダリングエンジンの工程](https://res.cloudinary.com/silverbirder/image/upload/v1656816689/silver-birder.github.io/blog/browser_rendering_process.jpg)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1656816689/silver-birder.github.io/blog/browser_rendering_process.jpg"
+  width={1093}
+  height={167}
+  layout="constrained"
+  alt="レンダリングエンジンの工程"
+/>
 
 - (図には書いていないけど)Parse
   - HTML と CSS をパース
@@ -56,11 +64,23 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1656938619/si
 開いたページで DevTools を開き、Performance タブをクリックします。
 左上にある reload ボタンを押して、計測してみましょう。
 
-![devtools_performance](https://res.cloudinary.com/silverbirder/image/upload/v1656941210/silver-birder.github.io/blog/devtools_performance.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1656941210/silver-birder.github.io/blog/devtools_performance.png"
+  width={1546}
+  height={1212}
+  layout="constrained"
+  alt="devtools_performance"
+/>
 
 計測の結果、 Main を見てみましょう。
 
-![devtools_performance_1](https://res.cloudinary.com/silverbirder/image/upload/v1656941719/silver-birder.github.io/blog/devtools_performance_1.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1656941719/silver-birder.github.io/blog/devtools_performance_1.png"
+  width={2907}
+  height={1024}
+  layout="constrained"
+  alt="devtools_performance_1"
+/>
 
 さきほど説明したレンダリングエンジンの工程(色も一致)が、見えると思います。
 
@@ -73,7 +93,13 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1656938619/si
 視覚的に見やすい一方で、全体を網羅してみるのは難しいです。
 そこで、 `Event Log` を開きます。
 
-![devtools_performance_2](https://res.cloudinary.com/silverbirder/image/upload/v1656823105/silver-birder.github.io/blog/devtools_performance_2.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1656823105/silver-birder.github.io/blog/devtools_performance_2.png"
+  width={3104}
+  height={1974}
+  layout="constrained"
+  alt="devtools_performance_2"
+/>
 
 レンダリングエンジンのイベントログが、色とともに表示されています。
 ここには、さきほど見れなかった黄色や緑色のものもあります。
@@ -102,11 +128,23 @@ http://jankfree.org/ というサイトから引用します。
 DevTools から、fps を確認できます。
 Rendering タブにある `Frame Rendering Stats`にチェックを入れます。
 
-![devtools_fps_1](https://res.cloudinary.com/silverbirder/image/upload/v1656854862/silver-birder.github.io/blog/devtools_fps_1.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1656854862/silver-birder.github.io/blog/devtools_fps_1.png"
+  width={1664}
+  height={1974}
+  layout="constrained"
+  alt="devtools_fps_1"
+/>
 
 そうすると、画面に次の画像が表示されます。
 
-![devtools_fps_2](https://res.cloudinary.com/silverbirder/image/upload/v1656854862/silver-birder.github.io/blog/devtools_fps_2.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1656854862/silver-birder.github.io/blog/devtools_fps_2.png"
+  width={384}
+  height={358}
+  layout="constrained"
+  alt="devtools_fps_2"
+/>
 
 今、ブラウザは 18.6 fps のようです。
 
@@ -146,7 +184,13 @@ JavaScript や CSS を書いていると、DOM を追加してレイアウトが
 
 clientWidth を実行すると、そのときのレイアウト情報が必要になるため、強制的にレイアウトが実行されます。
 
-![layout_forced](https://res.cloudinary.com/silverbirder/image/upload/v1656941215/silver-birder.github.io/blog/layout_forced.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1656941215/silver-birder.github.io/blog/layout_forced.png"
+  width={3104}
+  height={1974}
+  layout="constrained"
+  alt="layout_forced"
+/>
 
 強制レイアウトが発生しているのが、みてとれます。
 
@@ -180,7 +224,13 @@ clientWidth を実行すると、そのときのレイアウト情報が必要�
 
 DevTools の Performance タブから見ると、`forced reflow is likely a bottleneck` と警告が出ているのが分かります。
 
-![devtools_warn_forced_reflow](https://res.cloudinary.com/silverbirder/image/upload/v1656941719/silver-birder.github.io/blog/devtools_warn_forced_reflow.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1656941719/silver-birder.github.io/blog/devtools_warn_forced_reflow.png"
+  width={2910}
+  height={844}
+  layout="constrained"
+  alt="devtools_warn_forced_reflow"
+/>
 
 対策としては、次があげられます。
 
@@ -244,11 +294,23 @@ transform の場合は、left の部分をコメントアウトし、transform �
 
 left の場合、layout,paint,composite が発生しています。
 
-![css_trigger_1](https://res.cloudinary.com/silverbirder/image/upload/v1656936814/silver-birder.github.io/blog/css_trigger_1.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1656936814/silver-birder.github.io/blog/css_trigger_1.png"
+  width={1396}
+  height={1193}
+  layout="constrained"
+  alt="css_trigger_1"
+/>
 
 transform の場合、composite のみ発生しています。
 
-![css_trigger_2](https://res.cloudinary.com/silverbirder/image/upload/v1656936814/silver-birder.github.io/blog/css_trigger_2.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1656936814/silver-birder.github.io/blog/css_trigger_2.png"
+  width={1435}
+  height={1186}
+  layout="constrained"
+  alt="css_trigger_2"
+/>
 
 このように、composite のみで動く CSS プロパティを選ぶと、軽量になります。
 次のサイトには、CSS のどのプロパティがレイアウト・ペイント・コンポジットどれを更新するのか分かります。
@@ -260,12 +322,24 @@ transform の場合、composite のみ発生しています。
 left の場合の Layers は、次の画像です。
 数秒経過しただけで、ペイントカウントが、数百を超えました。
 
-![devtools_layout_1](https://res.cloudinary.com/silverbirder/image/upload/v1656941210/silver-birder.github.io/blog/devtools_layout_1.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1656941210/silver-birder.github.io/blog/devtools_layout_1.png"
+  width={1664}
+  height={1974}
+  layout="constrained"
+  alt="devtools_layout_1"
+/>
 
 transform の場合の Layers は、次の画像です。
 ペイントカウントが、たったの 2 回に留まりました。
 
-![devtools_layout_2](https://res.cloudinary.com/silverbirder/image/upload/v1656941210/silver-birder.github.io/blog/devtools_layout_2.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1656941210/silver-birder.github.io/blog/devtools_layout_2.png"
+  width={1664}
+  height={1974}
+  layout="constrained"
+  alt="devtools_layout_2"
+/>
 
 ## 終わりに
 

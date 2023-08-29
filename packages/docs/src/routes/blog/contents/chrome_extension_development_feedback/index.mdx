@@ -7,6 +7,8 @@ tags: ["Chrome Extension", "Manifest V3"]
 cover_image: https://raw.githubusercontent.com/Silver-birder/chrome-extension-tiktok-scraping-downloader/main/overview.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 皆さん、Chrome 拡張機能をご存知ですか？
 Chrome 拡張機能は、Chrome ブラウザをカスタマイズするための機能です。
 
@@ -71,7 +73,13 @@ manifest.json ファイルに記述で誤りがあるなどで、Chrome 拡張�
 1. `chrome://extensions` へアクセス
 1. 次の図にあるような ERROR ボタンをクリック
 
-![chrome extensions debug](https://res.cloudinary.com/silverbirder/image/upload/v1642325181/silver-birder.github.io/blog/chrome_extensions_debug.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1642325181/silver-birder.github.io/blog/chrome_extensions_debug.png"
+  width={780}
+  height={404}
+  layout="constrained"
+  alt="chrome extensions debug"
+/>
 
 恐らく、何かしらエラーメッセージが出力されていると思います。
 それを解決しましょう。

@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614431016/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614431016/silver-birder.github.io/blog/rMinc.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 # ターゲットユーザー
 
 - GMail と GCalendar を使っている人
@@ -24,8 +26,11 @@ socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v16144310
 Google は気を利かせて、次のような予定を勝手に登録してくれることがあります。（良い悪いがありますが...）
 
 <figure title="unknownorganizer@calendar.google.com">
-<img alt="unknownorganizer@calendar.google.com" src="https://res.cloudinary.com/silverbirder/image/upload/v1614431051/silver-birder.github.io/blog/unknownorganizer_google_calendar.png" />
-<figcaption>unknownorganizer@calendar.google.com</figcaption>
+  <img
+    alt="unknownorganizer@calendar.google.com"
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1614431051/silver-birder.github.io/blog/unknownorganizer_google_calendar.png"
+  />
+  <figcaption>unknownorganizer@calendar.google.com</figcaption>
 </figure>
 
 この気を利かせるかどうかは、Google の判断によるため未知数です。
@@ -54,7 +59,14 @@ https://www.npmjs.com/package/@silverbirder/rminc
 詳しくは、[README.md](https://github.com/silverbirder/rMinc/blob/master/README.md)をご確認下さい。
 
 概要はこんな感じです。
-![overview](https://res.cloudinary.com/silverbirder/image/upload/v1581769421/rMinc/rMinc_overview.png)
+
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1581769421/rMinc/rMinc_overview.png"
+  width={1852}
+  height={1036}
+  layout="constrained"
+  alt="overview"
+/>
 
 1. 特定キーワードでメールを抽出
    1. アマゾンなら、[from:(shipment-tracking@amazon.co.jp) 発送](https://github.com/silverbirder/rMinc/blob/master/src/user/mailRule/amazonMailRule.ts#L61)
@@ -67,7 +79,14 @@ https://www.npmjs.com/package/@silverbirder/rminc
 1. 抽出した内容を GCalendar に登録
 
 実際に使ってみるとこんな感じになります。
-![example](https://res.cloudinary.com/silverbirder/image/upload/v1581760683/rMinc/rMinc_sample.png)
+
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1581760683/rMinc/rMinc_sample.png"
+  width={1854}
+  height={1032}
+  layout="constrained"
+  alt="example"
+/>
 
 小さくて見えないと思いますが、お届け予定日、タイトル、配達先、メールリンクが登録されています。
 

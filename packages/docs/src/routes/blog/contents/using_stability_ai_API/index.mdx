@@ -7,6 +7,8 @@ tags: ["Stable Diffusion", "API"]
 cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1662177842/silver-birder.github.io/blog/stable-diffusion-api-on-slack.jpg
 ---
 
+import { Image } from "@unpic/qwik";
+
 Stable Diffusion は、文章を渡すと画像を生成してくれる AI で OSS です。
 これを自分の PC で動かそうとすると、GPU が必要になります。
 (CPU で動かせる[stable_diffusion.openvino](https://github.com/bes-dev/stable_diffusion.openvino) というのもあります)
@@ -32,7 +34,13 @@ API は、とりあえず、`<url>/?prompt=<text>` というパラメータを�
 
 Slack で使ってみると、こんな感じになりました。
 
-![stable-diffusion-api-on-slack](https://res.cloudinary.com/silverbirder/image/upload/v1662177842/silver-birder.github.io/blog/stable-diffusion-api-on-slack.jpg)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1662177842/silver-birder.github.io/blog/stable-diffusion-api-on-slack.jpg"
+  width={900}
+  height={778}
+  layout="constrained"
+  alt="stable-diffusion-api-on-slack"
+/>
 
 ひとまず、API で Stable Diffusion を動かせました。
 

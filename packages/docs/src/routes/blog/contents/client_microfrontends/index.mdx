@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/fetch/f_auto/https://
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/fetch/f_auto/https://raw.githubusercontent.com/silverbirder/micro-frontends-sample-code-6/main/overview.svg
 ---
 
+import { Image } from "@unpic/qwik";
+
 2021 年、あけましておめでとうございます。本年も宜しくおねがいします。最近、体重が増えてしまったため、有酸素運動を頑張っています。
 
 本記事は、昨年の冬あたりから検証していた クライアントサイド統合での Micro Frontends について話そうと思います。検証したソースコードは、次のリポジトリにあります。
@@ -18,7 +20,13 @@ https://github.com/silverbirder/micro-frontends-sample-code-6
 
 全体設計イメージ図は、次のとおりです。
 
-![overview](https://res.cloudinary.com/silverbirder/image/fetch/f_auto/https://raw.githubusercontent.com/silverbirder/micro-frontends-sample-code-6/main/overview.svg)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/fetch/f_auto/https://raw.githubusercontent.com/silverbirder/micro-frontends-sample-code-6/main/overview.svg"
+  width={832}
+  height={568}
+  layout="constrained"
+  alt="overview"
+/>
 
 サーバーサイドは静的コンテンツを返すだけとし、クライアントサイドでアプリケーションを構築します。
 

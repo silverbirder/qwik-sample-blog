@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1580997144/LG
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1580997144/LGTM/golia.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 # 画像で会話って楽しい
 
 皆さん、チャットツールでコミュニケーションするとき、絵文字や画像って使ってますか？
@@ -20,7 +22,13 @@ socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v15809971
 
 そこで、次のような画像でコミュニケーションを取ると、柔らかい印象を与えることができます。
 
-![golia LGTM](https://res.cloudinary.com/silverbirder/image/upload/v1580997144/LGTM/golia.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1580997144/LGTM/golia.png"
+  width={600}
+  height={600}
+  layout="constrained"
+  alt="golia LGTM"
+/>
 
 # Tiqav2
 
@@ -45,8 +53,11 @@ Tiqav2 は、大きく分けて 2 つの機能があります。
 ### 画像とテキストを保存
 
 <figure title="Saving flow by Tiqav2">
-<img alt="Saving flow by Tiqav2" src="https://res.cloudinary.com/silverbirder/image/upload/v1614429484/silver-birder.github.io/blog/saving_flow_by_tiqav2.png" />
-<figcaption>Saving flow by Tiqav2</figcaption>
+  <img
+    alt="Saving flow by Tiqav2"
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1614429484/silver-birder.github.io/blog/saving_flow_by_tiqav2.png"
+  />
+  <figcaption>Saving flow by Tiqav2</figcaption>
 </figure>
 
 検索する為には、全文検索サービスの Algolia を使います。
@@ -66,8 +77,11 @@ https://cloud.google.com/vision/
 ### 画像を検索&表示
 
 <figure title="Searching Flow  By Tiqav2">
-<img alt="Searching Flow  By Tiqav2" src="https://res.cloudinary.com/silverbirder/image/upload/v1614429523/silver-birder.github.io/blog/searching_flow_by_tiqav2.png" />
-<figcaption>Searching Flow  By Tiqav2</figcaption>
+  <img
+    alt="Searching Flow  By Tiqav2"
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1614429523/silver-birder.github.io/blog/searching_flow_by_tiqav2.png"
+  />
+  <figcaption>Searching Flow By Tiqav2</figcaption>
 </figure>
 
 テキストで全文検索を行います。その結果の ID と Extension を組み合わせることで、
@@ -82,8 +96,11 @@ https://cloudinary.com/documentation/image_transformations#supported_image_forma
 この画像を表示する機能を使うと、次のように Slack 上で画像を送信することができます。
 
 <figure title="Send Tiqav2 URL on Slack">
-<img alt="Send Tiqav2 URL on Slack" src="https://res.cloudinary.com/silverbirder/image/upload/v1614429563/silver-birder.github.io/blog/send_tiqav2_URL_on_slack.png" />
-<figcaption>Send Tiqav2 URL on Slack</figcaption>
+  <img
+    alt="Send Tiqav2 URL on Slack"
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1614429563/silver-birder.github.io/blog/send_tiqav2_URL_on_slack.png"
+  />
+  <figcaption>Send Tiqav2 URL on Slack</figcaption>
 </figure>
 
 詳しい機能は、次のリポジトリをご確認下さい。

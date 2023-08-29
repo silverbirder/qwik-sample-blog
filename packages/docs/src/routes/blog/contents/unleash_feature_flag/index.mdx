@@ -6,9 +6,17 @@ description: フィーチャーフラグ（Feature Flag）をご存知でしょ�
 tags: ["unleash"]
 ---
 
+import { Image } from "@unpic/qwik";
+
 フィーチャーフラグ（Feature Flag）をご存知でしょうか？これは新機能のリリース制御や AB テストを容易にする強力なツールです。しかし、適切な管理ツールなければ、フィーチャーフラグの管理は容易なことではありません。今回は、そんなフィーチャーフラグの管理を効率化するツール、**Unleash**について解説します。
 
-![Unleash](https://storage.googleapis.com/zenn-user-upload/353d890469ef-20230628.png)
+<Image
+  src="https://storage.googleapis.com/zenn-user-upload/353d890469ef-20230628.png"
+  width={1322}
+  height={981}
+  layout="constrained"
+  alt="Unleash"
+/>
 _Unleash_
 
 Unleash のリポジトリはこちら 👉[GitHub - Unleash](https://github.com/Unleash/unleash)
@@ -41,22 +49,46 @@ Unleash のセットアップについては、公式ドキュメンテーショ
 
 構築が完了すると、Unleash の画面が表示されます。
 
-![Unleash](https://storage.googleapis.com/zenn-user-upload/353d890469ef-20230628.png)
+<Image
+  src="https://storage.googleapis.com/zenn-user-upload/353d890469ef-20230628.png"
+  width={1322}
+  height={981}
+  layout="constrained"
+  alt="Unleash"
+/>
 _Unleash_
 
 フィーチャーフラグを作成してみましょう。`New feature toggle`をクリックし、名前には`new_feature`を入力します。
 
-![New feature toggle](https://storage.googleapis.com/zenn-user-upload/b06e11b8f38a-20230628.png)
+<Image
+  src="https://storage.googleapis.com/zenn-user-upload/b06e11b8f38a-20230628.png"
+  width={1400}
+  height={1094}
+  layout="constrained"
+  alt="New feature toggle"
+/>
 _New feature toggle_
 
 続いて、React から Unleash への接続に必要な API token を生成します。Unleash の画面上部から `Configure > API access` を選択します。
 
-![API access](https://storage.googleapis.com/zenn-user-upload/4fea3cd45d9c-20230628.png)
+<Image
+  src="https://storage.googleapis.com/zenn-user-upload/4fea3cd45d9c-20230628.png"
+  width={1400}
+  height={700}
+  layout="constrained"
+  alt="API access"
+/>
 _API access_
 
 `New API token` をクリックし、API token を作成します。
 
-![New API token](https://storage.googleapis.com/zenn-user-upload/1ac3a5595c02-20230628.png)
+<Image
+  src="https://storage.googleapis.com/zenn-user-upload/1ac3a5595c02-20230628.png"
+  width={1400}
+  height={1175}
+  layout="constrained"
+  alt="New API token"
+/>
 _New API token_
 
 今回、クライアントサイド(React)で Unleash を利用するため、`Client-side SDK` を選択して API token を生成します。もちろん、サーバーサイドから Unleash を利用することも可能です。
@@ -107,7 +139,13 @@ export default App;
 
 以下にフィーチャーフラグのデモを示します。都合上、`production`の environment を使用しています。以下の画像をクリックすると動画を閲覧できます。
 
-[![Feature flag demo](https://res.cloudinary.com/silverbirder/video/upload/c_scale,w_640/v1687921192/silver-birder.github.io/blog/feature-flag-demo.gif)](https://res.cloudinary.com/silverbirder/video/upload/v1687921192/silver-birder.github.io/blog/feature-flag-demo.gif)
+[<Image
+	src="https://res.cloudinary.com/silverbirder/video/upload/c_scale,w_640/v1687921192/silver-birder.github.io/blog/feature-flag-demo.gif"
+	width={640}
+	height={509}
+	layout="constrained"
+	alt="Feature flag demo"
+/>](https://res.cloudinary.com/silverbirder/video/upload/v1687921192/silver-birder.github.io/blog/feature-flag-demo.gif)
 
 以上が Unleash の基本的な使用方法です。
 
@@ -131,7 +169,13 @@ Activation Strategies は以下の 4 つがあります。
 
 以下の画像は、Gradual rollout の設定画面です。
 
-![Gradual rollout](https://storage.googleapis.com/zenn-user-upload/aa326c9fcba8-20230628.png)
+<Image
+  src="https://storage.googleapis.com/zenn-user-upload/aa326c9fcba8-20230628.png"
+  width={1400}
+  height={1024}
+  layout="constrained"
+  alt="Gradual rollout"
+/>
 _Gradual rollout_
 
 特に、Gradual Rollout ストラテジーは AB テストとしても利用可能です。
@@ -144,7 +188,13 @@ Unleash では、全てのフィーチャーフラグに Variant という機能
 
 例として、先ほど作成した new_feature のフィーチャーフラグに対して、以下の画像の通り、4 つの Variant を設定しました。それぞれの Variant は設定した `Weight` に基づいて選択されます。
 
-![Feature toggle variants](https://storage.googleapis.com/zenn-user-upload/d0869460f07b-20230628.png)
+<Image
+  src="https://storage.googleapis.com/zenn-user-upload/d0869460f07b-20230628.png"
+  width={1400}
+  height={1149}
+  layout="constrained"
+  alt="Feature toggle variants"
+/>
 _Feature toggle variants_
 
 以下に、new_feature の Variant を使用する例を示します。`variant.name` には、先ほど設定した Variant の name が入力されます。そのため、この`variant.name`を基に処理を分岐させることが可能です。
@@ -193,7 +243,13 @@ Unleash では、フィーチャーフラグに様々なタイプが設定でき
 
 Unleash では、Health と呼ばれる指標が表示されます。この値が低いと、技術的負債が蓄積されているということを示します。フィーチャーフラグを適切にアーカイブする運用を心掛けましょう。
 
-![Unleash health](https://storage.googleapis.com/zenn-user-upload/1a4ba5569cf8-20230628.png)
+<Image
+  src="https://storage.googleapis.com/zenn-user-upload/1a4ba5569cf8-20230628.png"
+  width={1400}
+  height={831}
+  layout="constrained"
+  alt="Unleash health"
+/>
 _Unleash health_
 
 ## Unleash 機能: その他

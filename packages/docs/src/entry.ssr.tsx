@@ -46,7 +46,7 @@ const generateBlogFrontMatter = async () => {
           data.head.meta.find((m) => m.name === "description")?.content || "",
         permalink: path
           .replace(/^\/src\/routes/, "")
-          .replace(/\/index.md$/, "/"),
+          .replace(/\/index.mdx$/, "/"),
         date: data.head.frontmatter.date,
         tags: data.head.frontmatter.tags,
         published: data.head.frontmatter.published,

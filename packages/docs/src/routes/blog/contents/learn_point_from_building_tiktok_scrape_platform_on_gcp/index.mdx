@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1630224935/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1630224935/silver-birder.github.io/blog/tiktok_scraper_doc2.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 TikTok へスクレイプするバッチを GCP 上で構築しました。
 GCP 構築のシステム設計話と、その構築時に、ハマったことを共有します。
 
@@ -40,13 +42,25 @@ https://www.npmjs.com/package/tiktok-scraper
 - 音楽
 
 <figure title="tiktok_scraper_doc1">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1630224934/silver-birder.github.io/blog/tiktok_scraper_doc1.png" alt="tiktok_scraper_doc1" />
-<figcaption>動画をダウンロード</figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1630224934/silver-birder.github.io/blog/tiktok_scraper_doc1.png"
+    width={1596}
+    height={886}
+    layout="constrained"
+    alt="tiktok_scraper_doc1"
+  />
+  <figcaption>動画をダウンロード</figcaption>
 </figure>
 
 <figure title="tiktok_scraper_doc2">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1630224935/silver-birder.github.io/blog/tiktok_scraper_doc2.png" alt="tiktok_scraper_doc2" />
-<figcaption>様々な切り口で、動画をダウンロード</figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1630224935/silver-birder.github.io/blog/tiktok_scraper_doc2.png"
+    width={1584}
+    height={896}
+    layout="constrained"
+    alt="tiktok_scraper_doc2"
+  />
+  <figcaption>様々な切り口で、動画をダウンロード</figcaption>
 </figure>
 
 加えて、メタ情報(フォロワー数やいいね数など)も手に入ります。
@@ -56,8 +70,14 @@ https://www.npmjs.com/package/tiktok-scraper
 リンクには、有効期限を示す文字が含まれており、一定の時間が経過すると `Access Denied` となります。
 
 <figure title="tiktok_scraper_doc3">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1630224935/silver-birder.github.io/blog/tiktok_scraper_doc3.png" alt="tiktok_scraper_doc3" />
-<figcaption>様々な切り口で、メタ情報をダウンロード</figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1630224935/silver-birder.github.io/blog/tiktok_scraper_doc3.png"
+    width={1594}
+    height={900}
+    layout="constrained"
+    alt="tiktok_scraper_doc3"
+  />
+  <figcaption>様々な切り口で、メタ情報をダウンロード</figcaption>
 </figure>
 
 手に入れられない情報は、**ログインが必要なもの**です。
@@ -73,8 +93,14 @@ https://www.npmjs.com/package/tiktok-scraper
 バッチで収集したデータを閲覧する Web アプリケーションも作ろうと考え、Netlify と React で動かすことにしました。
 
 <figure title="tiktok_scraper_web_app_sample">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1630404283/silver-birder.github.io/blog/tiktok_scraper_web_app_sample.png" alt="tiktok_scraper_web_app_sample" />
-<figcaption>Webアプリケーション UI</figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1630404283/silver-birder.github.io/blog/tiktok_scraper_web_app_sample.png"
+    width={816}
+    height={1730}
+    layout="constrained"
+    alt="tiktok_scraper_web_app_sample"
+  />
+  <figcaption>Webアプリケーション UI</figcaption>
 </figure>
 
 ## 目的
@@ -102,7 +128,13 @@ https://www.npmjs.com/package/tiktok-scraper
 
 実際に構築した GCP のシステム設計図が、次の画像のとおりです。
 
-![tiktok scrape platform overviews](https://res.cloudinary.com/silverbirder/image/upload/v1630160345/silver-birder.github.io/blog/tiktok_scrape_platform_overviews.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1630160345/silver-birder.github.io/blog/tiktok_scrape_platform_overviews.png"
+  width={722}
+  height={566}
+  layout="constrained"
+  alt="tiktok scrape platform overviews"
+/>
 
 GCP リソースの用途は、次のとおりです。
 

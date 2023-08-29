@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614431108/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614431108/silver-birder.github.io/blog/everything_I_ve_learned_about_Micro_Frontends.jpg
 ---
 
+import { Image } from "@unpic/qwik";
+
 Micro Frontends という Web フロントエンドアーキテクチャがあります。
 このアーキテクチャを知るために、書籍を読み、簡単なサンプル Web アプリを開発しました。
 そこから学んだことをすべて議事録として残したいと思います。
@@ -26,9 +28,21 @@ EC サイトのような Web アプリケーションでは、様々な専門知
 
 > それはマイクロサービスの考え方をフロントエンドに拡張したものです。
 
-![micro frontends monolith-frontback-microservices](https://micro-frontends-japanese.org/resources/monolith-frontback-microservices.png)
+<Image
+  src="https://micro-frontends-japanese.org/resources/monolith-frontback-microservices.png"
+  width={1278}
+  height={499}
+  layout="constrained"
+  alt="micro frontends monolith-frontback-microservices"
+/>
 
-![micro frontends verticals-headline](https://micro-frontends-japanese.org/resources/verticals-headline.png)
+<Image
+  src="https://micro-frontends-japanese.org/resources/verticals-headline.png"
+  width={920}
+  height={509}
+  layout="constrained"
+  alt="micro frontends verticals-headline"
+/>
 
 ※ [https://micro-frontends-japanese.org](https://micro-frontends-japanese.org)
 
@@ -43,7 +57,10 @@ https://www.manning.com/books/micro-frontends-in-action
 
 > Amazon does not talk a lot about its internal development structure. However, there are reports that <b>the teams who run its e-commerce site have been working like this </b>for a long time. ...
 
-> <b>Micro frontends are indeed quite popular in the e-commerce</b> sector. <b>In 2012</b> the Otto Group, a Germany based mail order company and one of the world’s largest e-commerce players started to split up its monolith. ...
+> <b>Micro frontends are indeed quite popular in the e-commerce</b> sector. <b>
+>   In 2012
+> </b> the Otto Group, a Germany based mail order company and one of the world’s
+> largest e-commerce players started to split up its monolith. ...
 
 > The Swedish furniture company <b>IKEA and Zalando</b>, one of Europes biggest fashion retailers, moved to this model. ...
 
@@ -121,7 +138,13 @@ apple, banana, orange という商品を検索するだけのサンプル Web �
 
 概要図はこちらです。
 
-![micro frontends sample overview](https://res.cloudinary.com/silverbirder/image/upload/v1588513402/micro-frontends-sample-code/micro_frontends_sample.jpg)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1588513402/micro-frontends-sample-code/micro_frontends_sample.jpg"
+  width={1381}
+  height={723}
+  layout="constrained"
+  alt="micro frontends sample overview"
+/>
 
 サンプルコードは、ここに置いています。
 https://github.com/silverbirder/micro-frontends-sample-code
@@ -290,8 +313,8 @@ https://mizchi.hatenablog.com/entry/2019/02/21/235403
 
 ## SSR + CSR (Hydration) が実現可能
 
-<b>サーバーサイド統合であっても、CSR は実現可能</b>です。
-ただし、Hydration には<b>パフォーマンス面に難有り</b>なため、このあたりは課題として残ります。
+<b>サーバーサイド統合であっても、CSR は実現可能</b>です。 ただし、Hydration には
+<b>パフォーマンス面に難有り</b>なため、このあたりは課題として残ります。
 また、CSR するための bundle した javascript の size には注意が必要です。
 
 例えば、次のリポジトリにある "shared_vendor_webpack_dll" のように、vendor ファイルを共有することで、
@@ -311,6 +334,7 @@ https://github.com/zalando/tailor
 
 今回では、React.js と Vue.js を使用しています。
 これを Riot.js や Svelte.js にも切り替えることも可能です。
+
 <b>フロントエンド界隈では、JS フレームワークの変化が激しい</b>ので、
 このメリットは大切だと思います。
 

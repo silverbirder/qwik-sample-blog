@@ -8,6 +8,8 @@ cover_image: https://www.aosabook.org/images/llvm/RetargetableCompiler.png
 socialMediaImage: https://www.aosabook.org/images/llvm/RetargetableCompiler.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 コンパイラ基盤である LLVM について、全く知識がない私が、
 javascript ソースコードをパースし LLVM でコンパイルできるようになりました。
 
@@ -113,8 +115,13 @@ LLVM は、任意のフロントエンド言語(コンパイラという文脈�
 また、非言語依存な中間言語(以下、IR)を中心として設計されています。
 
 <figure title="Retargetablity - The Architecture of Open Source Applications: LLVM">
-<img alt="Retargetablity - The Architecture of Open Source Applications: LLVM" src="https://www.aosabook.org/images/llvm/RetargetableCompiler.png" />
-<figcaption>Retargetablity - The Architecture of Open Source Applications: LLVM</figcaption>
+  <img
+    alt="Retargetablity - The Architecture of Open Source Applications: LLVM"
+    src="https://www.aosabook.org/images/llvm/RetargetableCompiler.png"
+  />
+  <figcaption>
+    Retargetablity - The Architecture of Open Source Applications: LLVM
+  </figcaption>
 </figure>
 
 ---
@@ -208,7 +215,13 @@ declare noundef i32 @printf(i8* nocapture noundef readonly, ...) local_unnamed_a
 
 IR を Module,Function,Block,Instruction で区切って見ると、次の画像のとおりです。
 
-![sample_llvm_code](https://res.cloudinary.com/silverbirder/image/upload/v1633770792/silver-birder.github.io/blog/sample_llvm_code.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1633770792/silver-birder.github.io/blog/sample_llvm_code.png"
+  width={2068}
+  height={1138}
+  layout="constrained"
+  alt="sample_llvm_code"
+/>
 
 それぞれ、どういうものか簡単に説明します。
 

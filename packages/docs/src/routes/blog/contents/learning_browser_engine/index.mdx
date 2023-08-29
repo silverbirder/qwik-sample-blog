@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1621950014/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1621950014/silver-birder.github.io/blog/remotar-jobs-s5kTY-Ve1c0-unsplash.jpg
 ---
 
+import { Image } from "@unpic/qwik";
+
 Web フロントエンジニアたるもの、**ブラウザの仕組みに興味を持つのは自然の摂理**です。本記事では、私がブラウザの仕組みを学んでいく過程を備忘録として残します。
 
 # みんな大好き Chrome
@@ -43,8 +45,20 @@ Chrome は、Chromium を元に開発されています。
 これです。
 
 <figure title="chromium/src">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1622126149/silver-birder.github.io/blog/chromium_src.png" alt="chromium/src" />
-<figcaption><span><a href="https://source.chromium.org/chromium/chromium/src">chromium/src - source.chromium.org</a></span></figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1622126149/silver-birder.github.io/blog/chromium_src.png"
+    width={2870}
+    height={1524}
+    layout="constrained"
+    alt="chromium/src"
+  />
+  <figcaption>
+    <span>
+      <a href="https://source.chromium.org/chromium/chromium/src">
+        chromium/src - source.chromium.org
+      </a>
+    </span>
+  </figcaption>
 </figure>
 
 [Chromium - Wiki](<https://en.wikipedia.org/wiki/Chromium_(web_browser)>)によれば、Chromium のソースコードは約 3,500 万行あるそうです。
@@ -65,8 +79,20 @@ Chrome は、Chromium を元に開発されています。
 最初に目につくのが、ブラウザの主な構成要素です。
 
 <figure title="ブラウザの主な構成要素">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1656253204/silver-birder.github.io/blog/%E3%83%95%E3%82%99%E3%83%A9%E3%82%A6%E3%82%B5%E3%82%99%E3%81%AE%E6%A7%8B%E6%88%90%E8%A6%81%E7%B4%A0.png" alt="ブラウザの主な構成要素" />
-<figcaption><span><a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">ブラウザの主な構成要素 - www.html5rocks.com</a></span></figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1656253204/silver-birder.github.io/blog/%E3%83%95%E3%82%99%E3%83%A9%E3%82%A6%E3%82%B5%E3%82%99%E3%81%AE%E6%A7%8B%E6%88%90%E8%A6%81%E7%B4%A0.png"
+    width={500}
+    height={339}
+    layout="constrained"
+    alt="ブラウザの主な構成要素"
+  />
+  <figcaption>
+    <span>
+      <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
+        ブラウザの主な構成要素 - www.html5rocks.com
+      </a>
+    </span>
+  </figcaption>
 </figure>
 
 構成要素の内、ユーザーインターフェース、ブラウザエンジン、レンダリングエンジンに着目します。
@@ -87,13 +113,37 @@ Chrome は、Chromium を元に開発されています。
 ブラウザの基本的なフローは、次の図の通りです。
 
 <figure title="レンダリングの基本的なフロー">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1656253204/silver-birder.github.io/blog/%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%99%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%99%E3%82%A8%E3%83%B3%E3%82%B7%E3%82%99%E3%83%B3%E5%9F%BA%E6%9C%AC%E3%83%95%E3%83%AD%E3%83%BC.png" alt="レンダリングの基本的なフロー" />
-<figcaption><span><a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">レンダリングの基本的なフロー - www.html5rocks.com</a></span></figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1656253204/silver-birder.github.io/blog/%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%99%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%99%E3%82%A8%E3%83%B3%E3%82%B7%E3%82%99%E3%83%B3%E5%9F%BA%E6%9C%AC%E3%83%95%E3%83%AD%E3%83%BC.png"
+    width={600}
+    height={66}
+    layout="constrained"
+    alt="レンダリングの基本的なフロー"
+  />
+  <figcaption>
+    <span>
+      <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
+        レンダリングの基本的なフロー - www.html5rocks.com
+      </a>
+    </span>
+  </figcaption>
 </figure>
 
 <figure title="Webkitのメインフロー">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1656253203/silver-birder.github.io/blog/Webkit%E3%81%AE%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AD%E3%83%BC.png" alt="Webkitのメインフロー" />
-<figcaption><span><a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">Webkitのメインフロー - www.html5rocks.com</a></span></figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1656253203/silver-birder.github.io/blog/Webkit%E3%81%AE%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AD%E3%83%BC.png"
+    width={624}
+    height={289}
+    layout="constrained"
+    alt="Webkitのメインフロー"
+  />
+  <figcaption>
+    <span>
+      <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
+        Webkitのメインフロー - www.html5rocks.com
+      </a>
+    </span>
+  </figcaption>
 </figure>
 
 1. Parsing HTML to construct the DOM tree
@@ -126,16 +176,40 @@ DOM は、これまでの単なるテキストから、API を持たせたオブ
 以降は DOM を使って処理しやすくなります。
 
 <figure title="サンプル マークアップのDOMツリー">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1656253203/silver-birder.github.io/blog/%E3%82%B5%E3%83%B3%E3%83%95%E3%82%9A%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%AF%E3%82%A2%E3%83%83%E3%83%95%E3%82%9A%E3%81%AEDOM%E3%83%84%E3%83%AA%E3%83%BC.png" alt="サンプル マークアップのDOMツリー" />
-<figcaption><span><a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">サンプル マークアップのDOMツリー - www.html5rocks.com</a></span></figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1656253203/silver-birder.github.io/blog/%E3%82%B5%E3%83%B3%E3%83%95%E3%82%9A%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%AF%E3%82%A2%E3%83%83%E3%83%95%E3%82%9A%E3%81%AEDOM%E3%83%84%E3%83%AA%E3%83%BC.png"
+    width={400}
+    height={219}
+    layout="constrained"
+    alt="サンプル マークアップのDOMツリー"
+  />
+  <figcaption>
+    <span>
+      <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
+        サンプル マークアップのDOMツリー - www.html5rocks.com
+      </a>
+    </span>
+  </figcaption>
 </figure>
 
 これまでは HTML の話をしていましたが、HTML と並行して CSS も同様に処理していきレンダーオブジェクトというオブジェクトを作っていきます。これは、スタイル情報を付与したオブジェクトになります。
 基本的に、CSS と HTML は互いに独立しているので、並列処理が可能です。例えば、CSS を処理したことで、HTML が変化することはないはずです。
 
 <figure title="CSSの解析">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1656253203/silver-birder.github.io/blog/CSS%E3%81%AE%E8%A7%A3%E6%9E%90.png" alt="CSSの解析" />
-<figcaption><span><a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">CSSの解析 - www.html5rocks.com</a></span></figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1656253203/silver-birder.github.io/blog/CSS%E3%81%AE%E8%A7%A3%E6%9E%90.png"
+    width={500}
+    height={393}
+    layout="constrained"
+    alt="CSSの解析"
+  />
+  <figcaption>
+    <span>
+      <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
+        CSSの解析 - www.html5rocks.com
+      </a>
+    </span>
+  </figcaption>
 </figure>
 
 ただ、Javascript は話が違うので、Javascript が読み込まれた時点で HTML のパースを中断して Javascript のパースが開始されます。
@@ -150,8 +224,20 @@ DOM とレンダーオブジェクトは、1 対 1 という訳ではなく、�
 レンダーツリーの更新は、DOM ツリーが更新される度に行われます。
 
 <figure title="レンダーツリーと対応するDOMツリー">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1656253203/silver-birder.github.io/blog/%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%99%E3%83%BC%E3%83%84%E3%83%AA%E3%83%BC%E3%81%A8%E5%AF%BE%E5%BF%9C%E3%81%99%E3%82%8BDOM%E3%83%84%E3%83%AA%E3%83%BC.png" alt="レンダーツリーと対応するDOMツリー" />
-<figcaption><span><a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">レンダーツリーと対応するDOMツリー - www.html5rocks.com</a></span></figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1656253203/silver-birder.github.io/blog/%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%99%E3%83%BC%E3%83%84%E3%83%AA%E3%83%BC%E3%81%A8%E5%AF%BE%E5%BF%9C%E3%81%99%E3%82%8BDOM%E3%83%84%E3%83%AA%E3%83%BC.png"
+    width={731}
+    height={396}
+    layout="constrained"
+    alt="レンダーツリーと対応するDOMツリー"
+  />
+  <figcaption>
+    <span>
+      <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
+        レンダーツリーと対応するDOMツリー - www.html5rocks.com
+      </a>
+    </span>
+  </figcaption>
 </figure>
 
 レンダーオブジェクトからスタイルを計算するのですが、ちょっと複雑です。
@@ -177,8 +263,17 @@ DOM とレンダーオブジェクトは、1 対 1 という訳ではなく、�
 CSS ボックスモデルの図を参考までに共有しておきます。
 
 <figure title="CSS 基本ボックスモデル">
-<img src="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model/boxmodel-(3).png" alt="CSS 基本ボックスモデル" />
-<figcaption><span><a href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">CSS 基本ボックスモデル - developer.mozilla.org</a></span></figcaption>
+  <img
+    src="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model/boxmodel-(3).png"
+    alt="CSS 基本ボックスモデル"
+  />
+  <figcaption>
+    <span>
+      <a href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">
+        CSS 基本ボックスモデル - developer.mozilla.org
+      </a>
+    </span>
+  </figcaption>
 </figure>
 
 ---
@@ -204,8 +299,20 @@ CSS ボックスモデルの図を参考までに共有しておきます。
 配置方法が分かれば、今度は描画する形について考えます。ブロックボックスとインラインボックスです。
 
 <figure title="ブロックとインラインの配列">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1656253203/silver-birder.github.io/blog/%E3%83%95%E3%82%99%E3%83%AD%E3%83%83%E3%82%AF%E3%81%A8%E3%82%A4%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%AE%E9%85%8D%E5%88%97.png" alt="ブロックとインラインの配列" />
-<figcaption><span><a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">ブロックとインラインの配列 - www.html5rocks.com</a></span></figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1656253203/silver-birder.github.io/blog/%E3%83%95%E3%82%99%E3%83%AD%E3%83%83%E3%82%AF%E3%81%A8%E3%82%A4%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%AE%E9%85%8D%E5%88%97.png"
+    width={350}
+    height={324}
+    layout="constrained"
+    alt="ブロックとインラインの配列"
+  />
+  <figcaption>
+    <span>
+      <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
+        ブロックとインラインの配列 - www.html5rocks.com
+      </a>
+    </span>
+  </figcaption>
 </figure>
 
 ブロックボックスは、短形の形であり垂直に並びます。
@@ -232,8 +339,20 @@ Rust 製の Servo というブラウザエンジンを開発している人が�
 Toy ブラウザエンジン(mbrubeck)のメインフローが、これまでの話ととても似ています。
 
 <figure title="Toyブラウザエンジン(mbrubeck)のメインフロー">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1622034177/silver-birder.github.io/blog/mbrubeck_toy-layout-engine-7-painting.png" alt="Toyブラウザエンジン(mbrubeck)のメインフロー" />
-<figcaption><span><a href="https://limpet.net/mbrubeck/2014/11/05/toy-layout-engine-7-painting.html">Toyブラウザエンジン(mbrubeck)のメインフロー - limpet.net</a></span></figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1622034177/silver-birder.github.io/blog/mbrubeck_toy-layout-engine-7-painting.png"
+    width={2844}
+    height={738}
+    layout="constrained"
+    alt="Toyブラウザエンジン(mbrubeck)のメインフロー"
+  />
+  <figcaption>
+    <span>
+      <a href="https://limpet.net/mbrubeck/2014/11/05/toy-layout-engine-7-painting.html">
+        Toyブラウザエンジン(mbrubeck)のメインフロー - limpet.net
+      </a>
+    </span>
+  </figcaption>
 </figure>
 
 Style tree は、これまでの話でいうと Render tree だと思います。
@@ -300,8 +419,21 @@ span#name {
 ```
 
 <figure title="Toyブラウザエンジン(mbrubeck)のアウトプット">
-<img src="https://res.cloudinary.com/silverbirder/image/upload/v1622034247/silver-birder.github.io/blog/mbrubeck_robinson_output.png" alt="Toyブラウザエンジン(mbrubeck)のアウトプット" />
-<figcaption><span><a href="https://github.com/mbrubeck/robinson">Toyブラウザエンジン(mbrubeck)のアウトプット - github.com/mbrubeck/robinson</a></span></figcaption>
+  <Image
+    src="https://res.cloudinary.com/silverbirder/image/upload/v1622034247/silver-birder.github.io/blog/mbrubeck_robinson_output.png"
+    width={800}
+    height={600}
+    layout="constrained"
+    alt="Toyブラウザエンジン(mbrubeck)のアウトプット"
+  />
+  <figcaption>
+    <span>
+      <a href="https://github.com/mbrubeck/robinson">
+        Toyブラウザエンジン(mbrubeck)のアウトプット -
+        github.com/mbrubeck/robinson
+      </a>
+    </span>
+  </figcaption>
 </figure>
 
 次のリンクにある自作ブラウザエンジンは、[mbrubeck/robinson](https://github.com/mbrubeck/robinson)を参考にして作られたものだそうです。
@@ -438,8 +570,21 @@ li {
 ```
 
 <figure title="Toyブラウザエンジン(askerry)のアウトプット">
-<img src="https://github.com/askerry/toy-browser/raw/master/examples/demo.png" alt="Toyブラウザエンジン(askerry)のアウトプット" />
-<figcaption><span><a href="https://github.com/askerry/toy-browser">Toyブラウザエンジン(askerry)のアウトプット - github.com/askerry/toy-browser</a></span></figcaption>
+  <Image
+    src="https://github.com/askerry/toy-browser/raw/master/examples/demo.png"
+    width={981}
+    height={652}
+    layout="constrained"
+    alt="Toyブラウザエンジン(askerry)のアウトプット"
+  />
+  <figcaption>
+    <span>
+      <a href="https://github.com/askerry/toy-browser">
+        Toyブラウザエンジン(askerry)のアウトプット -
+        github.com/askerry/toy-browser
+      </a>
+    </span>
+  </figcaption>
 </figure>
 
 私としては、こちらの方が興味があるので、まずこちらを知り、それを Rust 版で作り直したいなと思います。

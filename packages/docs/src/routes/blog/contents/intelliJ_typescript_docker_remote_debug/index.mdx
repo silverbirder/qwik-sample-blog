@@ -8,22 +8,48 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614345272/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614345272/silver-birder.github.io/blog/ts-node-dev.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 # TL;DR
 
 1. Docker コンテナ上で、 `ts-node-dev --inspect=0.0.0.0:9229 ./dist/index.js` を実行
 
-![ts-node-dev](https://res.cloudinary.com/silverbirder/image/upload/v1614345272/silver-birder.github.io/blog/ts-node-dev.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614345272/silver-birder.github.io/blog/ts-node-dev.png"
+  width={2790}
+  height={682}
+  layout="constrained"
+  alt="ts-node-dev"
+/>
 
 2. IntelliJ 上で、`Attach to Node.js/Chrome` を実行
 
 `Run > Edit Configuration ... > +ボタン > Attach to Node.js/Chrome`
 
-![Attach to Node.js/Chrome](https://res.cloudinary.com/silverbirder/image/upload/v1614345318/silver-birder.github.io/blog/Attach_to_Node_js_Chrome.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614345318/silver-birder.github.io/blog/Attach_to_Node_js_Chrome.png"
+  width={2136}
+  height={1342}
+  layout="constrained"
+  alt="Attach to Node.js/Chrome"
+/>
 
 3. IntelliJ 上で BreakPoint を貼り、ブラウザにアクセス
 
-![IntelliJ Breakpoint](https://res.cloudinary.com/silverbirder/image/upload/v1614345359/silver-birder.github.io/blog/IntelliJ_Breakpoint.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614345359/silver-birder.github.io/blog/IntelliJ_Breakpoint.png"
+  width={2876}
+  height={1758}
+  layout="constrained"
+  alt="IntelliJ Breakpoint"
+/>
 
 ※ Docker コンテナでは、アプリ用ポート(8080)と、inspect 用ポート(9229)を開放する必要あり
 
-![8080と9229portの開放](https://res.cloudinary.com/silverbirder/image/upload/v1614345390/silver-birder.github.io/blog/8080%E3%81%A89229port%E3%81%AE%E9%96%8B%E6%94%BE.png)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614345390/silver-birder.github.io/blog/8080%E3%81%A89229port%E3%81%AE%E9%96%8B%E6%94%BE.png"
+  width={2792}
+  height={702}
+  layout="constrained"
+  alt="8080と9229portの開放"
+/>

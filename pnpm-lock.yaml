@@ -125,9 +125,15 @@ importers:
 
   packages/migrate:
     devDependencies:
+      axios:
+        specifier: ^1.5.0
+        version: 1.5.0
       cloudinary:
         specifier: ^1.40.0
         version: 1.40.0
+      sharp:
+        specifier: ^0.32.5
+        version: 0.32.5
 
 packages:
 
@@ -6197,6 +6203,16 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
+  /axios@1.5.0:
+    resolution: {integrity: sha512-D4DdjDo5CY50Qms0qGQTTw6Q44jl7zRwY7bthds06pUGfChBCTcQs+N743eFWGEd6pRTMd6A+I87aWyFV5wiZQ==}
+    dependencies:
+      follow-redirects: 1.15.2
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
   /b4a@1.6.4:
     resolution: {integrity: sha512-fpWrvyVHEKyeEvbKZTVOeZF3VSKKWtJxFIxX/jaVPf+cLbGUSitjb49pHLqPV2BUNNZ0LcoeEGfE/YCpyDYHIw==}
     dev: true
@@ -8215,6 +8231,16 @@ packages:
       tabbable: 6.2.0
     dev: true
 
+  /follow-redirects@1.15.2:
+    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: true
+
   /for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
     dependencies:
@@ -8231,6 +8257,15 @@ packages:
 
   /form-data@3.0.1:
     resolution: {integrity: sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==}
+    engines: {node: '>= 6'}
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
+    dev: true
+
+  /form-data@4.0.0:
+    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
     engines: {node: '>= 6'}
     dependencies:
       asynckit: 0.4.0
@@ -8888,7 +8923,7 @@ packages:
     resolution: {integrity: sha512-sNRVfUwkUcsVWNn5inTHDXWzpPRWPWbSgGkuQmlsFCWXAR2+K5R5vG5tC3Qs4LeJaMugKB8hGVm6rvZjFHQrUw==}
     engines: {node: '>=12.0.0'}
     dependencies:
-      sharp: 0.32.4
+      sharp: 0.32.5
     dev: true
 
   /import-fresh@3.3.0:
@@ -12291,8 +12326,8 @@ packages:
       kind-of: 6.0.3
     dev: true
 
-  /sharp@0.32.4:
-    resolution: {integrity: sha512-exUnZewqVZC6UXqXuQ8fyJJv0M968feBi04jb9GcUHrWtkRoAKnbJt8IfwT4NJs7FskArbJ14JAFGVuooszoGg==}
+  /sharp@0.32.5:
+    resolution: {integrity: sha512-0dap3iysgDkNaPOaOL4X/0akdu0ma62GcdC2NBQ+93eqpePdDdr2/LM0sFdDSMmN7yS+odyZtPsb7tx/cYBKnQ==}
     engines: {node: '>=14.15.0'}
     requiresBuild: true
     dependencies:
