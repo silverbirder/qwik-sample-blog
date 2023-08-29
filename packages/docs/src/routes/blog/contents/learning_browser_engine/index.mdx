@@ -55,7 +55,7 @@ Chrome は、Chromium を元に開発されています。
   <figcaption>
     <span>
       <a href="https://source.chromium.org/chromium/chromium/src">
-        chromium/src - source.chromium.org
+        chromium/src
       </a>
     </span>
   </figcaption>
@@ -89,7 +89,7 @@ Chrome は、Chromium を元に開発されています。
   <figcaption>
     <span>
       <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
-        ブラウザの主な構成要素 - www.html5rocks.com
+        ブラウザの主な構成要素
       </a>
     </span>
   </figcaption>
@@ -123,7 +123,7 @@ Chrome は、Chromium を元に開発されています。
   <figcaption>
     <span>
       <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
-        レンダリングの基本的なフロー - www.html5rocks.com
+        レンダリングの基本的なフロー
       </a>
     </span>
   </figcaption>
@@ -140,7 +140,7 @@ Chrome は、Chromium を元に開発されています。
   <figcaption>
     <span>
       <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
-        Webkitのメインフロー - www.html5rocks.com
+        Webkitのメインフロー
       </a>
     </span>
   </figcaption>
@@ -186,7 +186,7 @@ DOM は、これまでの単なるテキストから、API を持たせたオブ
   <figcaption>
     <span>
       <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
-        サンプル マークアップのDOMツリー - www.html5rocks.com
+        サンプル マークアップのDOMツリー
       </a>
     </span>
   </figcaption>
@@ -206,7 +206,7 @@ DOM は、これまでの単なるテキストから、API を持たせたオブ
   <figcaption>
     <span>
       <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
-        CSSの解析 - www.html5rocks.com
+        CSSの解析
       </a>
     </span>
   </figcaption>
@@ -234,7 +234,7 @@ DOM とレンダーオブジェクトは、1 対 1 という訳ではなく、�
   <figcaption>
     <span>
       <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
-        レンダーツリーと対応するDOMツリー - www.html5rocks.com
+        レンダーツリーと対応するDOMツリー
       </a>
     </span>
   </figcaption>
@@ -263,14 +263,17 @@ DOM とレンダーオブジェクトは、1 対 1 という訳ではなく、�
 CSS ボックスモデルの図を参考までに共有しておきます。
 
 <figure title="CSS 基本ボックスモデル">
-  <img
-    src="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model/boxmodel-(3).png"
+  <Image
+    src="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_box_model/Introduction_to_the_CSS_box_model/boxmodel.png"
+    width={548}
+    height={386}
+    layout="constrained"
     alt="CSS 基本ボックスモデル"
   />
   <figcaption>
     <span>
       <a href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">
-        CSS 基本ボックスモデル - developer.mozilla.org
+        CSS 基本ボックスモデル
       </a>
     </span>
   </figcaption>
@@ -309,7 +312,7 @@ CSS ボックスモデルの図を参考までに共有しておきます。
   <figcaption>
     <span>
       <a href="https://www.html5rocks.com/ja/tutorials/internals/howbrowserswork/">
-        ブロックとインラインの配列 - www.html5rocks.com
+        ブロックとインラインの配列
       </a>
     </span>
   </figcaption>
@@ -349,7 +352,7 @@ Toy ブラウザエンジン(mbrubeck)のメインフローが、これまでの
   <figcaption>
     <span>
       <a href="https://limpet.net/mbrubeck/2014/11/05/toy-layout-engine-7-painting.html">
-        Toyブラウザエンジン(mbrubeck)のメインフロー - limpet.net
+        Toyブラウザエンジン(mbrubeck)のメインフロー
       </a>
     </span>
   </figcaption>
@@ -371,7 +374,6 @@ Toy ブラウザエンジン(mbrubeck)に、次の HTML と CSS を読み込ま�
 ```
 
 ```css
-/* https://github.com/mbrubeck/robinson/blob/master/examples/test.css */
 * {
   display: block;
 }
@@ -464,13 +466,13 @@ Toy ブラウザエンジン(askerry)に、次の HTML と CSS を読み込ま�
           <a href="#" class="navitem"> About </a>
           <a href="#" class="navitem"> Some random stuff </a>
           <a href="#" class="navitem"> Conclusion </a>
-          <img class="img" src="images/otters.jpg"/ />
+          <img class="img" src="images/otters.jpg" />
         </div>
         <div id="content">
           <h2>What is this?</h2>
           This is a <b>toy</b> browser engine, implemented for
-          <span>fun </span> <img class="icon" src="images/fun.png"/ /> and
-          <span>glory <img class="icon" src="images/glory.png"/ /></span>.
+          <span>fun </span> <img class="icon" src="images/fun.png" /> and
+          <span>glory <img class="icon" src="images/glory.png" /></span>.
           <h2>Why would anyone do this?</h2>
           This seems pretty pointless! But I had a few goals:
           <ul>
