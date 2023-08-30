@@ -5,7 +5,7 @@ const url = require("url");
 const crypto = require("crypto");
 require("dotenv").config();
 
-const filePath = "../docs/src/routes/resume/index.json";
+const filePath = "../docs/src/routes/misc/book/index.json";
 const dryRun = false;
 let processLimit = 50;
 
@@ -25,8 +25,8 @@ const processJson = async () => {
   const updatedItems = json.items;
 
   for (let item of updatedItems) {
-    if (item.image && processLimit > 0 && !item.width && !item.height) {
-      const imageUrl = item.image;
+    if (item.cover && processLimit > 0 && !item.width && !item.height) {
+      const imageUrl = item.cover;
       if (dryRun) {
         console.log(`Image URL: ${imageUrl}`);
       } else {
