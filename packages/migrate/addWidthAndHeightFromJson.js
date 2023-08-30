@@ -7,7 +7,7 @@ require("dotenv").config();
 
 const filePath = "../docs/src/routes/resume/index.json";
 const dryRun = false;
-let processLimit = 1;
+let processLimit = 50;
 
 const downloadImage = async (imgUrl) => {
   const response = await axios.get(imgUrl, { responseType: "arraybuffer" });
@@ -25,7 +25,7 @@ const processJson = async () => {
   const updatedItems = json.items;
 
   for (let item of updatedItems) {
-    if (item.image && processLimit > 0) {
+    if (item.image && processLimit > 0 && !item.width && !item.height) {
       const imageUrl = item.image;
       if (dryRun) {
         console.log(`Image URL: ${imageUrl}`);
@@ -36,6 +36,9 @@ const processJson = async () => {
 
           item.width = metadata.width;
           item.height = metadata.height;
+          console.log(
+            `Image URL: ${imageUrl} - Width: ${item.width} - Height: ${item.height}`
+          );
         } catch (error) {
           console.error(
             `Failed to process image from URL ${imageUrl} due to error:`,

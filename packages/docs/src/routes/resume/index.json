@@ -8,9 +8,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377340/silver-birder.github.io/resume/ampproject-ar21.svg",
       "results": "ブログサイトにAMP(@ampproject/toolbox-optimizer)を利用.",
       "actual_years": "1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["HTML", "Framework", "Google"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "HTML",
+        "Framework",
+        "Google"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Akamai",
@@ -20,9 +28,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377382/silver-birder.github.io/resume/akamai-ar21.svg",
       "results": "",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["CDN"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "CDN"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Algolia",
@@ -32,9 +46,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377409/silver-birder.github.io/resume/algolia-ar21.svg",
       "results": "クライアントライブラリを使ってAutocompleteの機能を利用. OSSGateではじめてコントリビュートした.",
       "actual_years": "1.5",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Real Time Search", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Real Time Search",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Amazon Web Services",
@@ -44,9 +65,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377411/silver-birder.github.io/resume/amazon_aws-ar21.svg",
       "results": "初めて経験したクラウドサービスで, EC2やS3, Lambdaを利用.",
       "actual_years": "2",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Cloud Vendor"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Cloud Vendor"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Angular",
@@ -56,9 +84,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377413/silver-birder.github.io/resume/angular-ar21.svg",
       "results": "チュートリアルを試したり, RxJSを学習.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Frontend", "Framework", "Javascript"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Frontend",
+        "Framework",
+        "Javascript"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Ansible",
@@ -68,9 +104,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377415/silver-birder.github.io/resume/ansible-ar21.svg",
       "results": "GCEインスタンス向けのPlaybookをゼロベースで構築.　Ansbileのベストプラクティスに従った構成を意識した.",
       "actual_years": "1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Configuration Management", "Python"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Configuration Management",
+        "Python"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Apache Airflow",
@@ -82,8 +125,13 @@
       "width": "375",
       "height": "144",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Workflow Engine", "Python"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Workflow Engine",
+        "Python"
+      ],
       "icon": ""
     },
     {
@@ -94,7 +142,9 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377438/silver-birder.github.io/resume/apache_beam-ar21.svg",
       "results": "GCPのDataflowをKotlinで利用. 並列化やサイドインプット, ウィンドニング, テストパイプラインなどを経験.",
       "actual_years": "1.5",
-      "usage_scenarios": ["Company"],
+      "usage_scenarios": [
+        "Company"
+      ],
       "tech_types": [
         "Apache",
         "Batch",
@@ -102,7 +152,9 @@
         "ETL",
         "Programming Model"
       ],
-      "icon": ""
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Apache HTTP Server",
@@ -112,9 +164,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377440/silver-birder.github.io/resume/apache-ar21.svg",
       "results": "LAMP構成で利用. Nginxへ切り替えた.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Web Server", "Apache"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Web Server",
+        "Apache"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Apache Solr",
@@ -124,9 +183,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377442/silver-birder.github.io/resume/apache_solr-ar21.svg",
       "results": "",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Apache", "Full Text Search", "Java"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Apache",
+        "Full Text Search",
+        "Java"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Ara Framework",
@@ -138,8 +205,14 @@
       "width": "375",
       "height": "375",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Framework", "Server Side", "Micro Frontends"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Framework",
+        "Server Side",
+        "Micro Frontends"
+      ],
       "icon": ""
     },
     {
@@ -152,8 +225,13 @@
       "width": "375",
       "height": "64",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Testing", "Architecture"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Testing",
+        "Architecture"
+      ],
       "icon": ""
     },
     {
@@ -164,9 +242,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377458/silver-birder.github.io/resume/argoprojio-ar21.svg",
       "results": "スケーラブルなバッチが欲しかったので, Argo Workflowsを使ってみた. まだ入門中.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Workflow Engine", "Kubernetes"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Workflow Engine",
+        "Kubernetes"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Atlassian Bitbucket",
@@ -176,9 +261,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377460/silver-birder.github.io/resume/bitbucket-ar21.svg",
       "results": "Atlassian社の製品と連携して利用.",
       "actual_years": "3",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Git Management", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Git Management",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Atlassian Confluence",
@@ -188,9 +280,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377525/silver-birder.github.io/resume/confluence.svg",
       "results": "Atlassian社の製品と連携して利用.",
       "actual_years": "3",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["SaaS", "Wiki"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "SaaS",
+        "Wiki"
+      ],
+      "icon": "",
+      "width": 2500,
+      "height": 379
     },
     {
       "name": "Atlassian JIRA",
@@ -200,9 +299,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377463/silver-birder.github.io/resume/atlassian_jira-ar21.svg",
       "results": "Atlassian社の製品と連携して利用.",
       "actual_years": "3",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Issue & Project Tracking", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Issue & Project Tracking",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Atom",
@@ -212,9 +318,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377465/silver-birder.github.io/resume/atom_io-ar21.svg",
       "results": "開発エディタとして利用. Brackets→Atom→VSCodeの順で乗り換えた.",
       "actual_years": "1",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Source Code Editor"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Source Code Editor"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Auth0",
@@ -224,9 +337,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377527/silver-birder.github.io/resume/auth0-ar21.svg",
       "results": "プライベートで手軽に認証できるサービスが欲しかったので, 利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Authentication", "Authorization", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Authentication",
+        "Authorization",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Babel",
@@ -236,9 +357,18 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377529/silver-birder.github.io/resume/babeljs-ar21.svg",
       "results": "ReactやTypescriptなどを使う際に, トランスパイルとして利用. これ単体を利用した事はない.",
       "actual_years": "1.5",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Frontend", "Compiler", "Transpiler"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Frontend",
+        "Compiler",
+        "Transpiler"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "BackstopJS",
@@ -250,8 +380,13 @@
       "width": "375",
       "height": "302",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Testing", "Visual Regression"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Testing",
+        "Visual Regression"
+      ],
       "icon": ""
     },
     {
@@ -262,9 +397,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377533/silver-birder.github.io/resume/gnu_bash-ar21.svg",
       "results": "ちょっとした自動化で使い捨てスクリプトを書く. 規模が大きくなったら高級言語で書き換える.",
       "actual_years": "6",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Shell"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Shell"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Bit.dev",
@@ -274,9 +416,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377538/silver-birder.github.io/resume/bit.svg",
       "results": "Micro Frontendsの検証として, 試用. 複数人開発で便利そう.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Framework", "Build Time", "Micro Frontends"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Framework",
+        "Build Time",
+        "Micro Frontends"
+      ],
+      "icon": "",
+      "width": 24,
+      "height": 24
     },
     {
       "name": "Bootstrap",
@@ -286,9 +436,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377540/silver-birder.github.io/resume/getbootstrap-ar21.svg",
       "results": "WebアプリのCSSデザインを手軽に使いたいときに利用. Gridのレスポンスデザインを学ぶ.",
       "actual_years": "1.5",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["CSS", "Framework"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "CSS",
+        "Framework"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Brackets",
@@ -298,9 +455,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377542/silver-birder.github.io/resume/bracketsio-ar21.svg",
       "results": "開発エディタとして利用. Brackets→Atom→VSCodeの順で乗り換えた.",
       "actual_years": "1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Source Code Editor"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Source Code Editor"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Browser Stack",
@@ -310,9 +473,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377544/silver-birder.github.io/resume/browserstack-ar21.svg",
       "results": "",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Mobile Testing Platform", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Mobile Testing Platform",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Buildpacks",
@@ -322,9 +492,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377546/silver-birder.github.io/resume/buildpacksio-ar21.svg",
       "results": "Node.jsをBuildpacksでコンテナ化した経験あり.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Application Image Builder", "Heroku", "Cloud Native"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Application Image Builder",
+        "Heroku",
+        "Cloud Native"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "C",
@@ -334,8 +512,12 @@
       "image": "",
       "results": "大学の授業で勉強した. はじめて触ったコンパイラ言語.",
       "actual_years": "2",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Programming Language"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
       "icon": "devicon-c-plain colored"
     },
     {
@@ -346,9 +528,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377552/silver-birder.github.io/resume/w3_css-ar21.svg",
       "results": "",
       "actual_years": "9",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Style Sheets"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Style Sheets"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "CakePHP",
@@ -358,9 +547,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377608/silver-birder.github.io/resume/cakephp.svg",
       "results": "MVCを学んだはじめてのフレームワーク. ファットレイヤーの課題を知る.",
       "actual_years": "2",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Web", "Framework", "PHP"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Web",
+        "Framework",
+        "PHP"
+      ],
+      "icon": "",
+      "width": 2500,
+      "height": 2490
     },
     {
       "name": "ChatGPT",
@@ -370,8 +567,13 @@
       "image": "",
       "results": "壁打ち相手に利用. 業務効率化に貢献.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["AI"],
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "AI"
+      ],
       "icon": ""
     },
     {
@@ -382,9 +584,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377554/silver-birder.github.io/resume/google_chrome-ar21.svg",
       "results": "ManifestV3で, 個人利用向けのツールを作った.",
       "actual_years": "2",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Chrome", "Browser"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Chrome",
+        "Browser"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "CircleCI",
@@ -394,9 +603,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377556/silver-birder.github.io/resume/circleci-ar21.svg",
       "results": "プライベートでCIが欲しかったので, 利用. スケジュール実行ができて良い.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["SaaS", "CI"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "SaaS",
+        "CI"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "CloudEvents",
@@ -406,9 +622,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377558/silver-birder.github.io/resume/cloudeventsio-ar21.svg",
       "results": "GCPのEventarcを利用. 詳しくは知らない.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Event Data Specification", "Cloud Native"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Event Data Specification",
+        "Cloud Native"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Cloudflare",
@@ -418,9 +641,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377610/silver-birder.github.io/resume/cloudflare-ar21.svg",
       "results": "Edge Workerとして利用. Edge上でJavascriptを実行できる魅力を知る.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["CDN"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "CDN"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Cloudinary",
@@ -430,9 +659,18 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377613/silver-birder.github.io/resume/cloudinary.svg",
       "results": "画像管理のSaaSを使いたかったので, 利用. 画像を動的に編集できる機能が良い.",
       "actual_years": "1.5",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["SaaS", "Image", "Video", "Management"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "SaaS",
+        "Image",
+        "Video",
+        "Management"
+      ],
+      "icon": "",
+      "width": 512,
+      "height": 100
     },
     {
       "name": "Codecov",
@@ -442,9 +680,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377676/silver-birder.github.io/resume/codecov.svg",
       "results": "コードカバレッジをGithubのバッチとして表示したかったので, 利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Testing", "Code Coverage"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Testing",
+        "Code Coverage"
+      ],
+      "icon": "",
+      "width": 2278,
+      "height": 2500
     },
     {
       "name": "Contentful",
@@ -454,9 +699,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377617/silver-birder.github.io/resume/contentful-logo-vector.png",
       "results": "Gravatarの代替サービスとして, このCMSを利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Headless CMS", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Headless CMS",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 900,
+      "height": 500
     },
     {
       "name": "Datadog",
@@ -466,9 +718,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377678/silver-birder.github.io/resume/datadoghq-ar21.svg",
       "results": "アプリケーションのサービス監視として利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Monitoring", "Application", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Monitoring",
+        "Application",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Deno",
@@ -478,9 +738,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377680/silver-birder.github.io/resume/denojs-original-wordmark.svg",
       "results": "チュートリアルやToDoアプリを開発. Rustで作られており期待してる.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Programming Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
+      "icon": "",
+      "width": 128,
+      "height": 128
     },
     {
       "name": "Digdag",
@@ -490,9 +756,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377682/silver-birder.github.io/resume/logo-digdag-rec-tr.png",
       "results": "大規模システムのバッチ群の一部として利用. ほぼゼロから全て構築.",
       "actual_years": "1.5",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Workflow Engine", "Java"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Workflow Engine",
+        "Java"
+      ],
+      "icon": "",
+      "width": 417,
+      "height": 208
     },
     {
       "name": "Django",
@@ -502,9 +775,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377684/silver-birder.github.io/resume/djangoproject-ar21.svg",
       "results": "PythonのWebフレームワークとして利用.",
       "actual_years": "1.5",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Web", "Framework", "Python"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Web",
+        "Framework",
+        "Python"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Docker",
@@ -514,9 +795,18 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377688/silver-birder.github.io/resume/docker-ar21.svg",
       "results": "アプリケーションは, 基本的にコンテナで開発. スリム化やマルチレイヤーを知る. (Runtimeなど低レイヤーは理解が浅い)",
       "actual_years": "3",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Container", "Open Platform", "Go"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Container",
+        "Open Platform",
+        "Go"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Elasticsearch",
@@ -526,9 +816,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377691/silver-birder.github.io/resume/Elasticsearch_logo.svg",
       "results": "",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Full Text Search", "Java"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Full Text Search",
+        "Java"
+      ],
+      "icon": "",
+      "width": 410,
+      "height": 90
     },
     {
       "name": "Electron",
@@ -538,9 +835,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377692/silver-birder.github.io/resume/electronjs-ar21.svg",
       "results": "デスクトップアプリをJavascriptで書けるので, いくつかサンプルを書いた. React Nativeと組み合わせ, ユニバーサルアプリを書こうとした.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Cross Platform", "Javascript", "C++"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Cross Platform",
+        "Javascript",
+        "C++"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Elm",
@@ -550,9 +855,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377694/silver-birder.github.io/resume/elm-lang-ar21.svg",
       "results": "チュートリアルを試す. Webアプリを関数型言語で書ける魅力を知る.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Programming Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Enchant.js",
@@ -564,8 +875,14 @@
       "width": "60",
       "height": "60",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Javascript", "Framework", "Game"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Javascript",
+        "Framework",
+        "Game"
+      ],
       "icon": ""
     },
     {
@@ -576,9 +893,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377708/silver-birder.github.io/resume/expoio-ar21.svg",
       "results": "React Nativeのデモとして利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Cross Platform", "Framework", "React"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Cross Platform",
+        "Framework",
+        "React"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Express.js",
@@ -588,9 +913,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377710/silver-birder.github.io/resume/expressjs-ar21.svg",
       "results": "Node.jsでWebアプリを書く時に, 一番利用経験が高いフレームワーク.",
       "actual_years": "6",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Web", "Framework", "Javascript"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Web",
+        "Framework",
+        "Javascript"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Firebase",
@@ -600,9 +933,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377712/silver-birder.github.io/resume/firebase-ar21.svg",
       "results": "リアルタイムデータ変更をWebアプリと簡単に連動したく, その機能を利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Mobile Backend As a Service"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Mobile Backend As a Service"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Flask",
@@ -612,9 +951,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377714/silver-birder.github.io/resume/pocoo_flask-ar21.svg",
       "results": "PythonのWebフレームワークとして利用.",
       "actual_years": "1.5",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Web", "Framework", "Python"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Web",
+        "Framework",
+        "Python"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Fluentd",
@@ -624,9 +971,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377716/silver-birder.github.io/resume/fluentd-ar21.svg",
       "results": "google-fluentdを利用. Digdagのログをパースしたり, フィルタリングしたり, タグを付けたりする設定ファイルを書いた.",
       "actual_years": "1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Data Collection", "Ruby"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Data Collection",
+        "Ruby"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Fly.io",
@@ -636,9 +990,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377718/silver-birder.github.io/resume/flyio-ar21.svg",
       "results": "Edge Workerとして利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["CDN"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "CDN"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Gatsby",
@@ -647,9 +1007,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377720/silver-birder.github.io/resume/gatsbyjs-ar21.svg",
       "results": "SSGを試したく, チュートリアルを試す. Ara Frameworkの一部としてGatsbyを利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Static Site Generator"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Static Site Generator"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Git",
@@ -659,9 +1025,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377722/silver-birder.github.io/resume/git-scm-ar21.svg",
       "results": "",
       "actual_years": "9",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Version Control System", "C"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Version Control System",
+        "C"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Gitbook",
@@ -671,9 +1045,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377724/silver-birder.github.io/resume/gitbook-ar21.svg",
       "results": "入門書ページの作成に利用. HonKitに乗り換えた.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["SaaS", "Wiki"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "SaaS",
+        "Wiki"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Github",
@@ -683,9 +1064,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377726/silver-birder.github.io/resume/github-ar21.svg",
       "results": "",
       "actual_years": "4",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Git Management", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Git Management",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Github Actions",
@@ -695,9 +1083,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377728/silver-birder.github.io/resume/github-actions.svg",
       "results": "GithubのCIが楽に使えるので, 利用. このブログサイトもActionsを導入している.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["CI"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "CI"
+      ],
+      "icon": "",
+      "width": 705,
+      "height": 684
     },
     {
       "name": "Gitpod",
@@ -707,9 +1101,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377730/silver-birder.github.io/resume/gitpodio-ar21.svg",
       "results": "ブラウザでWebアプリ開発をするため, 利用. Cloud IDEの魅力を知る (Theia IDE).",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["SaaS", "Cloud IDE", "Browser"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "SaaS",
+        "Cloud IDE",
+        "Browser"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Go",
@@ -719,9 +1121,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377732/silver-birder.github.io/resume/golang-ar21.svg",
       "results": "シンプルな設計言語であるGoに魅力を感じ, API開発に利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Programming Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Google Analytics",
@@ -731,9 +1139,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377734/silver-birder.github.io/resume/google_analytics-ar21.svg",
       "results": "自サイトにGAを導入. 詳しくは知らない.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Google", "Analysis"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Google",
+        "Analysis"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Google Appengine",
@@ -743,9 +1159,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377736/silver-birder.github.io/resume/google_appengine-ar21.svg",
       "results": "手軽にWebアプリバックエンドを書くときに利用. Cloud Runが登場後, あまり利用しなくなった.",
       "actual_years": "１",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Google", "PaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Google",
+        "PaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Google Apps Script(Clasp)",
@@ -757,8 +1180,16 @@
       "width": "128",
       "height": "128",
       "actual_years": "2",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Google", "Workspace", "Platform", "Javascript"],
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Google",
+        "Workspace",
+        "Platform",
+        "Javascript"
+      ],
       "icon": ""
     },
     {
@@ -769,9 +1200,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377740/silver-birder.github.io/resume/google_bigquery-ar21.svg",
       "results": "業務の大規模データ構築に利用. SQLのコーディングには自信がある.",
       "actual_years": "3",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Google", "Data Warehouse"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Google",
+        "Data Warehouse"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Google Chrome",
@@ -781,9 +1219,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377554/silver-birder.github.io/resume/google_chrome-ar21.svg",
       "results": "",
       "actual_years": "6",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Browser"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Browser"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Google Cloud Platform",
@@ -793,9 +1238,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377743/silver-birder.github.io/resume/google_cloud-ar21.svg",
       "results": "公私共に利用しているサービス. クラウドベンダーで一番好き.",
       "actual_years": "3",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Cloud Vendor"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Cloud Vendor"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Google Cloud Run",
@@ -805,9 +1257,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377745/silver-birder.github.io/resume/google_cloud_run-ar21.svg",
       "results": "アプリケーション・バッチ(CPU Allocation)・APIなど全て, 基本的にCloud Runで構築.",
       "actual_years": "2",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Google", "Serverless Container"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Google",
+        "Serverless Container"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 64
     },
     {
       "name": "Google Map",
@@ -817,9 +1276,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377747/silver-birder.github.io/resume/google_maps-ar21.svg",
       "results": "",
       "actual_years": "5",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Google", "Map"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Google",
+        "Map"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Google Stackdriver(Cloud Logging)",
@@ -829,9 +1295,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377749/silver-birder.github.io/resume/google_stackdriver-ar21.svg",
       "results": "Cloud Monitoringの監視として, 利用. カスタム指標を定義するなど柔軟に活用できる.",
       "actual_years": "1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Google", "System Management"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Google",
+        "System Management"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "GraphQL Codegen",
@@ -841,9 +1314,18 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378037/silver-birder.github.io/resume/logo.svg",
       "results": "GraphQLのschemaからTypeScriptコード生成に利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal", "Company"],
-      "tech_types": ["GraphQL", "Schema", "Generator"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal",
+        "Company"
+      ],
+      "tech_types": [
+        "GraphQL",
+        "Schema",
+        "Generator"
+      ],
+      "icon": "",
+      "width": 105,
+      "height": 101
     },
     {
       "name": "GraphQL Yoga",
@@ -853,9 +1335,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377752/silver-birder.github.io/resume/logo.svg",
       "results": "GraphQLサーバとして利用. 手軽に使えるので便利.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["GraphQL", "Server"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "GraphQL",
+        "Server"
+      ],
+      "icon": "",
+      "width": 105,
+      "height": 101
     },
     {
       "name": "GraphQL urql",
@@ -865,9 +1354,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377755/silver-birder.github.io/resume/sidebar-badge.svg",
       "results": "GraphQLクライアントとして利用. キャッシュ戦略がシンプル, 軽量という魅力. wonkaを知る.",
       "actual_years": "1.5",
-      "usage_scenarios": ["Personal", "Company"],
-      "tech_types": ["GraphQL", "Client"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal",
+        "Company"
+      ],
+      "tech_types": [
+        "GraphQL",
+        "Client"
+      ],
+      "icon": "",
+      "width": 600,
+      "height": 595
     },
     {
       "name": "Gravatar",
@@ -877,9 +1374,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377757/silver-birder.github.io/resume/gravatar-ar21.svg",
       "results": "アバター管理に利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Avatar Management", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Avatar Management",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Gulp",
@@ -889,9 +1393,18 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377759/silver-birder.github.io/resume/858a382c-2ed1-41d2-a5d5-ab7d33b132f5.png",
       "results": "フロントエンドのタスクランナーとして利用.",
       "actual_years": "1",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Toolkit", "Workflow", "Javascript"],
-      "icon": "devicon-gulp-plain colored"
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Toolkit",
+        "Workflow",
+        "Javascript"
+      ],
+      "icon": "devicon-gulp-plain colored",
+      "width": 1200,
+      "height": 1200
     },
     {
       "name": "HTML5",
@@ -901,9 +1414,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377761/silver-birder.github.io/resume/w3_html5-ar21.svg",
       "results": "",
       "actual_years": "6",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Markup Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Markup Language"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Heroku",
@@ -913,9 +1433,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377763/silver-birder.github.io/resume/heroku-ar21.svg",
       "results": "手軽なアプリ構築に利用. now.sh(vercel)を知ってから, あまり使わなくなった.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["PaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "PaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "IFTTT",
@@ -925,9 +1451,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377765/silver-birder.github.io/resume/ifttt-ar21.svg",
       "results": "IoTとの連携に利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Collaboration Platform", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Collaboration Platform",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Iframely",
@@ -937,8 +1470,13 @@
       "image": "",
       "results": "EmbedCodeを利用するために利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["SaaS", "Iframe"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "SaaS",
+        "Iframe"
+      ],
       "icon": ""
     },
     {
@@ -949,9 +1487,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377767/silver-birder.github.io/resume/imagemagick-ar21.svg",
       "results": "画像加工バッチで利用.",
       "actual_years": "1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Graphic Software"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Graphic Software"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "IntelliJ IDEA",
@@ -961,9 +1505,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378039/silver-birder.github.io/resume/intellijidea.svg",
       "results": "普段良く使うIDE.",
       "actual_years": "3",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["IDE"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "IDE"
+      ],
+      "icon": "",
+      "width": 2500,
+      "height": 313
     },
     {
       "name": "JAMstack",
@@ -973,9 +1523,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377770/silver-birder.github.io/resume/jamstack-ar21.svg",
       "results": "",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Architecture Pattern"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Architecture Pattern"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "JQuery",
@@ -985,9 +1541,18 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377772/silver-birder.github.io/resume/jquery-ar21.svg",
       "results": "一番初めに触ったフロントエンドフレームワーク. クロスブラウザ対応の魅力を知る.",
       "actual_years": "3",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Frontend", "Framework", "Javascript"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Frontend",
+        "Framework",
+        "Javascript"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Java",
@@ -997,9 +1562,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377774/silver-birder.github.io/resume/java-ar21.svg",
       "results": "大学の授業で勉強.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Programming Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "JavaScript Object Notation",
@@ -1009,9 +1580,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377776/silver-birder.github.io/resume/json-ar21.svg",
       "results": "",
       "actual_years": "6",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Data Interchange"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Data Interchange"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Javascript",
@@ -1021,9 +1599,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377779/silver-birder.github.io/resume/javascript-ar21.svg",
       "results": "最も長く使っているプログラミング言語.",
       "actual_years": "6",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Programming Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Jenkins",
@@ -1033,9 +1618,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377782/silver-birder.github.io/resume/jenkins-ar21.svg",
       "results": "宣言的な記法でJenkinsfileを書いた経験あり. 運用経験はない.",
       "actual_years": "2",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["CI"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "CI"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Jest",
@@ -1045,9 +1636,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377784/silver-birder.github.io/resume/jestjsio-ar21.svg",
       "results": "フロントエンドのテストツールで最も利用しているもの.",
       "actual_years": "1",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Javascript", "Testing"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Javascript",
+        "Testing"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Jq",
@@ -1057,9 +1656,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378041/silver-birder.github.io/resume/jq.svg",
       "results": "jsonをcliで便利に加工するために, 利用.",
       "actual_years": "2",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["JSON", "Processor"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "JSON",
+        "Processor"
+      ],
+      "icon": "",
+      "width": 400,
+      "height": 220
     },
     {
       "name": "Kotlin",
@@ -1069,9 +1676,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377786/silver-birder.github.io/resume/kotlinlang-ar21.svg",
       "results": "Apache Beamで使った言語.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Programming Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Kubernetes",
@@ -1081,9 +1694,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377788/silver-birder.github.io/resume/kubernetes-ar21.svg",
       "results": "一通り全てのリソースを試用. オーケストレータの魅力を知る.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Container Orchestrator", "Go"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Container Orchestrator",
+        "Go"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "LLVM",
@@ -1093,9 +1713,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377791/silver-birder.github.io/resume/LLVMWyvernSmall.png",
       "results": "JavascriptをJITコンパイルするのに利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Compiler Infrastructure"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Compiler Infrastructure"
+      ],
+      "icon": "",
+      "width": 700,
+      "height": 439
     },
     {
       "name": "Lerna",
@@ -1105,9 +1731,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378043/silver-birder.github.io/resume/lerna-icon.png",
       "results": "モノレポ管理として利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Javascript", "Monorepo"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Javascript",
+        "Monorepo"
+      ],
+      "icon": "",
+      "width": 512,
+      "height": 512
     },
     {
       "name": "Let's Encrypt",
@@ -1117,9 +1750,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377792/silver-birder.github.io/resume/letsencrypt-ar21.svg",
       "results": "オレオレ証明書に利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Certificate Authority"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Certificate Authority"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Lit Element",
@@ -1129,9 +1768,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377794/silver-birder.github.io/resume/logo.svg",
       "results": "Web Componentsの型が欲しく, Lit Elementを利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Web Components"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Web Components"
+      ],
+      "icon": "",
+      "width": 105,
+      "height": 101
     },
     {
       "name": "MQL4",
@@ -1141,9 +1786,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377797/silver-birder.github.io/resume/docs_mql4.png",
       "results": "FXの自動トレードを開発したく, MQL4を利用.",
       "actual_years": "2",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Programming Language", "Trading", "FX"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Programming Language",
+        "Trading",
+        "FX"
+      ],
+      "icon": "",
+      "width": 323,
+      "height": 158
     },
     {
       "name": "Markdown",
@@ -1153,8 +1806,13 @@
       "image": "",
       "results": "",
       "actual_years": "6",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Lightweight Markup Language"],
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Lightweight Markup Language"
+      ],
       "icon": "devicon-markdown-original colored"
     },
     {
@@ -1165,8 +1823,13 @@
       "image": "",
       "results": "Bootstrapと並んで, よく使うCSSフレームワーク.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["CSS", "Framework"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "CSS",
+        "Framework"
+      ],
       "icon": "devicon-materialui-plain colored"
     },
     {
@@ -1177,9 +1840,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377798/silver-birder.github.io/resume/memcached-ar21.svg",
       "results": "インメモリのデータストアを知る. 特に使ったことはない.",
       "actual_years": "0",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Memory", "Cache"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Memory",
+        "Cache"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Micro Frontends",
@@ -1189,8 +1859,13 @@
       "image": "",
       "results": "プライベートで検証しブログへアウトプット.業務でも経験.",
       "actual_years": "2",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Architecture"],
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Architecture"
+      ],
       "icon": ""
     },
     {
@@ -1201,9 +1876,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377800/silver-birder.github.io/resume/mongodb-ar21.svg",
       "results": "一番初めてに使ったDB. MongoDB Atlasを使って無料で利用.",
       "actual_years": "1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["DB", "NoSQL"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "DB",
+        "NoSQL"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "MySQL",
@@ -1213,9 +1895,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693377802/silver-birder.github.io/resume/mysql-ar21.svg",
       "results": "業務で一番利用しているDB. テーブル設計や正規化の経験あり. チューニング(スロークエリログ)も一部あり.",
       "actual_years": "3",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["DB", "RDB"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "DB",
+        "RDB"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Nagios",
@@ -1225,9 +1915,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378044/silver-birder.github.io/resume/nagios-ar21.svg",
       "results": "ネットワーク監視として知る. 特に使ったことはない.",
       "actual_years": "0",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Monitoring", "Network"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Monitoring",
+        "Network"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Nest.js",
@@ -1237,9 +1934,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378046/silver-birder.github.io/resume/nestjs-ar21.svg",
       "results": "TODOアプリを作成. バックエンドの機能が充実していると感じている.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Web", "Framework", "Javascript"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Web",
+        "Framework",
+        "Javascript"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Netlify",
@@ -1249,9 +1954,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378048/silver-birder.github.io/resume/netlify-ar21.svg",
       "results": "フロントエンド開発に利用. カスタムドメインを無料で使えるので便利.",
       "actual_years": "1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["CDN"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "CDN"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Neumorphism",
@@ -1261,8 +1972,13 @@
       "image": "",
       "results": "ちょっと変わったデザインであるNeumorphismを使ってみたかったので, 試した.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["CSS", "Framework"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "CSS",
+        "Framework"
+      ],
       "icon": ""
     },
     {
@@ -1273,9 +1989,18 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378051/silver-birder.github.io/resume/2d3864ef-00e0-4026-ab1d-30e4a98e2899.png",
       "results": "React.jsと相性が良いWebアプリフレームワークとして利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal", "Company"],
-      "tech_types": ["Web", "Framework", "Javascript"],
-      "icon": "devicon-nextjs-original-wordmark colored"
+      "usage_scenarios": [
+        "Personal",
+        "Company"
+      ],
+      "tech_types": [
+        "Web",
+        "Framework",
+        "Javascript"
+      ],
+      "icon": "devicon-nextjs-original-wordmark colored",
+      "width": 2000,
+      "height": 1198
     },
     {
       "name": "Nginx",
@@ -1285,9 +2010,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378052/silver-birder.github.io/resume/nginx-ar21.svg",
       "results": "Webサーバとして利用.C10K問題を知る.",
       "actual_years": "1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Web Server"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Web Server"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Node.js",
@@ -1297,9 +2028,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378054/silver-birder.github.io/resume/nodejs-ar21.svg",
       "results": "最も長く触っているサーバーサイド言語.",
       "actual_years": "5",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Programming Language", "Javascript"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Programming Language",
+        "Javascript"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Npm",
@@ -1309,9 +2047,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378056/silver-birder.github.io/resume/npmjs-ar21.svg",
       "results": "",
       "actual_years": "5",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Package Management System", "Node.js"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Package Management System",
+        "Node.js"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Nuxt.js",
@@ -1321,9 +2066,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378058/silver-birder.github.io/resume/nuxtjs-ar21.svg",
       "results": "Vue.jsと相性が良いWebアプリフレームワークとして利用. あまり使ったことはない.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Web", "Framework", "Javascript"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Web",
+        "Framework",
+        "Javascript"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Obsidian",
@@ -1333,8 +2086,13 @@
       "image": "",
       "results": "MarkdownでWikiWikiWebなメモアプリ.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Markdown", "WikiWikiWeb"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Markdown",
+        "WikiWikiWeb"
+      ],
       "icon": ""
     },
     {
@@ -1345,8 +2103,13 @@
       "image": "",
       "results": "Emojiは著作権が関係するので, このOpenMojiを利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Open Sorce", "Emoji"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Open Sorce",
+        "Emoji"
+      ],
       "icon": ""
     },
     {
@@ -1357,13 +2120,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378060/silver-birder.github.io/resume/openpolicyagent-ar21.svg",
       "results": "TerraformやDocker, SQLなどをポリシーテストするために, 利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
+      "usage_scenarios": [
+        "Personal"
+      ],
       "tech_types": [
         "Cloud Native",
         "Policy Engine",
         "Policy Definition Language"
       ],
-      "icon": ""
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Open-wc",
@@ -1375,8 +2142,14 @@
       "width": "375",
       "height": "444",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Web Components", "Tool", "Library"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Web Components",
+        "Tool",
+        "Library"
+      ],
       "icon": ""
     },
     {
@@ -1387,9 +2160,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378063/silver-birder.github.io/resume/php-ar21.svg",
       "results": "LAMP構成でアプリ開発で利用.",
       "actual_years": "2",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Programming Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Playwright",
@@ -1399,9 +2178,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378430/silver-birder.github.io/resume/stk8sqYZ_400x400.png",
       "results": "手軽にE2Eテストを書きたかったので利用. Test Generatorが便利.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Testing", "E2E"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Testing",
+        "E2E"
+      ],
+      "icon": "",
+      "width": 400,
+      "height": 400
     },
     {
       "name": "Podium",
@@ -1411,9 +2197,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378066/silver-birder.github.io/resume/podium.png",
       "results": "Micro Frontendsの検証として, 試用. manifest.jsonという設計が良い.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Framework", "Server Side", "Micro Frontends"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Framework",
+        "Server Side",
+        "Micro Frontends"
+      ],
+      "icon": "",
+      "width": 200,
+      "height": 200
     },
     {
       "name": "Pulumi",
@@ -1423,9 +2217,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378067/silver-birder.github.io/resume/pulumiio-ar21.svg",
       "results": "IaaSをプログラミング言語でコーディングできる魅力を知り, 利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Infrastructure", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Infrastructure",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Puppeteer",
@@ -1435,9 +2236,18 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378069/silver-birder.github.io/resume/pptrdev-icon.svg",
       "results": "ブラウザ自動操作をするために, 利用.",
       "actual_years": "1",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Headless Chrome", "Node.js", "Google"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Headless Chrome",
+        "Node.js",
+        "Google"
+      ],
+      "icon": "",
+      "width": 64,
+      "height": 64
     },
     {
       "name": "Python",
@@ -1447,9 +2257,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378071/silver-birder.github.io/resume/python-ar21.svg",
       "results": "業務で最も長く触っている言語.",
       "actual_years": "3",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Programming Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Raspberry Pi",
@@ -1459,9 +2276,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378073/silver-birder.github.io/resume/raspberrypi-ar21.svg",
       "results": "IoTやk8sなどで利用. 夏場でショートした(ヒートシンクが必要).",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Single Board Computer"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Single Board Computer"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "React.js",
@@ -1471,9 +2294,18 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378075/silver-birder.github.io/resume/reactjs-ar21.svg",
       "results": "Webアプリ開発のフロントエンドで利用. メモ化やパフォーマンスチューニングの経験. 状態管理の難しさを痛感. レイヤードアーキテクチャの導入経験済",
       "actual_years": "2",
-      "usage_scenarios": ["Personal", "Company"],
-      "tech_types": ["Frontend", "Framework", "Javascript"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal",
+        "Company"
+      ],
+      "tech_types": [
+        "Frontend",
+        "Framework",
+        "Javascript"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Redis",
@@ -1483,9 +2315,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378077/silver-birder.github.io/resume/redis-ar21.svg",
       "results": "インメモリのデータストアを知る. 特に使ったことはない.",
       "actual_years": "0",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["IMDB"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "IMDB"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Rendertron",
@@ -1495,8 +2333,13 @@
       "image": "",
       "results": "SPAのダイナミックレンダリングが必要な場面に利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Puppeteer", "Dynamic Rendering"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Puppeteer",
+        "Dynamic Rendering"
+      ],
       "icon": ""
     },
     {
@@ -1507,14 +2350,18 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378432/silver-birder.github.io/resume/logo.svg",
       "results": "個人ブログにRocketを利用. MarkdownとWebComponentsをシームレスに使えることに驚く.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
+      "usage_scenarios": [
+        "Personal"
+      ],
       "tech_types": [
         "Modern Web",
         "Web Components",
         "Markdown",
         "Static Site Generator"
       ],
-      "icon": ""
+      "icon": "",
+      "width": 105,
+      "height": 101
     },
     {
       "name": "Ruby",
@@ -1524,9 +2371,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378080/silver-birder.github.io/resume/ruby-lang-ar21.svg",
       "results": "業務で利用. まだ詳しくない.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Programming Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Ruby on Rails",
@@ -1536,9 +2389,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378082/silver-birder.github.io/resume/Ruby_on_Rails_logo.svg",
       "results": "業務で利用. あまり得意ではない.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Ruby", "Web", "Framework"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Ruby",
+        "Web",
+        "Framework"
+      ],
+      "icon": "",
+      "width": 260,
+      "height": 330
     },
     {
       "name": "Rust",
@@ -1548,9 +2409,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378084/silver-birder.github.io/resume/rust-lang-ar21.svg",
       "results": "自作ブラウザや自作言語に利用. 気になっている言語. 画像処理ツールにも利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Programming Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "RxJS",
@@ -1562,8 +2429,13 @@
       "width": "375",
       "height": "375",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Javascript", "Reactive Programming"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Javascript",
+        "Reactive Programming"
+      ],
       "icon": ""
     },
     {
@@ -1574,9 +2446,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378087/silver-birder.github.io/resume/sentryio-ar21.svg",
       "results": "Webアプリケーションのエラーモニタリングに利用.",
       "actual_years": "1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Monitoring", "Error Tracking", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Monitoring",
+        "Error Tracking",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Single-spa",
@@ -1588,8 +2468,14 @@
       "width": "375",
       "height": "375",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Framework", "Client Side", "Micro Frontends"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Framework",
+        "Client Side",
+        "Micro Frontends"
+      ],
       "icon": ""
     },
     {
@@ -1600,9 +2486,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378090/silver-birder.github.io/resume/skaffold.svg",
       "results": "Kubernetesのローカル開発で利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Kubernetes", "Development"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Kubernetes",
+        "Development"
+      ],
+      "icon": "",
+      "width": 568,
+      "height": 239
     },
     {
       "name": "Slack",
@@ -1612,9 +2505,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378092/silver-birder.github.io/resume/slack-ar21.svg",
       "results": "",
       "actual_years": "5",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Groupware", "SaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Groupware",
+        "SaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Snap.svg",
@@ -1624,9 +2525,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378094/silver-birder.github.io/resume/snapsvgio-ar21.svg",
       "results": "SVGを返却するSaaSを作りたかったので, 利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["JavaScript", "SVG", "Library"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "JavaScript",
+        "SVG",
+        "Library"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Snowpack",
@@ -1636,9 +2545,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378434/silver-birder.github.io/resume/68747470733a2f2f7777772e736e6f777061636b2e6465762f696d672f6c6f676f2e706e67.png",
       "results": "ESMのビルドツールとして利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["ESM", "Build Tool"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "ESM",
+        "Build Tool"
+      ],
+      "icon": "",
+      "width": 640,
+      "height": 512
     },
     {
       "name": "Snyk",
@@ -1648,9 +2564,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378097/silver-birder.github.io/resume/snyk.svg",
       "results": "脆弱性診断を手軽にチェックしたく, 利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["SaaS", "Vulnerability"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "SaaS",
+        "Vulnerability"
+      ],
+      "icon": "",
+      "width": 209,
+      "height": 108
     },
     {
       "name": "Storybook",
@@ -1660,8 +2583,15 @@
       "image": "",
       "results": "Webフロントエンド開発におけるUI開発に必須.テストにも利用.",
       "actual_years": "3",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Frontend", "Catalog", "UI"],
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Frontend",
+        "Catalog",
+        "UI"
+      ],
       "icon": ""
     },
     {
@@ -1672,9 +2602,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378099/silver-birder.github.io/resume/apache_subversion-ar21.svg",
       "results": "",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Version Control System", "Apache"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Version Control System",
+        "Apache"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Surgesh",
@@ -1684,9 +2621,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378101/silver-birder.github.io/resume/surgesh-ar21.svg",
       "results": "",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["CDN"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "CDN"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Tailor",
@@ -1696,9 +2639,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378435/silver-birder.github.io/resume/68747470733a2f2f7261776769746875622e636f6d2f7a616c616e646f2f7461696c6f722f6d61737465722f6c6f676f2f7461696c6f722d6c6f676f2e737667.svg",
       "results": "Micro Frontendsの検証として, 試用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Framework", "Server Side", "Micro Frontends"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Framework",
+        "Server Side",
+        "Micro Frontends"
+      ],
+      "icon": "",
+      "width": 500,
+      "height": 200
     },
     {
       "name": "Terraform",
@@ -1708,9 +2659,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378107/silver-birder.github.io/resume/terraformio-ar21.svg",
       "results": "GCPのリソース管理で利用. dev/prodといった環境分離や, 権限管理など経験あり.",
       "actual_years": "1",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Infrastructure"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Infrastructure"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "TextLint",
@@ -1722,8 +2680,15 @@
       "width": "256",
       "height": "256",
       "actual_years": "1",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Linter", "Text", "Javascript"],
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Linter",
+        "Text",
+        "Javascript"
+      ],
       "icon": ""
     },
     {
@@ -1734,8 +2699,14 @@
       "image": "",
       "results": "WebでARを使いたかったので, 利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Web", "AR", "Javascript"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Web",
+        "AR",
+        "Javascript"
+      ],
       "icon": ""
     },
     {
@@ -1746,14 +2717,18 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378110/silver-birder.github.io/resume/trello-ar21.svg",
       "results": "",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
+      "usage_scenarios": [
+        "Personal"
+      ],
       "tech_types": [
         "Groupware",
         "Issue & Project Tracking",
         "Task Management",
         "SaaS"
       ],
-      "icon": ""
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Turborepo",
@@ -1763,9 +2738,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378112/silver-birder.github.io/resume/turborepo.svg",
       "results": "vercel製のmonorepoツール. ビルドキャッシュで爆速開発ができる.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal", "Company"],
-      "tech_types": ["Monorepo"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal",
+        "Company"
+      ],
+      "tech_types": [
+        "Monorepo"
+      ],
+      "icon": "",
+      "width": 512,
+      "height": 115
     },
     {
       "name": "Twitter",
@@ -1775,9 +2757,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378114/silver-birder.github.io/resume/twitter-ar21.svg",
       "results": "SNSで最も使っているサービス. Twitter APIも利用経験あり.",
       "actual_years": "2",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["SNS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "SNS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Typescript",
@@ -1787,9 +2775,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378116/silver-birder.github.io/resume/typescriptlang-ar21.svg",
       "results": "メンテナビリティを意識するときに利用. DIP設計(Inversify)の経験あり.",
       "actual_years": "3",
-      "usage_scenarios": ["Personal", "Company"],
-      "tech_types": ["Programming Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal",
+        "Company"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Typesense",
@@ -1799,9 +2794,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378118/silver-birder.github.io/resume/typesense_logo.svg",
       "results": "AlgoliaやElasticsearchの代替として利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Full Text Search", "Algolia", "Elasticsearch"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Full Text Search",
+        "Algolia",
+        "Elasticsearch"
+      ],
+      "icon": "",
+      "width": 250,
+      "height": 56
     },
     {
       "name": "V",
@@ -1811,9 +2814,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378121/silver-birder.github.io/resume/vezt_vzt.svg",
       "results": "",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Programming Language"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Programming Language"
+      ],
+      "icon": "",
+      "width": 320,
+      "height": 320
     },
     {
       "name": "Varnish",
@@ -1823,9 +2832,15 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378122/silver-birder.github.io/resume/varnish-cache-ar21.svg",
       "results": "保守運用で設定ファイルを修正した経験あり. (Squidも経験あり)",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Reverse Proxy"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Reverse Proxy"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Vegeta",
@@ -1835,8 +2850,14 @@
       "image": "",
       "results": "負荷テストに利用. 動的データ生成のためGolangから利用した.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal", "Company"],
-      "tech_types": ["Testing", "Load"],
+      "usage_scenarios": [
+        "Personal",
+        "Company"
+      ],
+      "tech_types": [
+        "Testing",
+        "Load"
+      ],
       "icon": ""
     },
     {
@@ -1847,9 +2868,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378124/silver-birder.github.io/resume/file_type_vba.svg",
       "results": "Excelの自動化のため利用.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Programming Language", "Microsoft Office"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Programming Language",
+        "Microsoft Office"
+      ],
+      "icon": "",
+      "width": 32,
+      "height": 32
     },
     {
       "name": "Visual Studio Code",
@@ -1859,9 +2887,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378126/silver-birder.github.io/resume/vscode-original-wordmark.svg",
       "results": "開発エディタとして利用. Brackets→Atom→VSCodeの順で乗り換えた.",
       "actual_years": "1.5",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Source Code Editor", "Electron"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Source Code Editor",
+        "Electron"
+      ],
+      "icon": "",
+      "width": 128,
+      "height": 128
     },
     {
       "name": "Vue.js",
@@ -1871,9 +2907,18 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378128/silver-birder.github.io/resume/vuejs-ar21.svg",
       "results": "Webアプリ開発のフロントエンドで利用.",
       "actual_years": "1",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Frontend", "Framework", "Javascript"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Frontend",
+        "Framework",
+        "Javascript"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Web Components",
@@ -1883,9 +2928,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378137/silver-birder.github.io/resume/webcomponents-ar21.svg",
       "results": "期待しているWeb標準技術. 書籍を執筆.",
       "actual_years": "1",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Web", "Component"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Web",
+        "Component"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "WebAssembly",
@@ -1895,9 +2948,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378139/silver-birder.github.io/resume/webassembly-ar21.svg",
       "results": "気になっている技術.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Programming Language", "Virtual ISA"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Programming Language",
+        "Virtual ISA"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Webpack",
@@ -1907,9 +2967,17 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378141/silver-birder.github.io/resume/js_webpack-ar21.svg",
       "results": "Webフロントエンド開発で利用. 1ファイル化やMinifyで利用.",
       "actual_years": "1",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Module Bundler", "Javascript"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Module Bundler",
+        "Javascript"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Word Cloud",
@@ -1921,8 +2989,14 @@
       "width": "375",
       "height": "323",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Word", "Visualization", "Python"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Word",
+        "Visualization",
+        "Python"
+      ],
       "icon": ""
     },
     {
@@ -1933,9 +3007,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378144/silver-birder.github.io/resume/zabbix-ar21.svg",
       "results": "ネットワーク監視を知る. 特に使ったことはない.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Monitoring", "Network"],
-      "icon": ""
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Monitoring",
+        "Network"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 60
     },
     {
       "name": "Zeit(Vercel)",
@@ -1945,9 +3026,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378146/silver-birder.github.io/resume/zeit-ar21.svg",
       "results": "Webフロントエンドで手軽に利用.元々は, now.shという名前だった.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["CDN", "PaaS"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "CDN",
+        "PaaS"
+      ],
+      "icon": "",
+      "width": 120,
+      "height": 61
     },
     {
       "name": "backstage",
@@ -1957,8 +3045,12 @@
       "image": "",
       "results": "業務で利用. TechDocsを積極的に活用した",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["Documentation"],
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "Documentation"
+      ],
       "icon": ""
     },
     {
@@ -1969,8 +3061,13 @@
       "image": "",
       "results": "ATDDとして利用. screenplayパターンと共に検証した",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["ATDD"],
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "ATDD"
+      ],
       "icon": ""
     },
     {
@@ -1981,8 +3078,13 @@
       "image": "",
       "results": "oembedを使ってコンテンツを表示したいため, 利用. o-embedのWebComponentsを公開した.",
       "actual_years": "< 1",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["format", "embed"],
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "format",
+        "embed"
+      ],
       "icon": ""
     },
     {
@@ -1993,8 +3095,12 @@
       "image": "",
       "results": "業務で利用. BugやCodeSmellを見て品質貢献に寄与",
       "actual_years": "< 1",
-      "usage_scenarios": ["Company"],
-      "tech_types": ["QA"],
+      "usage_scenarios": [
+        "Company"
+      ],
+      "tech_types": [
+        "QA"
+      ],
       "icon": ""
     },
     {
@@ -2005,9 +3111,16 @@
       "image": "https://res.cloudinary.com/silverbirder/image/upload/v1693378149/silver-birder.github.io/resume/logo_centered%402x.png",
       "results": "大学時代に借りていたサーバ.",
       "actual_years": "3",
-      "usage_scenarios": ["Personal"],
-      "tech_types": ["Cloud Vendor", "Server"],
-      "icon": ""
+      "usage_scenarios": [
+        "Personal"
+      ],
+      "tech_types": [
+        "Cloud Vendor",
+        "Server"
+      ],
+      "icon": "",
+      "width": 800,
+      "height": 553
     },
     {
       "name": "文字コード",
@@ -2017,8 +3130,13 @@
       "image": "",
       "results": "",
       "actual_years": "2",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Basic IT Skill"],
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Basic IT Skill"
+      ],
       "icon": ""
     },
     {
@@ -2029,8 +3147,13 @@
       "image": "",
       "results": "",
       "actual_years": "6",
-      "usage_scenarios": ["Company", "Personal"],
-      "tech_types": ["Basic IT Skill"],
+      "usage_scenarios": [
+        "Company",
+        "Personal"
+      ],
+      "tech_types": [
+        "Basic IT Skill"
+      ],
       "icon": ""
     }
   ]
