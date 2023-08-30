@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614430655/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614430655/silver-birder.github.io/blog/cloudflare_worker_micro_frontends.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 今回、また Micro Frontends の構築を試みようと思います。構築パターンの内、サーバーサイド統合パターン、特にエッジサイド統合を試しました。
 その内容を紹介します。サンプルコードは、下記に残しています。
 
@@ -41,9 +43,12 @@ ESI は、SSI と似たようなもので、サーバーサイド側でコンテ
 次のような構成を考えてみました。
 
 <figure title="Cloudflare worker + Micro Frontends">
-  <img
-    alt="Cloudflare worker + Micro Frontends"
+  <Image
     src="https://res.cloudinary.com/silverbirder/image/upload/v1614430655/silver-birder.github.io/blog/cloudflare_worker_micro_frontends.png"
+    width={1200}
+    height={711}
+    layout="constrained"
+    alt="Cloudflare worker + Micro Frontends"
   />
   <figcaption>Cloudflare Workers + Micro Frontends</figcaption>
 </figure>

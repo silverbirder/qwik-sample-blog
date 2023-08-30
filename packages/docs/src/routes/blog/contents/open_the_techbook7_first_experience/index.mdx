@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614430347/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614430347/silver-birder.github.io/blog/ReViewStarter_sample_page.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 技術書典 7 で初執筆しました。
 
 # 記事の目的
@@ -62,9 +64,12 @@ $ docker run --rm -v $PWD:/work kauplan/review2.5 /bin/bash -c "cd /work; rake p
 ```
 
 <figure title="ReViewStarter sample page">
-  <img
-    alt="ReViewStarter sample page"
+  <Image
     src="https://res.cloudinary.com/silverbirder/image/upload/v1614430347/silver-birder.github.io/blog/ReViewStarter_sample_page.png"
+    width={757}
+    height={1200}
+    layout="constrained"
+    alt="ReViewStarter sample page"
   />
   <figcaption>ReViewStarter sample page</figcaption>
 </figure>
@@ -189,9 +194,12 @@ iPad, Magic Pencil は買って正解でした。
 お絵かきが苦手だったので、知人に助けてもらい、なんとか作れました。
 
 <figure title="表表紙">
-  <img
-    alt="表表紙"
+  <Image
     src="https://res.cloudinary.com/silverbirder/image/upload/v1614430433/silver-birder.github.io/blog/front_cover_of_web_component_for_the_first_time.png"
+    width={911}
+    height={1200}
+    layout="constrained"
+    alt="表表紙"
   />
   <figcaption>表表紙</figcaption>
 </figure>
@@ -301,9 +309,12 @@ Google Analytics (**初登録**)と Booth が連携できるので、流入数�
 離脱率が 86%という悲しい結果を知りました。ここは改善の余地がありそうです。
 
 <figure title="Booth on Google Analytics">
-  <img
-    alt="Booth on Google Analytics"
+  <Image
     src="https://res.cloudinary.com/silverbirder/image/upload/v1614430470/silver-birder.github.io/blog/booth_on_google_analytics.png"
+    width={1200}
+    height={731}
+    layout="constrained"
+    alt="Booth on Google Analytics"
   />
   <figcaption>Booth on Google Analytics</figcaption>
 </figure>

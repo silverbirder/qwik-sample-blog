@@ -2,11 +2,20 @@ const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
 const sharp = require("sharp");
-
 const downloadImage = async (url) => {
   try {
     const response = await axios.get(url, { responseType: "arraybuffer" });
-    return Buffer.from(response.data, "binary");
+
+    // Check if the response has an image content type
+    if (
+      response.headers["content-type"] &&
+      response.headers["content-type"].startsWith("image/")
+    ) {
+      return Buffer.from(response.data, "binary");
+    } else {
+      console.log(`Non-image content type received from URL: ${url}`);
+      return null;
+    }
   } catch (error) {
     return null;
   }
@@ -31,12 +40,13 @@ const processFiles = async (dir) => {
       let content = fs.readFileSync(filePath, "utf-8");
 
       const imageRegex =
-        /!\[(.*?)\]\((.*?)\)|<img src="(.*?)" alt="(.*?)"\s*\/?>/g;
+        /!\[(.*?)\]\((.*?)\)|<img\s+(?:(?:alt="(.*?)"\s+)?src="(.*?)"|(?:src="(.*?)"\s+)?alt="(.*?)")(?:\s+[^>]*?)?\s*\/?>/gs;
+
       let match;
 
       while ((match = imageRegex.exec(content))) {
-        const alt = match[1] || match[4];
-        const url = match[2] || match[3];
+        const alt = match[1] || match[3] || match[6];
+        const url = match[2] || match[4] || match[5];
 
         if (url.startsWith("http")) {
           // Remote image

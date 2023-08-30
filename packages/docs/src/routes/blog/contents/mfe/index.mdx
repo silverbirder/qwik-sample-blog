@@ -8,6 +8,8 @@ cover_image: https://micro-frontends-japanese.org/resources/monolith-frontback-m
 socialMediaImage: https://micro-frontends-japanese.org/resources/monolith-frontback-microservices.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 # Micro Frontends とは?🤔
 
 皆さん、**Micro Fronends**(以下、MFE)をご存知でしょうか。説明をざっくりしますと、Microservices の考え方をフロントエンドまで拡張した考え方です。Microservices は、バックエンド側で適用される事例をよく耳にしますが、フロントエンドでの適用事例は、あまり聞いたことがありません。
@@ -15,9 +17,12 @@ socialMediaImage: https://micro-frontends-japanese.org/resources/monolith-frontb
 従来、Web サービス開発ではモノリスな構成からスタートします。そこから、規模が拡大するにつれて様々な理由により、フロントエンドとバックエンドの分離、バックエンドの Microservices 化が行われます。
 
 <figure title="[翻訳記事]マイクロフロントエンド > monolith-frontback-microservices">
-  <img
-    alt="[翻訳記事]マイクロフロントエンド > monolith-frontback-microservices"
+  <Image
     src="https://micro-frontends-japanese.org/resources/monolith-frontback-microservices.png"
+    width={1278}
+    height={499}
+    layout="constrained"
+    alt="[翻訳記事]マイクロフロントエンド > monolith-frontback-microservices"
   />
   <figcaption>
     <a href="https://micro-frontends-japanese.org/">
@@ -29,9 +34,12 @@ socialMediaImage: https://micro-frontends-japanese.org/resources/monolith-frontb
 Microservices 化によって、Scalability、Agility、Independency、Availability の大幅な向上が期待できます。しかし、依然フロントエンドはモノリスなままです。そこで、次の画像のように、Microservices と同様にフロントエンドも縦(専門領域)に分割します。
 
 <figure title="[翻訳記事]マイクロフロントエンド > verticals-headline">
-  <img
-    alt="[翻訳記事]マイクロフロントエンド > verticals-headline"
+  <Image
     src="https://micro-frontends-japanese.org/resources/verticals-headline.png"
+    width={920}
+    height={509}
+    layout="constrained"
+    alt="[翻訳記事]マイクロフロントエンド > verticals-headline"
   />
   <figcaption>
     <a href="https://micro-frontends-japanese.org/">
@@ -43,9 +51,12 @@ Microservices 化によって、Scalability、Agility、Independency、Availabil
 ただし、全ての Web サービスを MFE にする必要はありません。先程の説明にもあった通り、規模が拡大した際に MFE を検討する必要があるため、小・中規模の Web サービスでは時期尚早です。また、次の画像にもある通り、静的ページ(Web サイト,Web ドキュメント)や動的ページ(Web アプリ)の両極端に位置する Web サービスは MFE の適用するのには不向きです(と書いています)。両方の要素が求められる Web サービスに MFE が役立ちます。MFE の適用される Web サービス事例では、EC サイトが挙げられます。
 
 <figure title="mfe-web-document-to-web-app">
-  <img
-    alt="mfe-web-document-to-web-app"
+  <Image
     src="https://res.cloudinary.com/silverbirder/image/upload/v1613832627/silver-birder.github.io/blog/mfe-web-document-to-web-app.png"
+    width={612}
+    height={261}
+    layout="constrained"
+    alt="mfe-web-document-to-web-app"
   />
   <figcaption>
     <a href="https://www.linkedin.com/pulse/microfrontends-approach-building-scalable-web-apps-vinci-rufus">
@@ -79,9 +90,12 @@ MFE では、各フロントエンドのフラグメント(HTML)を、どのタ�
 例えば、次の MFE の例で言えば、Team-Product、Team-Checkout、Team-Inspire の 3 つのフロントエンドフラグメント(HTML)があります。これらをどのタイミングで統合するのかがポイントです。
 
 <figure title="[翻訳記事]マイクロフロントエンド > mfe-three-teams">
-  <img
-    alt="[翻訳記事]マイクロフロントエンド > mfe-three-teams"
+  <Image
     src="https://micro-frontends-japanese.org/resources/three-teams.png"
+    width={1000}
+    height={722}
+    layout="constrained"
+    alt="[翻訳記事]マイクロフロントエンド > mfe-three-teams"
   />
   <figcaption>
     <a href="https://micro-frontends-japanese.org/">
@@ -97,9 +111,12 @@ MFE では、各フロントエンドのフラグメント(HTML)を、どのタ�
 ビルド時統合とは、Web サービスを Publish する前の Build の段階で統合するパターンです。このパターンは、[bit.dev](https://bit.dev)がよく使われます。
 
 <figure title="bit.dev toppage">
-  <img
-    alt="bit.dev toppage"
+  <Image
     src="https://storage.googleapis.com/zenn-user-upload/e74w0sjnj1r0zpzvd5xfvsk7k1bd"
+    width={1200}
+    height={531}
+    layout="constrained"
+    alt="bit.dev toppage"
   />
   <figcaption>
     <a href="https://bit.dev/">bit.dev</a>
@@ -113,9 +130,12 @@ MFE では、各フロントエンドのフラグメント(HTML)を、どのタ�
 サーバーサイド統合とは、Web サーバー側の HTML 構築段階で統合するパターンです。このパターンは、SSI や ESI、Podium、Tailor、Ara-Framework などが使われます。
 
 <figure title="ssi">
-  <img
-    alt="ssi"
+  <Image
     src="https://www.st-andrews.ac.uk/itsnew/web/images/ssi1.jpg"
+    width={600}
+    height={375}
+    layout="constrained"
+    alt="ssi"
   />
   <figcaption>
     <a href="https://www.st-andrews.ac.uk/itsnew/web/ssi/index.shtml">
@@ -127,9 +147,12 @@ MFE では、各フロントエンドのフラグメント(HTML)を、どのタ�
 フラグメントを提供するサーバーを準備し、それらからフラグメント情報を収集し、全体のページ HTML を構築します。それを SSR としてユーザーへ提供します。
 
 <figure title="cloudflare-worker">
-  <img
-    alt="cloudflare-worker"
+  <Image
     src="https://raw.githubusercontent.com/silverbirder/micro-frontends-sample-code-5/f3c20954e6196cb578cd16caaf5999e07306fb51/overview.svg"
+    width={909}
+    height={531}
+    layout="constrained"
+    alt="cloudflare-worker"
   />
   <figcaption>
     <a href="https://github.com/silverbirder/micro-frontends-sample-code-5">
@@ -157,9 +180,12 @@ MFE では、各フロントエンドのフラグメント(HTML)を、どのタ�
 iframe を使ったページ(フラグメント)埋め込み、全体のページ HTML を統合させたり、WebComponents のようにカスタムエレメントを定義した HTML タグでページを構成したりします。
 
 <figure title="client side integration pattern">
-  <img
-    alt="client side integration pattern"
+  <Image
     src="https://bluesoft.com/wp-content/uploads/2020/04/Micro-Frontends-11.jpg"
+    width={1493}
+    height={998}
+    layout="constrained"
+    alt="client side integration pattern"
   />
   <figcaption>
     <a href="https://bluesoft.com/micro-frontends-the-missing-piece-of-the-puzzle-in-feature-teams/">

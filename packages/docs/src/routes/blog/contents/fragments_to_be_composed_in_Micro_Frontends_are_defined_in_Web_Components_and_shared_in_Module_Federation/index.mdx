@@ -6,6 +6,8 @@ description: Micro Frontends(以降、MFE)で組成するフラグメントを W
 tags: ["Web Components", "Module Federation", "Micro Frontends"]
 ---
 
+import { Image } from "@unpic/qwik";
+
 Micro Frontends(以降、MFE)で組成するフラグメントを Web Components で定義して Module Federation で共有する方法を、ざっくり紹介します。
 
 サンプルコードは、次のリポジトリにあります。
@@ -27,9 +29,12 @@ https://silverbirder.github.io/blog/contents/mfe/
 MFE で有名な Michael Geers さんの記事より、次のサンプル図があります。
 
 <figure title="[翻訳記事]マイクロフロントエンド > mfe-three-teams">
-  <img
-    alt="[翻訳記事]マイクロフロントエンド > mfe-three-teams"
+  <Image
     src="https://micro-frontends-japanese.org/resources/three-teams.png"
+    width={1000}
+    height={722}
+    layout="constrained"
+    alt="[翻訳記事]マイクロフロントエンド > mfe-three-teams"
   />
   <figcaption>
     <a href="https://micro-frontends-japanese.org/">

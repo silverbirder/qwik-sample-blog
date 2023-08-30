@@ -8,6 +8,8 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614429255/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614429255/silver-birder.github.io/blog/FetchAll_and_RedirectURL.png
 ---
 
+import { Image } from "@unpic/qwik";
+
 Google Apps Script (以下、GAS)で、困ったことがあったので備忘録として残しておこうと思います。
 
 # やろうとしたこと
@@ -29,9 +31,12 @@ https://developers.google.com/apps-script/reference/url-fetch/url-fetch-app#adva
 要するに次のようなコードで解決しようと考えていました。
 
 <figure title="FetchAllとRedirectURL">
-  <img
-    alt="FetchAllとRedirectURL"
+  <Image
     src="https://res.cloudinary.com/silverbirder/image/upload/v1614429255/silver-birder.github.io/blog/FetchAll_and_RedirectURL.png"
+    width={1200}
+    height={671}
+    layout="constrained"
+    alt="FetchAllとRedirectURL"
   />
   <figcaption>FetchAllとRedirectURL</figcaption>
 </figure>
@@ -98,9 +103,12 @@ fetch や fetchAll は、`muteHttpExceptions: true` としたとしても、Exce
 そうすると、例えば 1000 件の URL を fetchAll した場合、<b>どれが成功で、どれが失敗で、どれが未実施か</b> がわからないというところです。
 
 <figure title="FetchAllとRedirectURL (Error)">
-  <img
-    alt="FetchAllとRedirectURL (Error)"
+  <Image
     src="https://res.cloudinary.com/silverbirder/image/upload/v1614429297/silver-birder.github.io/blog/FetchAll_and_RedirectURL_error.png"
+    width={1200}
+    height={669}
+    layout="constrained"
+    alt="FetchAllとRedirectURL (Error)"
   />
   <figcaption>FetchAllとRedirectURL (Error)</figcaption>
 </figure>

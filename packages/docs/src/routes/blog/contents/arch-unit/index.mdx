@@ -8,6 +8,8 @@ cover_image: https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-a
 socialMediaImage: https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg
 ---
 
+import { Image } from "@unpic/qwik";
+
 ArchUnit をというものを最近知りました。依存関係のテストができるそうです。さっそく試してみたいと思いますので、その備忘録として残しておきます。
 
 # ArchUnit
@@ -20,9 +22,12 @@ Java のアーキテクチャをテストできるライブラリで、パッケ
 そこで、親の顔よりも見たこの図をテストしたいと思います。
 
 <figure title="Clean Coder Blog > The Clean Architecture">
-  <img
-    alt="clean architecture overview"
+  <Image
     src="https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg"
+    width={772}
+    height={567}
+    layout="constrained"
+    alt="clean architecture overview"
   />
   <figcaption>
     <a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html">
@@ -113,9 +118,12 @@ import "../../1_enterprise_business_rules/entities/Entity";
 UML を可視化すると、下記の図のとおりです。
 
 <figure title="clean_architecture.puml">
-  <img
-    alt="clean_architecture.puml"
+  <Image
     src="https://res.cloudinary.com/silverbirder/image/upload/v1614430164/silver-birder.github.io/blog/clean_architecture.puml.png"
+    width={470}
+    height={684}
+    layout="constrained"
+    alt="clean_architecture.puml"
   />
   <figcaption>clean_architecture.puml</figcaption>
 </figure>
@@ -140,9 +148,12 @@ describe("architecture", () => {
 このテストケースは PASS します。
 
 <figure title="src/clean_architecture.test.ts > architecture > Check dependency #Succeed">
-  <img
-    alt="src/clean_architecture.test.ts > architecture > Check dependency #Succeed"
+  <Image
     src="https://res.cloudinary.com/silverbirder/image/upload/v1614430233/silver-birder.github.io/blog/src_clean_architecture_test_ts_architecture_check_dependency_succeed.png"
+    width={962}
+    height={422}
+    layout="constrained"
+    alt="src/clean_architecture.test.ts > architecture > Check dependency #Succeed"
   />
   <figcaption>
     src/clean_architecture.test.ts > architecture > Check dependency #Succeed
@@ -160,9 +171,12 @@ import "../../4_frameworks_and_drivers/web/Web";
 3 レイヤーが上位の 4 レイヤーを使用しています。この状態でテストを実行すると、
 
 <figure title="src/clean_architecture.test.ts > architecture > Check dependency #Failed">
-  <img
-    alt="src/clean_architecture.test.ts > architecture > Check dependency #Failed"
+  <Image
     src="https://res.cloudinary.com/silverbirder/image/upload/v1614430292/silver-birder.github.io/blog/src_clean_architecture_test_ts_architecture_check_dependency_failed.png"
+    width={1200}
+    height={564}
+    layout="constrained"
+    alt="src/clean_architecture.test.ts > architecture > Check dependency #Failed"
   />
   <figcaption>
     src/clean_architecture.test.ts > architecture > Check dependency #Failed
