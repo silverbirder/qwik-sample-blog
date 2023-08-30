@@ -4,7 +4,7 @@ title: Misc
 
 # Misc
 
-- [artifact](./artifact)
-- [book](./book)
-- [goods](./goods)
-- [watch](./watch)
+- [artifact](/misc/artifact)
+- [book](/misc/book)
+- [goods](/misc/goods)
+- [watch](/misc/watch)
