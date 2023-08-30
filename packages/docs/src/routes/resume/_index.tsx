@@ -18,6 +18,8 @@ export const Cards = component$(() => {
           name={item.name}
           image={item.image}
           description={item.results}
+          width={item.width}
+          height={item.height}
         />
       ))}
     </div>

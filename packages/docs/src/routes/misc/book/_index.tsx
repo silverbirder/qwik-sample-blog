@@ -12,12 +12,14 @@ export const Cards = component$(() => {
         gap: 20,
       })}
     >
-      {Index.map((item) => (
+      {Index.items.map((item) => (
         <Card
           key={item.title}
           name={item.title}
           image={item.cover}
           description={item.author}
+          width={item.width}
+          height={item.height}
         />
       ))}
     </div>
