@@ -41,7 +41,6 @@
     "@orama/plugin-parsedoc": "^1.2.1",
     "@pandacss/dev": "^0.8.0",
     "@playwright/test": "^1.37.0",
-    "@qwikest/icons": "^0.0.8",
     "@storybook/addon-essentials": "7.3.1",
     "@storybook/addon-links": "7.3.1",
     "@storybook/blocks": "7.3.1",

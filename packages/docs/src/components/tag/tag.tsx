@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
-import { BsTag } from "@qwikest/icons/bootstrap";
 import { css } from "~/styled-system/css";
 import { HStack } from "~/styled-system/jsx";
+import { MdiTagOutline } from "../icon/icon";
 
 export interface TagProps {
   name: string;
@@ -24,7 +24,7 @@ export const Tag = component$<TagProps>(({ name, url }) => {
             padding: "2",
           })}
         >
-          <BsTag class="icon" />
+          <MdiTagOutline class="icon" />
           <span
             class={css({
               fontWeight: "light",

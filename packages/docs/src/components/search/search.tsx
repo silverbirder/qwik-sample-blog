@@ -9,7 +9,7 @@ import search from "~/search.json";
 import Fuse from "fuse.js";
 import { css } from "~/styled-system/css";
 import { HStack, VStack } from "~/styled-system/jsx";
-import { BsSearch } from "@qwikest/icons/bootstrap";
+import { MdiMagnify } from "../icon/icon";
 
 export interface SearchProps {}
 
@@ -65,7 +65,7 @@ export const Search = component$<SearchProps>(() => {
           bind:value={keyword}
         />
         <button onClick$={onClick}>
-          <BsSearch />
+          <MdiMagnify />
         </button>
       </HStack>
       <div

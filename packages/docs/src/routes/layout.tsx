@@ -1,10 +1,9 @@
 import { component$, Slot } from "@builder.io/qwik";
 import { Link, type RequestHandler } from "@builder.io/qwik-city";
 import { css } from "~/styled-system/css";
-import { BsGithub, BsTwitter } from "@qwikest/icons/bootstrap";
-import { SiAmazon } from "@qwikest/icons/simpleicons";
 import { hstack } from "~/styled-system/patterns";
 import ImgFavicon from "~/media/favicon.svg?jsx";
+import { MdiAmazon, MdiGithub, MdiTwitter } from "~/components/icon/icon";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
@@ -61,12 +60,12 @@ export default component$(() => {
           </nav>
           <nav class={hstack({ gap: 1 })}>
             <a href="https://github.com/silverbirder" target="_brank">
-              <BsGithub
+              <MdiGithub
                 class={css({ width: "icon.main", height: "icon.main" })}
               />
             </a>
             <a href="https://x.com/silverbirder" target="_brank">
-              <BsTwitter
+              <MdiTwitter
                 class={css({ width: "icon.main", height: "icon.main" })}
               />
             </a>
@@ -74,9 +73,9 @@ export default component$(() => {
               href="https://www.amazon.co.jp/gp/product/B08CY2QCFV/"
               target="_brank"
             >
-              <SiAmazon
+              <MdiAmazon
                 class={css({ width: "icon.main", height: "icon.main" })}
-              ></SiAmazon>
+              ></MdiAmazon>
             </a>
           </nav>
         </div>
