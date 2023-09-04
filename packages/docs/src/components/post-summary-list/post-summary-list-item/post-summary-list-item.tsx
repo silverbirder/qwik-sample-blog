@@ -10,7 +10,7 @@ export const PostSummaryListItem = component$(
     return (
       <div
         class={css({
-          width: "70vw",
+          width: "90vw",
         })}
       >
         <a href={permalink}>
