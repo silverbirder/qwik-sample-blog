@@ -16,23 +16,20 @@ export const Card = component$<CardProps>(
       <div
         class={css({
           display: "grid",
-          gridTemplateRows: "max-content 200px 1fr",
-          maxWidth: 200,
+          gridTemplateRows:
+            "minmax(50px, auto) minmax(200px, auto) minmax(50px, auto)",
         })}
       >
-        <div class={css({ textStyle: "h4" })}>{name}</div>
-        <Image
-          src={image}
+        <div>{name}</div>
+        <div
           class={css({
-            objectFit: "contain",
-            width: "100%",
-            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           })}
-          width={width}
-          height={height}
-          layout="constrained"
-          alt="A lovely bath"
-        />
+        >
+          {image && <Image src={image} width={width} height={height} />}
+        </div>
         <div>
           <p>{description}</p>
         </div>

@@ -22,6 +22,7 @@ export const Tag = component$<TagProps>(({ name, url }) => {
             backgroundColor: "bg.quote",
             borderRadius: "tag.main",
             padding: "2",
+            alignItems: "center",
           })}
         >
           <MdiTagOutline class="icon" />

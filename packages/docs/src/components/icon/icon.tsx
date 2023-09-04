@@ -1,5 +1,7 @@
 import { QwikIntrinsicElements } from "@builder.io/qwik";
 
+// https://icones.js.org/
+
 export function MdiAmazon(props: QwikIntrinsicElements["svg"], key: string) {
   return (
     <svg

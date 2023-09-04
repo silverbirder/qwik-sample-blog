@@ -64,9 +64,11 @@ export const globalCss = defineGlobalStyles({
     color: "text.link",
     textDecoration: "none",
     "&:hover": {
+      textDecoration: "underline",
       color: "text.linkActive",
     },
     "&:active": {
+      textDecoration: "underline",
       color: "text.linkActive",
     },
     "&:focus": {
