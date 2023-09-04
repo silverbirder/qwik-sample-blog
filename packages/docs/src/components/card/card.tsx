@@ -8,8 +8,8 @@ import {
   MaterialSymbolsShoppingBag,
   MdiOfficeBuilding,
   MdiTagOutline,
-} from "../icon/icon";
-import { HStack, VStack } from "~/styled-system/jsx";
+} from "~/components/icon/icon";
+import { HStack } from "~/styled-system/jsx";
 
 export interface CardProps {
   name: string;
@@ -120,6 +120,7 @@ export const Card = component$<CardProps>(
           {tags &&
             tags.map((tag) => (
               <HStack
+                key={tag}
                 gap="1"
                 class={css({
                   alignItems: "center",
