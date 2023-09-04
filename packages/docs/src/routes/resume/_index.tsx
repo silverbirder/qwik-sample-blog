@@ -18,6 +18,9 @@ export const Cards = component$(() => {
           name={item.name}
           image={item.image}
           description={item.results}
+          tags={item.tech_types}
+          experienceYears={item.actual_years}
+          usages={item.usage_scenarios}
           width={item.width}
           height={item.height}
         />

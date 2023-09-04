@@ -17,9 +17,10 @@ export const Cards = component$(() => {
           key={item.name}
           name={item.name}
           image={item.image}
-          description={item.date}
           width={item.width}
           height={item.height}
+          date={item.date}
+          shopLink={item.url}
         />
       ))}
     </div>

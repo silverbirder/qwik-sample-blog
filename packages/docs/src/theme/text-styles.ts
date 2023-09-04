@@ -29,4 +29,18 @@ export const textStyles = defineTextStyles({
       letterSpacing: "tight",
     },
   },
+  lg: {
+    value: {
+      fontSize: "1.25rem",
+      lineHeight: "1.4",
+      letterSpacing: "tight",
+    },
+  },
+  md: {
+    value: {
+      fontSize: "1.125rem",
+      lineHeight: "1.4",
+      letterSpacing: "tight",
+    },
+  },
 });

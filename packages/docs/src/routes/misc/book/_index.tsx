@@ -17,7 +17,9 @@ export const Cards = component$(() => {
           key={item.title}
           name={item.title}
           image={item.cover}
-          description={item.author}
+          person={item.author}
+          date={item.pubdate}
+          office={item.publisher}
           width={item.width}
           height={item.height}
         />

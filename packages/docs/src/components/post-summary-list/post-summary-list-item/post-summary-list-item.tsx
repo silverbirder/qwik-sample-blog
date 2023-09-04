@@ -29,6 +29,7 @@ export const PostSummaryListItem = component$(
 
         <p
           class={css({
+            backgroundColor: "bg.quote",
             borderColor: "bg.quote",
             borderWidth: "medium",
             borderRadius: "base",
