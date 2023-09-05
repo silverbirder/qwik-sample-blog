@@ -7,7 +7,7 @@ export const globalCss = defineGlobalStyles({
   "html, body": {
     margin: 0,
     padding: 0,
-    fontFamily: "noto",
+    // fontFamily: "noto",
     fontSize: "base",
     lineHeight: 1.5,
     color: "text.main",

@@ -42,7 +42,7 @@ export const tokens = defineTokens({
     italic: { value: "italic" },
   },
   fonts: {
-    noto: { value: "var(--font-noto-sans), sans-serif" },
+    // noto: { value: "var(--font-noto-sans), sans-serif" },
   },
   radii: {
     xs: { value: ".125rem" },
