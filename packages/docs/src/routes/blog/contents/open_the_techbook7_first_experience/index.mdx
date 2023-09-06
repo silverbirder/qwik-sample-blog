@@ -8,7 +8,7 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614430347/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614430347/silver-birder.github.io/blog/ReViewStarter_sample_page.png
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 技術書典 7 で初執筆しました。
 
@@ -63,16 +63,13 @@ https://kauplan.org/reviewstarter/
 $ docker run --rm -v $PWD:/work kauplan/review2.5 /bin/bash -c "cd /work; rake pdf"
 ```
 
-<figure title="ReViewStarter sample page">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614430347/silver-birder.github.io/blog/ReViewStarter_sample_page.png"
-    width={757}
-    height={1200}
-    layout="constrained"
-    alt="ReViewStarter sample page"
-  />
-  <figcaption>ReViewStarter sample page</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614430347/silver-birder.github.io/blog/ReViewStarter_sample_page.png"
+  width={757}
+  height={1200}
+  layout="constrained"
+  alt="ReViewStarter sample page"
+/>
 
 **良い感じの本**の PDF が作成されました、最高です。
 
@@ -193,16 +190,13 @@ iPad, Magic Pencil は買って正解でした。
 
 お絵かきが苦手だったので、知人に助けてもらい、なんとか作れました。
 
-<figure title="表表紙">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614430433/silver-birder.github.io/blog/front_cover_of_web_component_for_the_first_time.png"
-    width={911}
-    height={1200}
-    layout="constrained"
-    alt="表表紙"
-  />
-  <figcaption>表表紙</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614430433/silver-birder.github.io/blog/front_cover_of_web_component_for_the_first_time.png"
+  width={911}
+  height={1200}
+  layout="constrained"
+  alt="表表紙"
+/>
 
 # 2. 製本
 
@@ -308,16 +302,13 @@ https://booth.pm/ja
 Google Analytics (**初登録**)と Booth が連携できるので、流入数を見れるのですが、
 離脱率が 86%という悲しい結果を知りました。ここは改善の余地がありそうです。
 
-<figure title="Booth on Google Analytics">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614430470/silver-birder.github.io/blog/booth_on_google_analytics.png"
-    width={1200}
-    height={731}
-    layout="constrained"
-    alt="Booth on Google Analytics"
-  />
-  <figcaption>Booth on Google Analytics</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614430470/silver-birder.github.io/blog/booth_on_google_analytics.png"
+  width={1200}
+  height={731}
+  layout="constrained"
+  alt="Booth on Google Analytics"
+/>
 
 pixiv ID 登録しないとダウンロードできないので、ここが駄目ならサービスを使わない方が良いかもしれません。
 見本誌に限っては、GoogleDrive で渡すようにするとかですかね。

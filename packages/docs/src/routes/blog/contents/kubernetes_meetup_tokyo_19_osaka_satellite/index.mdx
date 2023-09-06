@@ -8,7 +8,7 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614428700/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614428700/silver-birder.github.io/blog/kubernetes_osaka_satellite.png
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 大阪から Kubernetes Meetup Tokyo に参加できるとのことで、こちらに参加してきました。
 Kubernetes の生みの親である 3 人の内の 1 人の Joe Beda から、**Kubernetes の歴史**の経緯について教えて頂きました。
@@ -79,16 +79,13 @@ Kubernetes とは、「コンテナオーケストレーター」と多くの人
 他の観点で「１つのデータベースだけでクラスタを管理している設計」が魅力的だという話がありました。
 （勝手な解釈かもしれません。すみません）
 
-<figure title="kubernetes overview">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614428761/silver-birder.github.io/blog/google_kubernetes_overview.png"
-    width={1200}
-    height={639}
-    layout="constrained"
-    alt="kubernetes overview"
-  />
-  <figcaption>kubernetes overview</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614428761/silver-birder.github.io/blog/google_kubernetes_overview.png"
+  width={1200}
+  height={639}
+  layout="constrained"
+  alt="kubernetes overview"
+/>
 
 Kubernetes では、クラスタの状態を管理するために分散型 KVS である[etcd](https://github.com/etcd-io/etcd)を使っています(その他の状態管理はキャッシュしているそうです。)。
 etcd には、APIServer を経由しなければアクセスできないため、一貫したデータの維持が実現できます。
@@ -98,16 +95,13 @@ etcd には、APIServer を経由しなければアクセスできないため�
 kubernetes の control plane である、APIServer, Scheduler, Controller Manager があれば、シングルノードでもマルチノードでも動きます。
 kubernetes を DockerForMac で動かしたときは、そういえばシングルノードでしたね。マルチノードってイメージでしたけど。
 
-<figure title="kubernetes jazz Improv">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614428854/silver-birder.github.io/blog/google_kubernetes_jazz_Improv.png"
-    width={1200}
-    height={632}
-    layout="constrained"
-    alt="kubernetes jazz Improv"
-  />
-  <figcaption>kubernetes jazz Improv</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614428854/silver-birder.github.io/blog/google_kubernetes_jazz_Improv.png"
+  width={1200}
+  height={632}
+  layout="constrained"
+  alt="kubernetes jazz Improv"
+/>
 
 Kubernetes はコンテナオーケストレーションとよく言われますが、事前にすべてがプランされたオーケストレーションではなく、ジャズのように即興で計画して組み立てていくものに近い思想だそうです。
 私は音楽に疎い人なのですが意味は理解しました。（笑）性格的には即興は苦手っす。
@@ -179,16 +173,13 @@ https://aiming-inc.com/ja/
 今回使わさせて頂いた場所は、会議室でしょうか。
 30,40 人ぐらい入れるスペースで、清潔感がありました。
 
-<figure title="kubernetes osaka satelite aiming">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614428802/silver-birder.github.io/blog/kubernetes_osaka_satelite_aiming.jpg"
-    width={1200}
-    height={675}
-    layout="constrained"
-    alt="kubernetes osaka satelite aiming"
-  />
-  <figcaption>kubernetes osaka satelite aiming</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614428802/silver-birder.github.io/blog/kubernetes_osaka_satelite_aiming.jpg"
+  width={1200}
+  height={675}
+  layout="constrained"
+  alt="kubernetes osaka satelite aiming"
+/>
 
 東京との中継は、ときどき音声が途切れてしまうときもありますが、しっかりと写っていました。
 ただ、コンテンツとしては、YouTube にあげらているので、わざわざ Osaka に出席しなくても良いのでは？とも思いました。

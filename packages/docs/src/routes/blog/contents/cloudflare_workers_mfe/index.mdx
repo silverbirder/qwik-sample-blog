@@ -8,7 +8,7 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614430655/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614430655/silver-birder.github.io/blog/cloudflare_worker_micro_frontends.png
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 今回、また Micro Frontends の構築を試みようと思います。構築パターンの内、サーバーサイド統合パターン、特にエッジサイド統合を試しました。
 その内容を紹介します。サンプルコードは、下記に残しています。
@@ -42,16 +42,13 @@ ESI は、SSI と似たようなもので、サーバーサイド側でコンテ
 
 次のような構成を考えてみました。
 
-<figure title="Cloudflare worker + Micro Frontends">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614430655/silver-birder.github.io/blog/cloudflare_worker_micro_frontends.png"
-    width={1200}
-    height={711}
-    layout="constrained"
-    alt="Cloudflare worker + Micro Frontends"
-  />
-  <figcaption>Cloudflare Workers + Micro Frontends</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614430655/silver-birder.github.io/blog/cloudflare_worker_micro_frontends.png"
+  width={1200}
+  height={711}
+  layout="constrained"
+  alt="Cloudflare worker + Micro Frontends"
+/>
 
 ※ [Podium](https://podium-lib.io/)と[Ara-Framework](https://ara-framework.github.io/website/) に影響されています。  
 ※ [draw.io](https://draw.io/)の sketch style で書きました。

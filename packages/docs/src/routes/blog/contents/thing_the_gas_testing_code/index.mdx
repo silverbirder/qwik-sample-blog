@@ -8,7 +8,7 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614431246/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614431246/silver-birder.github.io/blog/google_apps_script_and_typescript_and_jest.png
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 Google Apps Script(以下,GAS)でライブラリを公開しました。ライブラリを開発する際、**テストのフィードバックサイクルを短くする**ため、`Clasp + Typescript + Jest` という技術スタックを選択しました。
 その開発体験について共有しようと思います。特段変わったことはしていません。
@@ -17,16 +17,13 @@ Google Apps Script(以下,GAS)でライブラリを公開しました。ライ�
 
 [script.google.com](https://script.google.com/)にアクセスしてデバッグ実行って、しんどくないですか？
 
-<figure title="Google Apps Script Debugging ...">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614431285/silver-birder.github.io/blog/google_apps_script_debugging.png"
-    width={930}
-    height={632}
-    layout="constrained"
-    alt="Google Apps Script Debugging ..."
-  />
-  <figcaption>Google Apps Script Debugging ...</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614431285/silver-birder.github.io/blog/google_apps_script_debugging.png"
+  width={930}
+  height={632}
+  layout="constrained"
+  alt="Google Apps Script Debugging ..."
+/>
 
 - ネットワーク越しでステップ実行するため、**遅い**
 - G Suite 系のサービスと連携すると、サービス側の調整(データ準備とか)が**面倒**

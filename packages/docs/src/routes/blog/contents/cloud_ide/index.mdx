@@ -8,7 +8,7 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1613138210/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1613138210/silver-birder.github.io/blog/20201211224606.png
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 2020 年 3 月頃からコロナが流行りだし、もう 12 月になります。働き方が大きく変わり、リモートワークが当たり前の時代となりました。
 エンジニアの働き方も同様に変わりました。そこで、今回は Cloud IDE というものを紹介しようと思います。
@@ -45,48 +45,32 @@ Cloud IDE は、クラウドにある統合開発環境(IDE)のことで、主�
 
 ブラウザで見ると、どんな UI でしょうか。いくつか例を載せておきます。
 
-<figure title="github-codespaces">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1693376916/silver-birder.github.io/blog/codespaces-vs.png"
-    width={3840}
-    height={2084}
-    layout="constrained"
-    alt="visual studio codespaces"
-  />
-  <figcaption>
-    <a href="https://github.co.jp/features/codespaces">
-      https://github.co.jp/features/codespaces
-    </a>
-  </figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1693376916/silver-birder.github.io/blog/codespaces-vs.png"
+  width={3840}
+  height={2084}
+  layout="constrained"
+  alt="visual studio codespaces"
+  href="https://github.co.jp/features/codespaces"
+/>
 
-<figure title="cloud-shell-editor">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1693376917/silver-birder.github.io/blog/Cloud_shell_editor.max-2000x2000.png"
-    width={2000}
-    height={1120}
-    layout="constrained"
-    alt="cloud shell editor"
-  />
-  <figcaption>
-    <a href="https://cloud.google.com/blog/ja/products/application-development/introducing-cloud-shell-editor">
-      https://cloud.google.com/blog/ja/products/application-development/introducing-cloud-shell-editor
-    </a>
-  </figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1693376917/silver-birder.github.io/blog/Cloud_shell_editor.max-2000x2000.png"
+  width={2000}
+  height={1120}
+  layout="constrained"
+  alt="cloud shell editor"
+  href="https://cloud.google.com/blog/ja/products/application-development/introducing-cloud-shell-editor"
+/>
 
-<figure title="gitpod">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1693376919/silver-birder.github.io/blog/gitpod-editor.jpg"
-    width={2880}
-    height={1864}
-    layout="constrained"
-    alt="gitpod"
-  />
-  <figcaption>
-    <a href="https://www.gitpod.io">https://www.gitpod.io</a>
-  </figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1693376919/silver-birder.github.io/blog/gitpod-editor.jpg"
+  width={2880}
+  height={1864}
+  layout="constrained"
+  alt="gitpod"
+  href="https://www.gitpod.io"
+/>
 
 Cloud Shell Editor や Gitpod は、OSS の **Theia** というものを使っています。
 また、全体的に UI がとても似ていますよね。これは、次の記事でわかりやすく説明されていますので、ご興味があればお読みください。

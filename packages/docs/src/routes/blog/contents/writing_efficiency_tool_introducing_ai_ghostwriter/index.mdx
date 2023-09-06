@@ -6,7 +6,7 @@ description: 最近、ビアードパパの焼きチーズケーキシューに�
 tags: ["Chrome Extension", "ChatGPT"]
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 最近、ビアードパパの焼きチーズケーキシューにハマっている silverbirder です。
 文章作成が苦手な私は、AI が文章を代筆する「AI Ghostwriter」という Chrome の拡張機能を開発しました。今回は、この便利なツールの紹介をします。
@@ -28,13 +28,13 @@ AI Ghostwriter は、ChatGPT を活用して執筆者のライティング作業
 
 百聞は一見にしかず、デモ動画を紹介します。以下の画像をクリックするとデモ動画が再生されます。
 
-[<Image
-	src="https://res.cloudinary.com/silverbirder/image/upload/v1693381103/silver-birder.github.io/blog/ai_ghost_writer_demo.gif"
-	width={640}
-	height={389}
-	layout="constrained"
-	alt="AI Ghostwriter DEMO"
-/>](https://res.cloudinary.com/silverbirder/image/upload/v1693381103/silver-birder.github.io/blog/ai_ghost_writer_demo.gif)
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1693381103/silver-birder.github.io/blog/ai_ghost_writer_demo.gif"
+  width={640}
+  height={389}
+  layout="constrained"
+  alt="AI Ghostwriter DEMO"
+/>
 
 以下は、デモ動画で紹介している AI Ghostwriter の操作手順です。
 
@@ -54,7 +54,6 @@ AI Ghostwriter は、ChatGPT を活用して執筆者のライティング作業
   layout="constrained"
   alt="Chrome拡張機能のオプションページ"
 />
-_Chrome 拡張機能のオプションページ_
 
 ※ オプションページは、右上の AI Ghostwriter アイコンを右クリックするとオプションという選択肢があり、それをクリックするとオプションページに遷移できます。
 

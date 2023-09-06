@@ -8,7 +8,7 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1693376915/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1693376915/silver-birder.github.io/blog/CleanArchitecture.jpg
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 ArchUnit をというものを最近知りました。依存関係のテストができるそうです。さっそく試してみたいと思いますので、その備忘録として残しておきます。
 
@@ -21,20 +21,14 @@ https://www.archunit.org/
 Java のアーキテクチャをテストできるライブラリで、パッケージやクラス、レイヤー、スライス（？）の依存関係をテストできるそうです。
 そこで、親の顔よりも見たこの図をテストしたいと思います。
 
-<figure title="Clean Coder Blog > The Clean Architecture">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1693376915/silver-birder.github.io/blog/CleanArchitecture.jpg"
-    width={772}
-    height={567}
-    layout="constrained"
-    alt="clean architecture overview"
-  />
-  <figcaption>
-    <a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html">
-      Clean Coder Blog > The Clean Architecture
-    </a>
-  </figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1693376915/silver-birder.github.io/blog/CleanArchitecture.jpg"
+  width={772}
+  height={567}
+  layout="constrained"
+  alt="Clean Coder Blog > The Clean Architecture"
+  href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
+/>
 
 # Typescript でも ArchUnit したい
 
@@ -117,16 +111,13 @@ import "../../1_enterprise_business_rules/entities/Entity";
 
 UML を可視化すると、下記の図のとおりです。
 
-<figure title="clean_architecture.puml">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614430164/silver-birder.github.io/blog/clean_architecture.puml.png"
-    width={470}
-    height={684}
-    layout="constrained"
-    alt="clean_architecture.puml"
-  />
-  <figcaption>clean_architecture.puml</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614430164/silver-birder.github.io/blog/clean_architecture.puml.png"
+  width={470}
+  height={684}
+  layout="constrained"
+  alt="clean_architecture.puml"
+/>
 
 テストコードは、下記のとおりです。
 
@@ -147,18 +138,13 @@ describe("architecture", () => {
 
 このテストケースは PASS します。
 
-<figure title="src/clean_architecture.test.ts > architecture > Check dependency #Succeed">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614430233/silver-birder.github.io/blog/src_clean_architecture_test_ts_architecture_check_dependency_succeed.png"
-    width={962}
-    height={422}
-    layout="constrained"
-    alt="src/clean_architecture.test.ts > architecture > Check dependency #Succeed"
-  />
-  <figcaption>
-    src/clean_architecture.test.ts > architecture > Check dependency #Succeed
-  </figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614430233/silver-birder.github.io/blog/src_clean_architecture_test_ts_architecture_check_dependency_succeed.png"
+  width={962}
+  height={422}
+  layout="constrained"
+  alt="src/clean_architecture.test.ts > architecture > Check dependency #Succeed"
+/>
 
 では、違反コードを書いてみます。
 
@@ -170,18 +156,13 @@ import "../../4_frameworks_and_drivers/web/Web";
 
 3 レイヤーが上位の 4 レイヤーを使用しています。この状態でテストを実行すると、
 
-<figure title="src/clean_architecture.test.ts > architecture > Check dependency #Failed">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614430292/silver-birder.github.io/blog/src_clean_architecture_test_ts_architecture_check_dependency_failed.png"
-    width={1200}
-    height={564}
-    layout="constrained"
-    alt="src/clean_architecture.test.ts > architecture > Check dependency #Failed"
-  />
-  <figcaption>
-    src/clean_architecture.test.ts > architecture > Check dependency #Failed
-  </figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614430292/silver-birder.github.io/blog/src_clean_architecture_test_ts_architecture_check_dependency_failed.png"
+  width={1200}
+  height={564}
+  layout="constrained"
+  alt="src/clean_architecture.test.ts > architecture > Check dependency #Failed"
+/>
 
 見事 Failed となりました。つまり、依存関係の誤りを自動的に検出することができます。
 

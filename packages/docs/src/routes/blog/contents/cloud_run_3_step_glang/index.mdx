@@ -8,7 +8,7 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1693376921/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1693376921/silver-birder.github.io/blog/190410-abrigednews-02-google-devops-with-serverless.png
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 # Cloud Run とは？
 
@@ -19,18 +19,14 @@ import { Image } from "@unpic/qwik";
 詳しくは割愛するが、Cloud Functions や App Engine と同じようなサーバーレスで動作するもの。
 コンテナを deploy するため、GKE から制御することもできる。
 
-<figure title="Cloud Run Deploy">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1693376921/silver-birder.github.io/blog/190410-abrigednews-02-google-devops-with-serverless.png"
-    width={1000}
-    height={576}
-    layout="constrained"
-    alt="Cloud Run Deploy"
-  />
-  <figcaption>
-    <a href="https://japan.zdnet.com/article/35135525/">Cloud Run Deploy</a>
-  </figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1693376921/silver-birder.github.io/blog/190410-abrigednews-02-google-devops-with-serverless.png"
+  width={1000}
+  height={576}
+  layout="constrained"
+  alt="Cloud Run Deploy"
+  href="https://japan.zdnet.com/article/35135525/"
+/>
 
 # デプロイしてみた
 

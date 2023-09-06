@@ -8,7 +8,7 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1580997144/LG
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1580997144/LGTM/golia.png
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 # 画像で会話って楽しい
 
@@ -52,16 +52,13 @@ Tiqav2 は、大きく分けて 2 つの機能があります。
 
 ### 画像とテキストを保存
 
-<figure title="Saving flow by Tiqav2">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614429484/silver-birder.github.io/blog/saving_flow_by_tiqav2.png"
-    width={1200}
-    height={652}
-    layout="constrained"
-    alt="Saving flow by Tiqav2"
-  />
-  <figcaption>Saving flow by Tiqav2</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614429484/silver-birder.github.io/blog/saving_flow_by_tiqav2.png"
+  width={1200}
+  height={652}
+  layout="constrained"
+  alt="Saving flow by Tiqav2"
+/>
 
 検索する為には、全文検索サービスの Algolia を使います。
 
@@ -79,16 +76,13 @@ https://cloud.google.com/vision/
 
 ### 画像を検索&表示
 
-<figure title="Searching Flow  By Tiqav2">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614429523/silver-birder.github.io/blog/searching_flow_by_tiqav2.png"
-    width={679}
-    height={680}
-    layout="constrained"
-    alt="Searching Flow  By Tiqav2"
-  />
-  <figcaption>Searching Flow By Tiqav2</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614429523/silver-birder.github.io/blog/searching_flow_by_tiqav2.png"
+  width={679}
+  height={680}
+  layout="constrained"
+  alt="Searching Flow  By Tiqav2"
+/>
 
 テキストで全文検索を行います。その結果の ID と Extension を組み合わせることで、
 画像を表示することができます。Extension の種類は、Cloudinary のサポートするもの全てになります。
@@ -101,16 +95,13 @@ https://cloudinary.com/documentation/image_transformations#supported_image_forma
 
 この画像を表示する機能を使うと、次のように Slack 上で画像を送信することができます。
 
-<figure title="Send Tiqav2 URL on Slack">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614429563/silver-birder.github.io/blog/send_tiqav2_URL_on_slack.png"
-    width={716}
-    height={569}
-    layout="constrained"
-    alt="Send Tiqav2 URL on Slack"
-  />
-  <figcaption>Send Tiqav2 URL on Slack</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614429563/silver-birder.github.io/blog/send_tiqav2_URL_on_slack.png"
+  width={716}
+  height={569}
+  layout="constrained"
+  alt="Send Tiqav2 URL on Slack"
+/>
 
 詳しい機能は、次のリポジトリをご確認下さい。
 

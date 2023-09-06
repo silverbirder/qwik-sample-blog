@@ -8,7 +8,7 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614429605/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614429605/silver-birder.github.io/blog/cloud_native_days_tokyo_2019.png
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 今回、東京で開催されました Cloud Native Days Tokyo 2019 に 2 日間とも参加してきましたので、報告しようと思います。
 セッション毎の報告というより、全体を通した感想を話そうかなと思います。
@@ -31,21 +31,14 @@ https://qiita.com/zaki-lknr/items/1c26bb713aef9645f5e6
 次の図では、CNCF プロジェクトの 180 日間における Commit 数をグラフ化したものです。
 生みの親である Google が 1 位で independent(個人)が 2 番目、日本企業 Fujitsu が 6 位です。熱意が伝わってきますね。
 
-<figure title="https://www.stackalytics.com/cncf?date=180">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614429648/silver-birder.github.io/blog/stackalytics_cncf.png"
-    width={1058}
-    height={525}
-    layout="constrained"
-    alt="https://www.stackalytics.com/cncf?date=180"
-  />
-  <figcaption>
-    <a href="https://www.stackalytics.com/cncf?date=180">
-      https://www.stackalytics.com/cncf?date=180
-    </a>
-  </figcaption>
-</figure>
-
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614429648/silver-birder.github.io/blog/stackalytics_cncf.png"
+  width={1058}
+  height={525}
+  layout="constrained"
+  alt="https://www.stackalytics.com/cncf?date=180"
+  href="https://www.stackalytics.com/cncf?date=180"
+/>
 ※ 2019/07/24 時点
 
 ただ、CNCF のメンバーとして日本企業は<b>17 社</b>しかないそうで、まだまだこれからといったところでしょうか。
@@ -229,16 +222,13 @@ https://twitter.com/ca_adtechstudio/status/1152080444445167616
 
 さっそく、キーボードにとりつけてみました。最高です！
 
-<figure title="ergodox with k8s keycap (cyberAgent)">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614429692/silver-birder.github.io/blog/ergodox_with_k8s_keycap.jpg"
-    width={1200}
-    height={900}
-    layout="constrained"
-    alt="ergodox with k8s keycap (cyberAgent)"
-  />
-  <figcaption>ergodox with k8s keycap (cyberAgent)</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614429692/silver-birder.github.io/blog/ergodox_with_k8s_keycap.jpg"
+  width={1200}
+  height={900}
+  layout="constrained"
+  alt="ergodox with k8s keycap (cyberAgent)"
+/>
 
 こちらのサービスから作られたそうで、私も自前で何か作ってみようかなと思いました。
 

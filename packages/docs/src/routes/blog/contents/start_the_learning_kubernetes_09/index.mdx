@@ -8,7 +8,7 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1639816612/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1639816612/silver-birder.github.io/blog/sample_deployment_1.png
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 # ストーリー
 
@@ -133,6 +133,7 @@ pi@raspi001:~/tmp $ for PODNAME in `k get pods -l app=sample-app -o jsonpath='{.
   layout="constrained"
   alt="sample_deployment_1"
 />
+
 <Image
   src="https://res.cloudinary.com/silverbirder/image/upload/v1639816612/silver-birder.github.io/blog/sample_deployment_2.png"
   width={594}

@@ -8,7 +8,7 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614431656/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614431656/silver-birder.github.io/blog/Photo_by_Dil_on_Unsplash.jpg
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 Micro Frontends に関わる記事を 100 件以上読みました(参考記事に記載しています)。そこから得た Micro Frontends についてこの投稿に記録します。
 また、調査メモについて、次のリポジトリに残しています。
@@ -172,20 +172,14 @@ https://developer.mozilla.org/ja/docs/Web/API/History_API
 
 # Web サイト ⇔Web アプリ
 
-<figure title="document-application">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614412210/silver-birder.github.io/blog/microfrontends-document-application.png"
-    width={612}
-    height={261}
-    layout="constrained"
-    alt="document-application"
-  />
-  <figcaption>
-    <a href="https://www.linkedin.com/pulse/microfrontends-approach-building-scalable-web-apps-vinci-rufus">
-      Microfrontends: An approach to building Scalable Web Apps
-    </a>
-  </figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614412210/silver-birder.github.io/blog/microfrontends-document-application.png"
+  width={612}
+  height={261}
+  layout="constrained"
+  alt="Microfrontends: An approach to building Scalable Web Apps"
+  href="https://www.linkedin.com/pulse/microfrontends-approach-building-scalable-web-apps-vinci-rufus"
+/>
 
 マイクロフロントエンドは、かなりのオーバーラップがあるバンドの中央部分の大部分に最も適しています。バンドの両極端に該当するプロジェクトにマイクロフロントエンドアーキテクチャを実装しようとすると、生産性に反するそうです。
 

@@ -8,7 +8,7 @@ cover_image: https://res.cloudinary.com/silverbirder/image/upload/v1614431016/si
 socialMediaImage: https://res.cloudinary.com/silverbirder/image/upload/v1614431016/silver-birder.github.io/blog/rMinc.png
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 # ターゲットユーザー
 
@@ -25,16 +25,13 @@ import { Image } from "@unpic/qwik";
 『いつ商品が届くのかな？メールを確認しよう』が、**面倒と感じませんか**？私は面倒と思います。
 Google は気を利かせて、次のような予定を勝手に登録してくれることがあります。（良い悪いがありますが...）
 
-<figure title="unknownorganizer@calendar.google.com">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1614431051/silver-birder.github.io/blog/unknownorganizer_google_calendar.png"
-    width={680}
-    height={820}
-    layout="constrained"
-    alt="unknownorganizer@calendar.google.com"
-  />
-  <figcaption>unknownorganizer@calendar.google.com</figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1614431051/silver-birder.github.io/blog/unknownorganizer_google_calendar.png"
+  width={680}
+  height={820}
+  layout="constrained"
+  alt="unknownorganizer@calendar.google.com"
+/>
 
 この気を利かせるかどうかは、Google の判断によるため未知数です。
 先程あげた例のメールも、同様のことが勝手にしてくれたら良いな〜と思っていました。

@@ -8,7 +8,7 @@ cover_image: https://www.aosabook.org/images/llvm/RetargetableCompiler.png
 socialMediaImage: https://www.aosabook.org/images/llvm/RetargetableCompiler.png
 ---
 
-import { Image } from "@unpic/qwik";
+import { Image } from "~/components/image/image";
 
 コンパイラ基盤である LLVM について、全く知識がない私が、
 javascript ソースコードをパースし LLVM でコンパイルできるようになりました。
@@ -114,18 +114,13 @@ LLVM は、次の特徴があります。
 LLVM は、任意のフロントエンド言語(コンパイラという文脈でいう変換前の言語)から任意の命令セットアーキテクチャ(以下、ISA)バックエンドへ変換できます。
 また、非言語依存な中間言語(以下、IR)を中心として設計されています。
 
-<figure title="Retargetablity - The Architecture of Open Source Applications: LLVM">
-  <Image
-    src="https://res.cloudinary.com/silverbirder/image/upload/v1693376952/silver-birder.github.io/blog/RetargetableCompiler.png"
-    width={557}
-    height={206}
-    layout="constrained"
-    alt="Retargetablity - The Architecture of Open Source Applications: LLVM"
-  />
-  <figcaption>
-    Retargetablity - The Architecture of Open Source Applications: LLVM
-  </figcaption>
-</figure>
+<Image
+  src="https://res.cloudinary.com/silverbirder/image/upload/v1693376952/silver-birder.github.io/blog/RetargetableCompiler.png"
+  width={557}
+  height={206}
+  layout="constrained"
+  alt="Retargetablity - The Architecture of Open Source Applications: LLVM"
+/>
 
 ---
 
