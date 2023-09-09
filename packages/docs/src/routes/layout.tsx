@@ -80,7 +80,15 @@ export default component$(() => {
           </nav>
         </div>
       </header>
-      <main class={css({ gridArea: "content", margin: "0 5%" })}>
+      <main
+        class={css({
+          gridArea: "content",
+          margin: {
+            base: "0 5%",
+            lg: "0 25%",
+          },
+        })}
+      >
         <Slot />
       </main>
       <footer

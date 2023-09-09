@@ -60,6 +60,9 @@ export const globalCss = defineGlobalStyles({
   "blockquote:before, blockquote:after, q:before, q:after": {
     content: "none",
   },
+  code: {
+    overflow: "auto",
+  },
   a: {
     color: "text.link",
     textDecoration: "none",

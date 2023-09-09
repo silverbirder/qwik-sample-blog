@@ -8,11 +8,7 @@ export const PostSummaryListItem = component$(
   ({ title, permalink, description, tags, date, published }: PostSummary) => {
     if (!published) return <></>;
     return (
-      <div
-        class={css({
-          width: "90vw",
-        })}
-      >
+      <div>
         <a href={permalink}>
           <div class={css({ textStyle: "h4" })}>{title}</div>
         </a>

@@ -17,7 +17,6 @@ import { Image } from "~/components/image/image";
   layout="constrained"
   alt="Unleash"
 />
-_Unleash_
 
 Unleash のリポジトリはこちら 👉[GitHub - Unleash](https://github.com/Unleash/unleash)
 
@@ -56,7 +55,6 @@ Unleash のセットアップについては、公式ドキュメンテーショ
   layout="constrained"
   alt="Unleash"
 />
-_Unleash_
 
 フィーチャーフラグを作成してみましょう。`New feature toggle`をクリックし、名前には`new_feature`を入力します。
 
@@ -67,7 +65,6 @@ _Unleash_
   layout="constrained"
   alt="New feature toggle"
 />
-_New feature toggle_
 
 続いて、React から Unleash への接続に必要な API token を生成します。Unleash の画面上部から `Configure > API access` を選択します。
 
@@ -78,7 +75,6 @@ _New feature toggle_
   layout="constrained"
   alt="API access"
 />
-_API access_
 
 `New API token` をクリックし、API token を作成します。
 
@@ -89,7 +85,6 @@ _API access_
   layout="constrained"
   alt="New API token"
 />
-_New API token_
 
 今回、クライアントサイド(React)で Unleash を利用するため、`Client-side SDK` を選択して API token を生成します。もちろん、サーバーサイドから Unleash を利用することも可能です。
 ここで、environment を`development`に設定します。これにより環境ごとに API token を設定できます。production 向けの API token が必要な場合は、別途生成します。
@@ -139,13 +134,14 @@ export default App;
 
 以下にフィーチャーフラグのデモを示します。都合上、`production`の environment を使用しています。以下の画像をクリックすると動画を閲覧できます。
 
-[<Image
+<Image
 	src="https://res.cloudinary.com/silverbirder/image/upload/v1693364382/silver-birder.github.io/blog/feature-flag-demo.gif"
 	width={640}
 	height={509}
 	layout="constrained"
 	alt="Feature flag demo"
-/>](https://res.cloudinary.com/silverbirder/image/upload/v1693364382/silver-birder.github.io/blog/feature-flag-demo.gif)
+  href="https://res.cloudinary.com/silverbirder/image/upload/v1693364382/silver-birder.github.io/blog/feature-flag-demo.gif"
+/>
 
 以上が Unleash の基本的な使用方法です。
 
@@ -195,7 +191,6 @@ Unleash では、全てのフィーチャーフラグに Variant という機能
   layout="constrained"
   alt="Feature toggle variants"
 />
-_Feature toggle variants_
 
 以下に、new_feature の Variant を使用する例を示します。`variant.name` には、先ほど設定した Variant の name が入力されます。そのため、この`variant.name`を基に処理を分岐させることが可能です。
 
@@ -250,7 +245,6 @@ Unleash では、Health と呼ばれる指標が表示されます。この値�
   layout="constrained"
   alt="Unleash health"
 />
-_Unleash health_
 
 ## Unleash 機能: その他
 
